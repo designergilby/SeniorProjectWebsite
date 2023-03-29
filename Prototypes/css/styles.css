@@ -13,6 +13,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	pointer-events: none;
 }
 
 .centralObj{
@@ -47,6 +48,50 @@
 	font-size: 5vw;
 	color: #fff;
 	margin-bottom: 10vw;
+}
+
+/*------------- Overlay ----------------*/
+.overlay{
+	height: 90vh;
+	width: 90vw;
+	position: fixed;
+	top: 5vh;
+	left: 5vw;
+	background-color: #000;
+	display: none;
+}
+
+.descCol{
+	color: #fff;
+	width: 45%;
+	height: 80vh;
+	background-color: red;
+	padding-top: 10vh;
+}
+
+.imgCol{
+	width: 45%;
+}
+
+.close{
+	background-color: #fff;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+
+h2{
+	font-size: 5vw;
+	margin-bottom: 3vw;
+}
+
+h3{
+	font-size: 4vw;
+	margin-bottom: 3vw;
+}
+
+p{
+	font-size: 2vw;
 }
 /* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 767px){
