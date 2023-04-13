@@ -1,5 +1,23 @@
+
+
 body{
-	background-color: #;
+	background-color: #F6e8cf;
+	font-family: "tgn-soft-round", sans-serif;
+}
+
+header{
+	position: fixed;
+}
+
+.container{
+	/*width:978px;*/
+	width:95.5%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.navBar{
+	border-bottom: solid
 }
 
 .container{
@@ -7,24 +25,146 @@ body{
 	margin-right:auto;
 }
 
-/* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media only screen and (max-width: 767px){
-	.container{
-		width:87.5%; /* 280 pixels at a 320 pixel screen width (iPhone 3 / 4 / 5) */
-	}
+.flexParent{
+	display: flex;
+	justify-content: space-between;
 }
 
-/* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-	.container{
-		width:93.75%; /* 720 pixels at a 768 pixel screen width (iPads) */
-	}
+.feature{
+	background-color: #F6e8cf;
 }
 
-/* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media only screen and (min-width: 1025px){
-	.container{
-		/*width:978px;*/
-		width:95.5%;
-	}
+.featureText{
+	width: 31.2883%;
+	height: 100vh;
+	border-right: dotted;
+}
+
+
+.title{
+	height: 30%;
+	border-bottom: dotted;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding-right: 3.0675%;
+}
+
+.title h1{
+	font-size: 4vw;
+	font-weight: 800;
+}
+
+.location{
+	border-bottom: dotted;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 3.0675%;
+}
+
+.location h2{
+	font-size: 2.5vw; 
+	/* margin-bottom: 0.5vw; */
+}
+
+.location h3{
+	font-size: 1vw;
+	/* margin-bottom: 0.25vw; */
+}
+
+.info{
+	display: flex;
+	height: 20%;
+    flex-direction: column;
+    justify-content: center;
+	padding-right: 3.0675%;
+	border-bottom: dotted;
+}
+
+.info h1{
+	font-size: 3vw;
+	font-weight: 800;
+}
+
+.info h3{
+	font-size: 1vw;
+}
+
+.para{
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 3.0675%;
+	border-bottom: dashed;
+}
+
+.para p{
+	font-size: 1vw;
+}
+
+.viewProjects{
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 3.0675%;
+}
+
+.viewProjects a{
+	text-decoration: none;
+	color: #000;
+}
+
+.blob{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 65.6442%;
+}
+
+.blob img{
+	height: 55vw;
+	width: 55vw;
+	object-fit: cover;
+}
+
+
+
+
+/*------ Feature Area 2 */
+
+.feature2{
+	display: none;
+}
+
+.titleBlurb h1{
+	font-size: 3vw;
+}
+
+.titleBlurb{
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-bottom: dotted;
+	padding-right: 3.0675%;
+}
+
+.blurbDesc{
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-bottom: dotted;
+	padding-right: 3.0675%;
+}
+
+.viewProject2{
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
