@@ -168,3 +168,62 @@ header{
 	flex-direction: column;
 	justify-content: center;
 }
+
+/*--- big grid area */
+
+
+/*Grid Holder*/
+
+.pjwrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	row-gap: 10px;
+	column-gap: 20px;
+
+	width: 80vw;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*Individual square holder*/
+
+.photoHolder{
+	width: 7vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	padding-right: 2vw;
+	padding-left: 2vw;
+
+	color: white;
+	background-color: red;
+	text-decoration: none;
+
+	font-size: 10pt;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.25vw;
+	background-size: 100%;
+}
+
+/*Logo holder with hovers*/
+
+.pjImage{
+	display: none;
+	width:100%;
+	padding-top: 100%;
+	background-color: purple;
+}
+
+.CharGreen:hover{
+	background-image: url(../images/NMC.png);
+}
+
+.CharGreen p:hover{
+	opacity:0;
+}
+
+
+
+
