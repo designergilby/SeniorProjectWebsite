@@ -205,16 +205,12 @@ header{
 	text-align: center;
 	line-height: 1.25vw;
 	background-size: 100%;
+
+	cursor: pointer;
 }
 
 /*Logo holder with hovers*/
 
-.pjImage{
-	display: none;
-	width:100%;
-	padding-top: 100%;
-	background-color: purple;
-}
 
 .CharGreen:hover{
 	background-image: url(../images/NMC.png);
