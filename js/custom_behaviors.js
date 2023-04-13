@@ -7,6 +7,13 @@ $(document).ready(function() {
 		$(".feature2").fadeIn(2000)
 		
 	})
+
+		$(".closePopButton").click(function(){
+		event.preventDefault()
+
+		$(".designerPageHolder ").fadeOut(800)
+	})
+
 	
 	
 });

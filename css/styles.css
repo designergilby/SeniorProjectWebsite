@@ -221,5 +221,138 @@ header{
 }
 
 
+/*Designer PopUp*/
+
+.tradeGothicHeavy{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	color: #4B3D37;
+}
+
+.tradeGothicBold{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #4B3D37;
+}
+
+.tradeGothicRegular{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #4B3D37;
+}
+
+
+.designerPageHolder{
+	width:100%;
+}
+
+.designerInfoHolder{
+	background-color: #FDF9F0;
+}
+
+.projectImagesHolder{
+	background-color: #DB170B;
+}
+
+.logoPop{
+/*	background-color: #DB170B;*/
+}
+
+
+.flexParent{
+	display:flex;
+	align-items: flex-start;
+}
+
+.closePopButton{
+	text-decoration:none;
+}
+
+	.closePopButton{
+		margin-top:3%;
+		margin-left:5%;
+		float:left;
+		font-size: 1.25vw;
+	}
+
+	.designerInfoHolder{
+		width:50%;
+		height: 100vh;
+	}
+
+	.projectImagesHolder{
+		width: 50%;
+		height: 100vh;
+	}
+
+	.designerContent{
+		width: 80%;
+		margin-left: 10%;
+		margin-right:10%;
+		margin-top: 15%;
+	}
+
+	.logoPop{
+		width:16%;
+		padding-top:16%;
+		margin-right:5%;
+		background-image: url(../images/pestoLogo.png);
+		background-size: 100%;
+	}
+
+	.projectNamePop{
+		font-size: 2.75vw;
+		margin-bottom:6%;
+	}
+
+	.projectLinkPop{
+		font-size:1.1vw;
+	}
+
+	.dimensionPop{
+		margin-top:3%;
+		margin-bottom:2%;
+	}
+
+	.projectDescription{
+		font-size:1vw;
+		line-height:1.3vw;
+		margin-bottom:20%;
+	}
+
+	.designerFace{
+		width:10%;
+		padding-top:10%;
+		margin-right:5%;
+		margin-bottom:2%;
+		background-image: url(../images/headshot.webp);
+		background-size: 100%;
+		background-color: red;
+	}
+
+	.designerNamePop{
+		font-size:1.25vw;
+		margin-bottom:5%;
+	}
+
+	.designerLinksPop{
+		font-size:1vw;
+		margin-right:5%;
+	}
+
+	.designerDescription{
+		font-size:.9vw;
+		line-height:1.3vw;
+		margin-bottom:20%;
+		width:70%;
+	}
+
+	.flexChildDesigner{
+		width:50%;
+	}
+
 
 
