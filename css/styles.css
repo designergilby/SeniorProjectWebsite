@@ -16,9 +16,140 @@ header{
 	margin-right:auto;
 }
 
-.navBar{
-	border-bottom: solid
+header{
+	background-color: #FDF9F0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-bottom: 2px dashed #4D3D34;
 }
+
+h1{
+	font-weight: 700;
+	color: #4D3D34;
+}
+
+.flexParent{
+	display: flex;
+}
+
+nav a{
+	color: #4D3D34;
+	text-decoration: none;
+
+}
+
+/* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 767px){
+	.container{
+		width:87.5%; /* 280 pixels at a 320 pixel screen width (iPhone 3 / 4 / 5) */
+	}
+	header{
+		height: 40px;
+	}
+
+	h1{
+		line-height: 40px;
+	}
+
+	.navButton{
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		right: 5%;
+		top: 0;
+
+		background-image: url(../images/menu.png);
+		background-size:100%;
+	}
+
+	nav{
+		position: absolute;
+		width: 100%;
+		top: 40px;
+		left: 0px;
+		background-color: #FDF9F0;
+		display: none;
+	}
+
+	nav a{
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-bottom: 2px dashed #4D3D34;
+	}
+}
+
+/* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.container{
+		width:93.75%; /* 720 pixels at a 768 pixel screen width (iPads) */
+		
+	}
+
+	header{
+		height: 50px;
+		
+	}
+
+	h1{
+		line-height: 50px;
+	}
+
+	.navButton{
+		display: none;
+	}
+
+	nav{
+/*		display: flex;*/
+		height: 100%;
+		margin-left: auto;
+	}
+
+	nav a{
+		line-height: 50px;
+		margin-left: 3vw;
+	}
+}
+
+/* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 1025px){
+	.container{
+		/*width:978px;*/
+		width:95.5%;
+	}
+
+	header{
+		height: 60px;
+		display: flex;
+	}
+
+	h1{
+		line-height: 60px;
+	}
+
+	.navButton{
+		display: none;
+	}
+
+	nav{
+		height: 100%;
+		margin-left: auto;
+		
+	}
+
+	nav a{
+		line-height: 60px;
+		margin-left: 2.5vw;
+	}
+}
+
+/*.navBar{
+	border-bottom: solid
+}*/
 
 .container{
 	margin-left:auto;
