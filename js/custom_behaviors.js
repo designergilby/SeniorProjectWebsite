@@ -30,3 +30,5 @@ $(document).ready(function() {
 	
 	
 });
+
+//Nadiyah's Section (Footer)

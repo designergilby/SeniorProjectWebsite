@@ -764,4 +764,81 @@ nav a{
 	}
 
 
+/* Nadiyah's Section (Footer) */
+	.flex{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	footer{
+		font-family: "tgn-soft-round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+		width:100vw;
+		height: 500px;
+	
+	}
+	.footerDate{
+		font-weight: 800;
+		font-size: 46.6px;
+		
+	}
+	.footerTime{
+		font-weight: 700;
+		font-size: 29.23px;
+	}
+	.footerLocation{
+		font-weight: 400;
+		font-size: 17.3px;
+	}
+	.leftFooter{
+		
+		height: 100%;
+		width: 57.05%;
+		display: flex;
+		justify-content: center;
+		
+	}
+	
+	.rightFooter{
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+		height: 100%;
+		width: 39.87%;
+	
+	}
+	.footerTopCredit{
+		font-weight: 700;
+		font-size: 12.2px;
+	}
+	.footerCredits{
+		font-weight: 400;
+		font-size: 12.2px;
+	}
 
+	.footerLocationPNG{
+		background-image:url(../images/Asset\ 3-8.png) ;
+		
+		height:340px;
+		width: 58.6%;
+	}
+	
+	.footerTimeAndDate{
+		align-content: center;
+	
+		
+	}
+	.footerBigcredits{
+		
+		align-content: center;
+	
+		
+	}
+	.footerSocialIcon{
+		margin-right: 30px;
+		width: 4.5vw;
+		height: 4.5vw;
+		background-color:rgba(0, 0, 0, 0.5);
+	}
+	
