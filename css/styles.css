@@ -300,6 +300,284 @@ nav a{
 	justify-content: center;
 }
 
+/* Specific Grid Area */
+.gallerySpecific{
+	display: flex;
+	flex-wrap: wrap;
+}
+.square{
+	width: 222px;
+	height: 222px;
+
+	margin-right: 30px;
+	margin-bottom: 60px;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	background-color: aqua;
+}
+.square:nth-of-type(4n){
+	margin-right: 0px;
+}
+.physical{
+	display: block;
+	/* display: none; */
+	background-color: aquamarine;
+}
+	.Blush{
+		
+	}
+	.Blush:hover{
+
+	}
+	.Combi{
+		
+	}
+	.Combi:hover{
+
+	}
+	.ForagedBlends{
+
+	}
+	.ForagedBlends:hover{
+
+	}
+	.Lumi{
+
+	}
+	.Lumi:hover{
+
+	}
+	.MyVCP{
+
+	}
+	.MyVCP:hover{
+
+	}
+	.Openit{
+
+	}
+	.Openit:hover{
+
+	}
+	.Resalve{
+
+	}
+	.Resalve:hover{
+
+	}
+	.Ruted{
+
+	}
+	.Ruted:hover{
+
+	}
+	.Silphi{
+
+	}
+	.Silphi:hover{
+
+	}
+	.Solace{
+		background-image: url(../Logos/Solace/LogoBandW.png);
+	}
+	.Solace:hover{
+		background-image: url(../Logos/Solace/LogoDarkB.png);
+	}
+	.Somid{
+
+	}
+	.Somid:hover{
+		
+	}
+.emotional{
+	display: block;
+	display: none;
+	background-color: beige;
+}
+	.AdoptYourself{
+
+	}
+	.AdoptYourself:hover{
+
+	}
+	.BlumeBar{
+
+	}
+	.BlumeBar:hover{
+
+	}
+	.DiaBuddy{
+		
+	}
+	.DiaBuddy:hover{
+
+	}
+	.Fake{
+
+	}
+	.Fake:hover{
+
+	}
+	.HealInk{
+
+	}
+	.HealInk:hover{
+
+	}
+	.IntroSpec{
+
+	}
+	.IntroSpec:hover{
+
+	}
+	.IslaAndMio{
+
+	}
+	.IslaAndMio:hover{
+		
+	}
+	.Journei{
+
+	}
+	.Journei:hover{
+
+	}
+	.Listenupp{
+
+	}
+	.Listenupp:hover{
+
+	}
+	.MUUD{
+
+	}
+	.MUUD:hover{
+
+	}
+	.Neuros{
+
+	}
+	.Neuros:hover{
+
+	}
+	.Ritual{
+
+	}
+	.Ritual:hover{
+
+	}
+	.Tranquillo{
+
+	}
+	.Tranquillo:hover{
+
+	}
+.intellectual{
+	display: block;
+	display: none;
+}
+	.Hatch{
+
+	}
+	.Hatch:hover{
+
+	}
+	.Skildr{
+
+	}
+	.Skildr:hover{
+
+	}
+.spiritual{
+	display: block;
+	display: none;
+}
+.social{
+	display: block;
+	display: none;
+}
+	.Bday{
+		
+	}
+	.Bday:hover{
+
+	}
+	.Courage{
+
+	}
+	.Courage:hover{
+
+	}
+	.FederationAudio{
+
+	}
+	.FederationAudio:hover{
+
+	}
+	.JustATip{
+
+	}
+	.JustATip:hover{
+
+	}
+	.Unbubl{
+
+	}
+	.Unbubl:hover{
+
+	}
+.financial{
+	display: block;
+	display: none;
+}
+	.BeaverCreek{
+
+	}
+	.BeaverCreek:hover{
+
+	}
+.occupational{
+	display: block;
+	display: none;
+}
+	.DoThat{
+
+	}
+	.DoThat:hover{
+
+	}
+.environmental{
+	display: block;
+	display: none;
+}
+	.EcoArt{
+
+	}
+	.EcoArt:hover{
+
+	}
+	.Pesto{
+
+	}
+	.Pesto:hover{
+
+	}
+	.Rngr{
+
+	}
+	.Rngr:hover{
+
+	}
+	.Slole{
+
+	}
+	.Slole:hover{
+		
+	}
+
+
 /*--- big grid area */
 
 
