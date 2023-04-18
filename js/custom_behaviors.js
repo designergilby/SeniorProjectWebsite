@@ -8,7 +8,7 @@ $(document).ready(function() {
 		
 	})
 
-		$(".closePopButton").click(function(){
+	$(".closePopButton").click(function(){
 		event.preventDefault()
 
 		$(".designerPageHolder ").fadeOut(800)
@@ -31,11 +31,29 @@ $(document).ready(function() {
 		autoplay:true,
 		autoplaySpeed: 2000,
 		speed:2000,
-		dots:true
+		dots:true,
+		arrows:false,
 	});
+
+
+	 $('.samPeskie').hover(function() {
+	    $(".samPeskie p").css({"opacity": "0"});
+	  }, function() {
+	    $(".samPeskie p").css({"opacity": "100"});
+	  })
+
+	$(".samPeskie").click(function(){
+		event.preventDefault()
+
+		$(".samPeskiePop").fadeIn(800)
+		$(".samPeskiePop").fadeOut(800)
+
+	})
 
 	
 	
 });
+
+
 
 //Nadiyah's Section (Footer)
