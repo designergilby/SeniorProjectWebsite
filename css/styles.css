@@ -81,6 +81,31 @@ nav a{
 		text-align: center;
 		border-bottom: 2px dashed #4D3D34;
 	}
+
+	.gallerySpecific{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+
+	.square{
+		width: 46.428571428571429%;
+		padding-top: 46.428571428571429%;
+		margin-bottom: 10.714285714285714%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: aqua;
+	}
+
+	.square:nth-of-type(4n){
+		margin-right: 0px;
+	}
+
+	.physical{
+		display: block;
+		/* display: none; */
+	}
 }
 
 /* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
