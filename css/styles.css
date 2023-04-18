@@ -81,6 +81,69 @@ nav a{
 		text-align: center;
 		border-bottom: 2px dashed #4D3D34;
 	}
+
+	.gallerySpecific{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+
+	.square{
+		width: 46.428571428571429%;
+		padding-top: 46.428571428571429%;
+		margin-bottom: 10.714285714285714%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: aqua;
+	}
+
+	.square:nth-of-type(4n){
+		margin-right: 0px;
+	}
+
+	.physical{
+		display: block;
+		/* display: none; */
+	}
+
+	.emotional{
+		display: block;
+/*		display: none;*/
+		background-color: beige;
+	}
+
+	.intellectual{
+		display: block;
+/*		display: none;*/
+	}
+
+	.spiritual{
+		display: block;
+/*		display: none;*/
+	}
+
+	.social{
+		display: block;
+/*		display: none;*/
+	}
+
+	.financial{
+		display: block;
+/*		display: none;*/
+	}
+
+	.occupational{
+		display: block;
+/*		display: none;*/
+	}
+
+	.environmental{
+		display: block;
+/*		display: none;*/
+	}
+
+
 }
 
 /* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -301,7 +364,7 @@ nav a{
 }
 
 /* Specific Grid Area */
-.gallerySpecific{
+/*.gallerySpecific{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -319,12 +382,11 @@ nav a{
 }
 .square:nth-of-type(4n){
 	margin-right: 0px;
-}
-.physical{
+}*/
+/*.physical{
 	display: block;
-	/* display: none; */
-	background-color: aquamarine;
-}
+}*/
+
 	.Blush{
 		
 	}
@@ -391,11 +453,11 @@ nav a{
 	.Somid:hover{
 		
 	}
-.emotional{
+/*.emotional{
 	display: block;
 	display: none;
 	background-color: beige;
-}
+}*/
 	.AdoptYourself{
 
 	}
@@ -474,10 +536,10 @@ nav a{
 	.Tranquillo:hover{
 
 	}
-.intellectual{
+/*.intellectual{
 	display: block;
 	display: none;
-}
+}*/
 	.Hatch{
 
 	}
@@ -490,14 +552,14 @@ nav a{
 	.Skildr:hover{
 
 	}
-.spiritual{
+/*.spiritual{
 	display: block;
 	display: none;
 }
 .social{
 	display: block;
 	display: none;
-}
+}*/
 	.Bday{
 		
 	}
@@ -528,30 +590,30 @@ nav a{
 	.Unbubl:hover{
 
 	}
-.financial{
+/*.financial{
 	display: block;
 	display: none;
-}
+}*/
 	.BeaverCreek{
 
 	}
 	.BeaverCreek:hover{
 
 	}
-.occupational{
+/*.occupational{
 	display: block;
 	display: none;
-}
+}*/
 	.DoThat{
 
 	}
 	.DoThat:hover{
 
 	}
-.environmental{
+/*.environmental{
 	display: block;
 	display: none;
-}
+}*/
 	.EcoArt{
 
 	}
