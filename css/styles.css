@@ -40,6 +40,10 @@ nav a{
 
 }
 
+.stopScroll{
+	overflow-y: hidden;
+}
+
 /* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 767px){
 	.container{
@@ -697,6 +701,12 @@ nav a{
 	background-size:100%;
 }
 
+.angelaHolton:hover{
+	background-image: url(../images/angelaHoltonLogo.png);
+	background-size:100%;
+}
+
+
 /*Designer PopUp*/
 
 .tradeGothicHeavy{
@@ -723,6 +733,10 @@ nav a{
 
 .designerPageHolder{
 	width:100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
 }
 
 .designerInfoHolder{
@@ -779,14 +793,20 @@ nav a{
 		background-size: 100%;
 	}
 
+	.angelaHoltonLogoPop{
+		background-image: url(../images/angelaHoltonLogo.png);
+		background-size: 100%;
+	}
+
 	.samPeskieLogoPop{
 		background-image: url(../images/samPeskieLogo.png);
 		background-size: 100%;
 	}
 
-	.samPeskiePop{
+	.templatePop, .samPeskiePop, .angelaHoltonPop{
 		display:none;
 	}
+
 
 	.projectNamePop{
 		font-size: 2.75vw;
@@ -841,7 +861,7 @@ nav a{
 
 	.projectImagesHolder div{
 		width: 100%;
-		height: 100vw;
+		height: 100vh;
 		background-size: 100%;
 	}
 

@@ -8,11 +8,6 @@ $(document).ready(function() {
 		
 	})
 
-	$(".closePopButton").click(function(){
-		event.preventDefault()
-
-		$(".designerPageHolder ").fadeOut(800)
-	})
 
 	$(".navButton").on("click", function(event){
 		event.preventDefault()
@@ -36,6 +31,27 @@ $(document).ready(function() {
 	});
 
 
+	 $('.angelaHolton').hover(function() {
+	    $(".angelaHolton p").css({"opacity": "0"});
+	  }, function() {
+	    $(".angelaHolton p").css({"opacity": "100"});
+	  })
+
+	$(".angelaHolton").click(function(){
+		event.preventDefault()
+
+		$(".angelaHoltonPop").fadeIn(500)
+		// $("body").addClass("stopScroll")
+	})
+
+	$(".angelaClose").click(function(){
+		event.preventDefault()
+
+		$(".angelaHoltonPop").fadeOut(500)
+		// $("body").removeClass("stopScroll")
+	})
+
+
 	 $('.samPeskie').hover(function() {
 	    $(".samPeskie p").css({"opacity": "0"});
 	  }, function() {
@@ -45,9 +61,15 @@ $(document).ready(function() {
 	$(".samPeskie").click(function(){
 		event.preventDefault()
 
-		$(".samPeskiePop").fadeIn(800)
-		$(".samPeskiePop").fadeOut(800)
+		$(".samPeskiePop").fadeIn(500)
+		// $("body").addClass("stopScroll")
+	})
 
+	$(".samClose").click(function(){
+		event.preventDefault()
+
+		$(".samPeskiePop").fadeOut(500)
+		// $("body").removeClass("stopScroll")
 	})
 
 	
