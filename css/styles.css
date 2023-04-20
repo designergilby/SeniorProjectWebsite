@@ -5,10 +5,6 @@ body{
 	font-family: "tgn-soft-round", sans-serif;
 }
 
-header{
-	position: fixed;
-}
-
 .container{
 	/*width:978px;*/
 	width:95.5%;
@@ -17,12 +13,14 @@ header{
 }
 
 header{
+	position: fixed;
 	background-color: #f2f1f3;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
 	border-bottom: 2px dashed #4D3D34;
+	z-index: 1;
 }
 
 h1{
@@ -652,13 +650,12 @@ nav a{
 .pjwrapper{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: flex-start;
+	justify-content: space-evenly;	
 
-	row-gap: 20px;
-	column-gap: 20px;
+	row-gap: 1.704158145875937vw;
+	column-gap: 1.704158145875937%;
 
-	width: 80vw;
+	width: 90vw;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -666,26 +663,27 @@ nav a{
 /*Individual square holder*/
 
 .photoHolder{
-	width: 7vw;
-	padding-top: 7vw;
-	padding-bottom: 2vw;
-	padding-right: 2vw;
-	padding-left: 2vw;
-
-	color: white;
-	background-color: red;
-	text-decoration: none;
-/*	background-color: #f2f1f3;*/
-
-	font-size: 10pt;
-	text-transform: uppercase;
-	text-align: center;
-	line-height: 1.25vw;
-	background-size: 100%;
-	color: #4B3D37;
-	font-weight: 700;
-
+	width: 10vw;
+	padding-top: 10vw;
+/*	background-color: red;*/
+	background-color: #f2f1f3;
+	
+	background-size: cover;
+	position:relative;
 	cursor: pointer;
+}
+
+.name{
+	position: absolute;
+  	top: 50%;
+  	right:50%;
+  	transform: translateY(-50%) translateX(50%);
+
+  	text-align: center;
+  	text-transform: uppercase;
+  	font-size: 1.25vw;
+  	color: #4B3D37;
+	font-weight: 700;
 }
 
 
