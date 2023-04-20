@@ -368,7 +368,7 @@ nav a{
 }
 
 /* Specific Grid Area */
-/*.gallerySpecific{
+.gallerySpecific{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -386,7 +386,7 @@ nav a{
 }
 .square:nth-of-type(4n){
 	margin-right: 0px;
-}*/
+}
 /*.physical{
 	display: block;
 }*/
@@ -499,6 +499,9 @@ nav a{
 
 	}
 	.IslaAndMio{
+
+		background-image: url(../images/samPeskieLogoBlack.png);
+		background-size: 100%;
 
 	}
 	.IslaAndMio:hover{
@@ -614,10 +617,10 @@ nav a{
 	.DoThat:hover{
 
 	}
-/*.environmental{
+.environmental{
 	display: block;
-	display: none;
-}*/
+/*	display: none;*/
+}
 	.EcoArt{
 
 	}
@@ -696,10 +699,18 @@ nav a{
 	background-image: url(../images/NMC.png);
 }
 
+/*.samPeskie{
+	background-image: url(../images/samPeskieLogo.png);
+	background-size:100%;
+	display:none;
+}*/
+
 .samPeskie:hover{
 	background-image: url(../images/samPeskieLogo.png);
 	background-size:100%;
 }
+
+
 
 .angelaHolton:hover{
 	background-image: url(../images/angelaHoltonLogo.png);
@@ -708,6 +719,12 @@ nav a{
 
 
 /*Designer PopUp*/
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 .tradeGothicHeavy{
 	font-family: "tgn-soft-round", sans-serif;
@@ -738,6 +755,32 @@ nav a{
 	left: 0;
 	z-index: 2;
 }
+
+.loaderBackground{
+	width:100%;
+	height:100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	background-color: #f2f1f3;
+}
+
+.loader {
+  border: 1vw solid blue; 
+  border-top: 1vw solid lightsteelblue; 
+  border-radius: 50%;
+  width: 5%;
+  padding-top: 5%;
+  animation: spin 2s linear infinite;
+  top:50%;
+  left:50%;
+  margin-top:-5%;
+  margin-left:-5%;
+  position:absolute;
+  display:none;
+}
+
 
 .designerInfoHolder{
 	background-color: #f2f1f3;
@@ -803,7 +846,7 @@ nav a{
 		background-size: 100%;
 	}
 
-	.templatePop, .samPeskiePop, .angelaHoltonPop{
+	.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
 		display:none;
 	}
 
@@ -833,7 +876,7 @@ nav a{
 		padding-top:10%;
 		margin-right:5%;
 		margin-bottom:2%;
-		background-image: url(../images/headshot.webp);
+		background-image: url(../images/headshotCopy.png);
 		background-size: 100%;
 		background-color: red;
 	}
