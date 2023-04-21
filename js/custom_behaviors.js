@@ -37,13 +37,14 @@ $(document).ready(function() {
 	    $(".angelaHolton p").css({"opacity": "100"});
 	  })
 
-	$(".angelaHolton").click(function(){
-		event.preventDefault()
+	// $(".angelaHolton").click(function(){
+	// 	event.preventDefault()
 
-		$(".angelaHoltonPop").fadeIn(500)
-		// $("body").addClass("stopScroll")
-	})
+	// 	$(".angelaHoltonPop").fadeIn(500)
+	// 	// $("body").addClass("stopScroll")
+	// })
 
+	
 	 $('.angelaHolton').click(function() {
 	    
 	    $(".loaderBackground").fadeIn(400, function(){
@@ -56,6 +57,23 @@ $(document).ready(function() {
 	    	})
 	    })
 	  })
+
+
+	 $('.Slole').click(function() {
+	    
+	    $(".loaderBackground").fadeIn(400, function(){
+	    	$(".loader").delay(100).fadeIn(400, function(){
+	    		 $(".angelaHoltonPop").fadeIn(800, function(){
+	    			$(".loader").delay(2000).fadeOut(400, function(){
+	    				$(".loaderBackground").fadeOut(400)
+	    			})
+	   			 })
+	    	})
+	    })
+	  })
+
+
+
 
 	$(".angelaClose").click(function(){
 		event.preventDefault()
@@ -71,15 +89,22 @@ $(document).ready(function() {
 	    $(".samPeskie p").css({"opacity": "100"});
 	  })
 
-	// $(".samPeskie").click(function(){
-	// 	event.preventDefault()
-
-	// 	$(".samPeskiePop").fadeIn(500)
-	// 	// $("body").addClass("stopScroll")
-	// })
-
 
 	$('.samPeskie').click(function() {
+	    
+	    $(".loaderBackground").fadeIn(400, function(){
+	    	$(".loader").delay(100).fadeIn(400, function(){
+	    		 $(".samPeskiePop").fadeIn(800, function(){
+	    			$(".loader").delay(2000).fadeOut(400, function(){
+	    				$(".loaderBackground").fadeOut(400)
+	    			})
+	   			 })
+	    	})
+	    })
+	  })
+
+
+	$('.IslaAndMio').click(function() {
 	    
 	    $(".loaderBackground").fadeIn(400, function(){
 	    	$(".loader").delay(100).fadeIn(400, function(){

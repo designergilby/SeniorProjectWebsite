@@ -46,6 +46,7 @@ nav a{
 @media only screen and (max-width: 767px){
 	.container{
 		width:87.5%; /* 280 pixels at a 320 pixel screen width (iPhone 3 / 4 / 5) */
+		background-color: seagreen;
 	}
 	header{
 		height: 40px;
@@ -54,6 +55,16 @@ nav a{
 	h1{
 		line-height: 40px;
 	}
+
+	/*.feature, .feature2, .container{
+		display:none;
+	}
+
+	footer, header{
+		display:none;
+	}*/
+
+
 
 	.navButton{
 		display: block;
@@ -146,14 +157,309 @@ nav a{
 	}
 
 
+	.IslaAndMio{
+
+		background-image: url(../images/samPeskieLogoBlack.png);
+		background-size: 100%;
+
+	}
+
+
+/*	Designer PopUp Mobile /////////////////////////*/
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loaderBackground{
+	width:100%;
+	height:100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background-color: #f2f1f3;
+	position: fixed; bottom: 0%; top: 0%; overflow: scroll; height: 100vh;
+}
+
+.loader {
+  border: 1vw solid blue; 
+  border-top: 1vw solid lightsteelblue; 
+  border-radius: 50%;
+  width: 5%;
+  padding-top: 5%;
+  animation: spin 2s linear infinite;
+  top:50%;
+  left:50%;
+  margin-top:-5%;
+  margin-left:-5%;
+  position:absolute;
+  display:none;
+}
+
+
+.tradeGothicHeavy{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	color: #042439;
+}
+
+.tradeGothicBold{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #042439;
+}
+
+.tradeGothicRegular{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #042439;
+}
+
+
+.designerPageHolder{
+	width:100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display:block;
+	background-color:lightgoldenrodyellow;
+}
+
+
+.designerInfoHolder{
+		width:100%;
+		height:90%;
+		display:inline-block;
+		background-color: #f2f1f3;
+}
+
+.projectImagesHolder{
+		width: 100%;
+		height: 50%;
+		background-color: #f2f1f3;
+		background-color:lightseagreen;
+}
+
+.projectImagesHolder div{
+		width: 100%;
+		height: 50vh;
+		background-size: 100%;
+	}
+	
+
+.flexParentM{
+	display:flex;
+	align-items: flex-start;
+}
+
+.closePopButton{
+	text-decoration:none;
+}
+
+	.closePopButton{
+		margin-top:6%;
+		margin-left:5%;
+		float:left;
+		font-size: 4vw;
+	}
+
+	.designerContent{
+		width: 80%;
+		margin-left: 10%;
+		margin-right:10%;
+		margin-top:20%;
+	}
+
+	.logoPop{
+		width:20%;
+		padding-top:20%;
+		margin-right:5%;
+		background-image: url(../images/pestoLogo.png);
+		background-size: 100%;
+	}
+
+	.angelaHoltonLogoPop{
+		background-image: url(../images/angelaHoltonLogo.png);
+		background-size: 100%;
+	}
+
+	.samPeskieLogoPop{
+		background-image: url(../images/samPeskieLogo.png);
+		background-size: 100%;
+	}
+
+	.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
+		display:none;
+	}
+
+
+	.projectNamePop{
+		font-size: 6.5vw;
+		margin-bottom:4%;
+	}
+
+	.projectLinkPop{
+		font-size:3vw;
+	}
+
+	.dimensionPop{
+		margin-top:4%;
+		margin-bottom:3%;
+		font-size:3.75vw;
+	}
+
+	.projectDescription{
+		font-size:3vw;
+		line-height:4vw;
+		margin-bottom:10%;
+	}
+
+	.designerFace{
+		width:15%;
+		padding-top:15%;
+		margin-right:5%;
+		margin-bottom:2%;
+		background-image: url(../images/headshotCopy.png);
+		background-size: 100%;
+		background-color: red;
+	}
+
+	.designerNamePop{
+		font-size:4vw;
+		margin-bottom:4%;
+	}
+
+	.designerLinksPop{
+		font-size:3vw;
+		margin-right:5%;
+	}
+
+	.designerDescription{
+		font-size:3vw;
+		line-height:4vw;
+		margin-bottom:20%;
+		width:100%;
+	}
+
+	.flexChildDesigner{
+		width:50%;
+	}	
+
+	.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    left: 10px;
+    top: -30px;
+
+    display: block;
+
+    width: 200px;
+    height:30px;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+   display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin: 9px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+/*    font-size: 15px;*/
+    line-height: 5px;
+    background-color: none;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width:7px;
+    height:7px;
+    border:2px solid #4B3D37;
+
+    content: '•';
+    text-align: center;
+
+    opacity: 1;
+    color: none;
+
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: none;
+    background-color: #4B3D37;
+    border-radius: 50%;
+   
+}
+
+
 }
 
 /* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 	.container{
 		width:93.75%; /* 720 pixels at a 768 pixel screen width (iPads) */
+		background-color:lightsteelblue;
 		
 	}
+
 
 	header{
 		height: 50px;
@@ -178,6 +484,305 @@ nav a{
 		line-height: 50px;
 		margin-left: 3vw;
 	}
+
+/*	Designer PopUp Tablet/////////*/
+
+
+	@keyframes spin {
+	  0% { transform: rotate(0deg); }
+	  100% { transform: rotate(360deg); }
+	}
+
+.loaderBackground{
+	width:100%;
+	height:100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background-color: #f2f1f3;
+}
+
+.loader {
+  border: 1vw solid blue; 
+  border-top: 1vw solid lightsteelblue; 
+  border-radius: 50%;
+  width: 5%;
+  padding-top: 5%;
+  animation: spin 2s linear infinite;
+  top:50%;
+  left:50%;
+  margin-top:-5%;
+  margin-left:-5%;
+  position:absolute;
+  display:none;
+}
+
+
+.tradeGothicHeavy{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	color: #042439;
+}
+
+.tradeGothicBold{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #042439;
+}
+
+.tradeGothicRegular{
+	font-family: "tgn-soft-round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #042439;
+}
+
+
+.designerPageHolder{
+	width:100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display:block;
+	background-color:lightgoldenrodyellow;
+}
+
+.designerInfoHolder{
+		width:100%;
+		display:inline-block;
+		background-color: #f2f1f3;
+		background-color: red;
+}
+
+.projectImagesHolder{
+		width: 100%;
+/*		height: 40%;*/
+		background-color: #f2f1f3;
+		background-color:lightseagreen;
+}
+
+.projectImagesHolder div{
+		width: 100%;
+		height: 50vh;
+		background-size: 100%;
+	}
+	
+
+.flexParentM{
+	display:flex;
+	align-items: flex-start;
+}
+
+.flexChildT{
+/*	background-color: lightsteelblue;*/
+}
+
+.flexChildTLeft{
+	width:50%;
+	margin-right:10%;
+}
+
+.flexChildTRight{
+	width:35%;
+	margin-top:4%;
+}
+
+
+.closePopButton{
+	text-decoration:none;
+}
+
+	.closePopButton{
+		margin-top:6%;
+		margin-left:5%;
+		float:left;
+		font-size: 2.5vw;
+	}
+
+	.designerContent{
+		width: 90%;
+		margin-bottom:20%;
+		margin-left: 5%;
+		margin-right:5%;
+		margin-top:15%;
+	}
+
+	.logoPop{
+		width:20%;
+		padding-top:20%;
+		margin-right:5%;
+		background-image: url(../images/pestoLogo.png);
+		background-size: 100%;
+	}
+
+	.angelaHoltonLogoPop{
+		background-image: url(../images/angelaHoltonLogo.png);
+		background-size: 100%;
+	}
+
+	.samPeskieLogoPop{
+		background-image: url(../images/samPeskieLogo.png);
+		background-size: 100%;
+	}
+
+	.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
+		display:none;
+	}
+
+
+	.projectNamePop{
+		font-size: 3.5vw;
+		margin-bottom:5%;
+	}
+
+	.projectLinkPop{
+		font-size:1.75vw;
+	}
+
+	.dimensionPop{
+		margin-top:4%;
+		margin-bottom:3%;
+		font-size:2vw;
+	}
+
+	.projectDescription{
+		font-size:1.75vw;
+		line-height:2.2vw;
+		margin-bottom:10%;
+	}
+
+	.designerFace{
+		width:25%;
+		padding-top:25%;
+		margin-right:5%;
+		margin-bottom:5%;
+		background-image: url(../images/headshotCopy.png);
+		background-size: 100%;
+		background-color: red;
+	}
+
+	.designerNamePop{
+		font-size:2.5vw;
+		margin-bottom:3%;
+	}
+
+	.designerLinksPop{
+		font-size:1.5vw;
+		margin-right:3%;
+	}
+
+	.designerDescription{
+		font-size:1.75vw;
+		line-height:2.2vw;
+		margin-bottom:20%;
+		width:100%;
+	}
+
+	.flexChildDesigner{
+		width:70%;
+	}	
+
+	.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    left: 10px;
+    top: -50px;
+
+    display: block;
+
+    width: 200px;
+    height:30px;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+   display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin: 9px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+/*    font-size: 15px;*/
+    line-height: 5px;
+    background-color: none;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width:9px;
+    height:9px;
+    border:3px solid #4B3D37;
+
+    content: '•';
+    text-align: center;
+
+    opacity: 1;
+    color: none;
+
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: none;
+    background-color: #4B3D37;
+    border-radius: 50%;
+   
+}
 }
 
 /* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -210,7 +815,7 @@ nav a{
 		line-height: 60px;
 		margin-left: 2.5vw;
 	}
-}
+/*}         Bracket Here ////////////////////////////////*/
 
 /*.navBar{
 	border-bottom: solid
@@ -638,10 +1243,12 @@ nav a{
 
 	}
 	.Slole{
-
+		background-image: url(../images/samPeskieLogoBlack.png);
+		background-size: 100%;
 	}
 	.Slole:hover{
-		
+		background-image: url(../images/samPeskieLogo.png);
+		background-size: 100%;
 	}
 
 
@@ -728,21 +1335,21 @@ nav a{
 	font-family: "tgn-soft-round", sans-serif;
 	font-weight: 800;
 	font-style: normal;
-	color: #4B3D37;
+	color: #042439;
 }
 
 .tradeGothicBold{
 	font-family: "tgn-soft-round", sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	color: #4B3D37;
+	color: #042439;
 }
 
 .tradeGothicRegular{
 	font-family: "tgn-soft-round", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	color: #4B3D37;
+	color: #042439;
 }
 
 
@@ -751,7 +1358,7 @@ nav a{
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 99;
 }
 
 .loaderBackground{
@@ -760,7 +1367,7 @@ nav a{
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 3;
+	z-index: 99;
 	background-color: #f2f1f3;
 }
 
@@ -777,15 +1384,6 @@ nav a{
   margin-left:-5%;
   position:absolute;
   display:none;
-}
-
-
-.designerInfoHolder{
-	background-color: #f2f1f3;
-}
-
-.projectImagesHolder{
-	background-color: #f2f1f3;
 }
 
 .logoPop{
@@ -812,11 +1410,13 @@ nav a{
 	.designerInfoHolder{
 		width:50%;
 		height: 100vh;
+		background-color: #f2f1f3;
 	}
 
 	.projectImagesHolder{
 		width: 50%;
 		height: 100vh;
+		background-color: #f2f1f3;
 	}
 
 	.designerContent{
@@ -985,4 +1585,7 @@ nav a{
 		height: 4.5vw;
 		background-color:rgba(0, 0, 0, 0.5);
 	}
+
+}
+
 	
