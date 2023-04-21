@@ -178,6 +178,290 @@ nav a{
 		line-height: 50px;
 		margin-left: 3vw;
 	}
+
+	.gallerySpecific{
+	display: flex;
+	flex-wrap: wrap;
+}
+.square{
+	width: 46.428571428571429%;
+	height: 46.428571428571429%;
+
+	margin-right: 10.714285714285714%;
+	margin-bottom: 21.428571428571429%;
+
+/*	background-size: contain;*/
+/*	background-repeat: no-repeat;*/
+
+	background-color: red;
+}
+
+.square:nth-of-type(5n){
+	margin-right: 0px;
+}
+
+
+	.Blush{
+		
+	}
+	.Blush:hover{
+
+	}
+	.Combi{
+		
+	}
+	.Combi:hover{
+
+	}
+	.ForagedBlends{
+
+	}
+	.ForagedBlends:hover{
+
+	}
+	.Lumi{
+
+	}
+	.Lumi:hover{
+
+	}
+	.MyVCP{
+
+	}
+	.MyVCP:hover{
+
+	}
+	.Openit{
+
+	}
+	.Openit:hover{
+
+	}
+	.Resalve{
+
+	}
+	.Resalve:hover{
+
+	}
+	.Ruted{
+
+	}
+	.Ruted:hover{
+
+	}
+	.Silphi{
+
+	}
+	.Silphi:hover{
+
+	}
+	.Solace{
+		background-image: url(../Logos/Solace/LogoBandW.png);
+	}
+	.Solace:hover{
+		background-image: url(../Logos/Solace/LogoDarkB.png);
+	}
+	.Somid{
+
+	}
+	.Somid:hover{
+		
+	}
+/*.emotional{
+	display: block;
+	display: none;
+	background-color: beige;
+}*/
+	.AdoptYourself{
+
+	}
+	.AdoptYourself:hover{
+
+	}
+	.BlumeBar{
+
+	}
+	.BlumeBar:hover{
+
+	}
+	.DiaBuddy{
+		
+	}
+	.DiaBuddy:hover{
+
+	}
+	.Fake{
+
+	}
+	.Fake:hover{
+
+	}
+	.HealInk{
+
+	}
+	.HealInk:hover{
+
+	}
+	.IntroSpec{
+
+	}
+	.IntroSpec:hover{
+
+	}
+	.IslaAndMio{
+
+		background-image: url(../images/samPeskieLogoBlack.png);
+		background-size: 100%;
+
+	}
+	.IslaAndMio:hover{
+		
+	}
+	.Journei{
+
+	}
+	.Journei:hover{
+
+	}
+	.Listenupp{
+
+	}
+	.Listenupp:hover{
+
+	}
+	.MUUD{
+
+	}
+	.MUUD:hover{
+
+	}
+	.Neuros{
+
+	}
+	.Neuros:hover{
+
+	}
+	.Ritual{
+
+	}
+	.Ritual:hover{
+
+	}
+	.Tranquillo{
+
+	}
+	.Tranquillo:hover{
+
+	}
+/*.intellectual{
+	display: block;
+	display: none;
+}*/
+	.Hatch{
+
+	}
+	.Hatch:hover{
+
+	}
+	.Skildr{
+
+	}
+	.Skildr:hover{
+
+	}
+/*.spiritual{
+	display: block;
+	display: none;
+}
+.social{
+	display: block;
+	display: none;
+}*/
+	.Bday{
+		
+	}
+	.Bday:hover{
+
+	}
+	.Courage{
+
+	}
+	.Courage:hover{
+
+	}
+	.FederationAudio{
+
+	}
+	.FederationAudio:hover{
+
+	}
+	.JustATip{
+
+	}
+	.JustATip:hover{
+
+	}
+	.Unbubl{
+
+	}
+	.Unbubl:hover{
+
+	}
+/*.financial{
+	display: block;
+	display: none;
+}*/
+	.BeaverCreek{
+
+	}
+	.BeaverCreek:hover{
+
+	}
+/*.occupational{
+	display: block;
+	display: none;
+}*/
+	.DoThat{
+
+	}
+	.DoThat:hover{
+
+	}
+	.environmental{
+		display: block;
+	}
+
+	.EcoArt{
+
+	}
+	.EcoArt:hover{
+
+	}
+	.Pesto{
+
+	}
+	.Pesto:hover{
+
+	}
+	.Rngr{
+
+	}
+	.Rngr:hover{
+
+	}
+	.Slole{
+
+	}
+	.Slole:hover{
+		
+	}
+
+}
+
+
+
+
+
 }
 
 /* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -210,7 +494,7 @@ nav a{
 		line-height: 60px;
 		margin-left: 2.5vw;
 	}
-}
+
 
 /*.navBar{
 	border-bottom: solid
@@ -371,11 +655,11 @@ nav a{
 	flex-wrap: wrap;
 }
 .square{
-	width: 222px;
-	height: 222px;
+	width: 79.285714285714286%;
+	height: 79.285714285714286%;
 
-	margin-right: 30px;
-	margin-bottom: 60px;
+	margin-right: 10.714285714285714%;
+	margin-bottom: 21.428571428571429%;
 
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -385,9 +669,7 @@ nav a{
 .square:nth-of-type(4n){
 	margin-right: 0px;
 }
-/*.physical{
-	display: block;
-}*/
+
 
 	.Blush{
 		
@@ -643,6 +925,8 @@ nav a{
 	.Slole:hover{
 		
 	}
+
+}
 
 
 /*--- big grid area */
