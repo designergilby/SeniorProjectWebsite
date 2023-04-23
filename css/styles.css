@@ -1,8 +1,18 @@
+/* ================================================== JACK =================================================== */
 
+/* ---------------- GENERAL ---------------- */
 
 body{
-	background-color: #f2f1f3;
 	font-family: "tgn-soft-round", sans-serif;
+	background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+section{
+	z-index: 5;
 }
 
 .container{
@@ -12,160 +22,821 @@ body{
 	margin-right:auto;
 }
 
-header{
-	position: fixed;
-	background-color: #f2f1f3;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	border-bottom: 2px dashed #4D3D34;
-	z-index: 1;
+.flexParent{
+	display: flex;
+	justify-content: space-between;
 }
 
-h1{
-	font-weight: 700;
-	color: #4D3D34;
+.flexParentD{
+	display: flex;
+	justify-content: space-between;
 }
+
+/* ---------------- BACKGROUND EFFECT ---------------- */
+
+.background{
+	background: linear-gradient(112.02deg, #b3bbfd 5.64%, #ffbddf 47.83%, #EBF1F5 96.3%);
+	opacity: 50%;
+	background-size: 400% 400%;
+	position:fixed;
+	top:0;
+	left:0;
+	height: 100vh;
+	width: 100vw;
+	animation: backgroundAnim 10s infinite;
+	z-index:-1;
+}
+
+@keyframes backgroundAnim{
+	
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	
+}
+
+.background::before{
+	position: absolute;
+	background: radial-gradient(
+		150vw circle at var(--mouse-x) var(--mouse-y),
+		#ffb0f1,
+		transparent 60%
+	);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top:0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 500ms;
+}
+
+.background:hover::before{
+	opacity: 1;
+}
+
+/* ---------------- FEATURE AREA 1 ---------------- */
+
+.feature1, .feature2{
+	height: 100vh;
+	color: #0063b0;
+	z-index: 5;
+}
+
+.revealedContent{
+	display: none;
+}
+
+
+/* Hero Image */
+
+.heroImg{
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+}
+
+.heroSVG{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+}
+
+#PHYS, #FINAN, #OCCU, #ENVIRON {
+	animation: breathe1 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+	transform-origin: center;
+}
+
+#INTELL, #EMO, #SPIRIT, #SOCIAL {
+	animation: breathe2 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+	transform-origin: center;
+}
+
+.transitionText{
+	position: absolute;
+	font-size: 1vw;
+	font-weight: 800;
+	text-decoration: none;
+	color: #0063b0;
+	width: 10vw;
+	height: 10vw;
+	height: 3vh;
+	text-align: center;
+	z-index: 20;
+}
+
+@keyframes breathe1{
+	0%, 100%{
+		scale: 80%;
+		opacity: 90%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 90%;
+		opacity: 100%;
+		rotation: 0deg;
+	}
+}
+
+@keyframes breathe2{
+	0%, 100%{
+		scale: 100%;
+		opacity: 90%;
+		rotation: 0deg
+	}
+
+	50%{
+		scale: 90%;
+		opacity: 100%;
+		rotation: 100deg;
+	}
+}
+
+/* Hero Text */
+
+.heroTextCont{
+	width: 65.6442%;
+	margin-left:17.1779%;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: absolute;
+	bottom: 2.5vw;
+}
+
+.decorateRect{
+	width: 10vw;
+	height: 1vw;
+	background-color: #0063b0;
+	animation: startGrow 1s ease-in-out;
+}
+
+@keyframes startGrow{
+	0%{
+		width: 0vw;
+	}
+	100%{
+		width: 10vw;
+	}
+}
+
+.heroTitle{
+	font-size: 5vw;
+	font-weight: 800;
+	margin-bottom: 3vw;
+}
+
+.heroTime{
+	font-size: 3vw;
+	font-weight: 800;
+	margin-bottom: 1vw;
+}
+
+.heroInfo1, .heroInfo2{
+	font-size: 1.75vw;
+	line-height: 1.75vw;
+	font-weight: bold;
+}
+
+.heroInfo3{
+	margin-top: 0.8vw;
+	font-size: 1.5vw;
+	pointer-events:all;
+}
+
+/* FEATURE 2*/
+
+.feature2{
+	overflow: hidden;
+	color: #009f98;
+}
+
+.decorateRectW{
+	width: 10vw;
+	height: 1vw;
+	background-color: #009f98;
+	animation: startGrow 1s ease-in-out;
+}
+
+.heroTextContW{
+	width: 65.6442%;
+	margin-left:17.1779%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-top: 5vw;
+	position: absolute;
+	bottom: 5vh;
+}
+
+.wellnessTitle{
+	font-size: 2.75vw;
+	font-weight: 800;
+	margin-top: 1vw;
+}
+
+.wellnessCopy{
+	font-size: 1.25vw;
+	margin-top: 1vw;
+	line-height: 1.5vw;
+}
+
+.heroImg2{
+	height: 35vw;
+	width: 35vw;
+	left: 50%;
+	margin-left: -17.5vw;
+	position: absolute;
+	opacity: 0;
+	margin-top: 3vh;
+}
+
+.heroSVG2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.physW{
+	animation: pulseW1 5s infinite;
+	transform-origin: center;
+}
+
+@keyframes pulseW1{
+	0%, 100%{
+		scale: 100%;
+	}
+	50%{
+		scale: 97%;
+	}
+}
+
+.emoW{
+	animation: pulseW2 5s infinite;
+	transform-origin: center;
+}
+
+@keyframes pulseW2{
+	0%, 100%{
+		scale: 100%;
+	}
+	50%{
+		scale: 97%;
+	}
+}
+
+.intelW{
+	animation: pulseW3 5s infinite;
+	transform-origin: center;
+}
+
+@keyframes pulseW3{
+	0%, 100%{
+		scale: 100%;
+	}
+	50%{
+		scale: 97%;
+	}
+}
+
+.spiritW{
+	animation: pulseW4 5s infinite;
+	transform-origin: center;
+}
+
+@keyframes pulseW4{
+	0%, 100%{
+		scale: 100%;
+	}
+	50%{
+		scale: 97%;
+	}
+}
+
+.socialW{
+	animation: pulseW5 5s infinite;
+	transform-origin: center;
+}
+
+@keyframes pulseW5{
+	0%, 100%{
+		scale: 100%;
+	}
+	50%{
+		scale: 97%;
+	}
+}
+
+.finanW{
+	animation: pulseW6 5s infinite;
+	transform-origin: center;
+}
+
+@keyframes pulseW6{
+	0%, 100%{
+		scale: 100%;
+	}
+	50%{
+		scale: 97%;
+	}
+}
+
+.occW{
+	animation: pulseW7 5s infinite;
+	transform-origin: center;
+}
+
+@keyframes pulseW7{
+	0%, 100%{
+		scale: 100%;
+	}
+	50%{
+		scale: 97%;
+	}
+}
+
+.environW{
+	animation: pulseW8 5s infinite;
+	transform-origin: center;
+}
+
+@keyframes pulseW8{
+	0%, 100%{
+		scale: 100%;
+	}
+	50%{
+		scale: 97%;
+	}
+}
+
+.placeHolder{
+	height: 100vh;
+}
+
+.arrowCont{
+	margin-top: 2vw;
+	display: none;
+}
+
+.viewSorter{
+	font-weight: 800;
+	font-size: 1.75vw;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.exploreWellness{
+	text-align: center;
+	margin-top: 2vw;
+	font-weight: 800;
+	font-size: 2vw;
+}
+
+.arrowLeft, .arrowRight{
+	width: 2vw;
+	height: 2vw;
+}
+
+
+
+
+/* ---------------- sorted ---------------- */
+
+.sortedProjects{
+	background-color: grey;
+}
+
+.sortedIcon{
+	height: 5vw;
+	width: 5vw;
+	background-color: black;
+}
+
+.rightColW{
+	width: 57.552%;
+}
+
+.leftColW{
+	width: 31.2883%;
+}
+
+/* ================================================== CHAR/GALLERY =================================================== */
 
 .flexParent{
 	display: flex;
 }
 
-nav a{
-	color: #4D3D34;
-	text-decoration: none;
-
+.pjwrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-left:auto;
+	margin-right:auto;
 }
+
+.photoHolder{
+/*	background-color: red;*/
+	background-size: cover;
+	position:relative;
+	cursor: pointer;
+/*	///This was for the hover transition///*/
+/*	background-image: none;*/
+}
+
+.name{
+	position: absolute;
+  	top: 50%;
+  	right:50%;
+  	transform: translateY(-50%) translateX(50%);
+
+  	text-align: center;
+  	text-transform: uppercase;
+  	color:#4B3D37;
+	font-weight: 700;
+/*	///This was for the hover transition///*/
+/*	opacity: 1;*/
+}
+
+.hoverTransition{
+	transition: all 450ms ease-in-out;
+}
+
+/*///We could move these to the desktop only, not sure how we wanted to handle the mobile since there is no hover////*/
+
+.salmanAhmed:hover{
+/*	transition: background-image 250ms ease-in-out;*/
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.jasmineBussie:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.katelynChristiansen:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.AutumnFrantz:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.jasmineFredrick:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.jackGilbert:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.charlotteGreen:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.hallieGroeschel:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.anikaGuggisberg:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.eleniHein:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.christianHeo:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.indigoHoffman:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+.angelaHolton:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+.ashleyJandro:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+.danielleJohnson:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+.jamieKerwin:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+.ceciliaKnudsen:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.alyssaKoepke:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.kaliKoester:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.tjorvenLandwehr:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.emmaLarson:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.beauLuzar:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.seringMcHugh:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.harlanMckay:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.carlyMeyer:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.nadiyahMC:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.joeMischke:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.sarahMorris:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.tylerMullin:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.lilyNess:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.laurenPechman:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.samPeskie:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.kaylaPurney:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.natalieReber:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.isabelRoberts:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.jadynSchoppers:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.destinySwen:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.vaughnVande:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+.alexWoo:hover{
+  	background-image: url("../images/angelaHoltonLogo.png");
+}
+
+/* ================================================== SARAH =================================================== */
+
+.gallerySpecific{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	row-gap: 0.5vw;
+	column-gap: 6.704158%;
+}
+
+.square{
+	background-size: cover;
+	display: block;
+}
+
+.Blush{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Combi{
+		background-image: url(../images/primaryhealinkLogo.png);
+		
+	}
+	
+	.ForagedBlends{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Lumi{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.MyVCP{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Openit{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Resalve{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Ruted{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Silphi{
+		background-image: url(../images/primaryhealinkLogo.png);
+	}
+	
+	.Solace{
+		background-image: url(../images/primaryhealinkLogo.png);
+	}
+	
+	.Somind{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+	.AdoptYourself{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.BlumeBar{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.DiaBuddy{
+		background-image: url(../images/primaryhealinkLogo.png);
+		
+	}
+	
+	.Fake{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Healink{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.IntroSpec{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.IslaAndMio{
+		background-image: url(../images/primaryhealinkLogo.png);
+	}
+	
+	.Journei{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Listenupp{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Muud{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+	.Neuros{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+	.Ritual{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+	.Tranquillo{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+	.Hatch{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Skildr{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+
+	.Bday{
+		background-image: url(../images/primaryhealinkLogo.png);
+		
+	}
+	.Courage{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.FederationAudio{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.JustATip{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Unbubl{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+	.BeaverCreek{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+	.DoThat{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+	.EcoArt{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Pesto{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Rngr{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+	
+	.Slole{
+		background-image: url(../images/primaryhealinkLogo.png);
+
+	}
+
+.emotional, .intellectual, .social, .financial, .occupational, .environmental{
+	display: none;
+}
+
+/* footer{
+	z-index: 99;
+} */
+
+
+/* ================================== POPUPS ================================ */
 
 .stopScroll{
 	overflow-y: hidden;
 }
-
-/* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media only screen and (max-width: 767px){
-	.container{
-		width:87.5%; /* 280 pixels at a 320 pixel screen width (iPhone 3 / 4 / 5) */
-		background-color: seagreen;
-	}
-	header{
-		height: 40px;
-	}
-
-	h1{
-		line-height: 40px;
-	}
-
-	/*.feature, .feature2, .container{
-		display:none;
-	}
-
-	footer, header{
-		display:none;
-	}*/
-
-
-
-	.navButton{
-		display: block;
-		width: 40px;
-		height: 40px;
-		position: absolute;
-		right: 5%;
-		top: 0;
-
-		background-image: url(../images/menu.png);
-		background-size:100%;
-	}
-
-	nav{
-		position: absolute;
-		width: 100%;
-		top: 40px;
-		left: 0px;
-		background-color: #f2f1f3;
-		display: none;
-	}
-
-	nav a{
-		display: block;
-		height: 40px;
-		line-height: 40px;
-		text-align: center;
-		border-bottom: 2px dashed #4D3D34;
-	}
-
-	.gallerySpecific{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-
-	.square{
-		width: 46.428571428571429%;
-		padding-top: 46.428571428571429%;
-		margin-bottom: 10.714285714285714%;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-color: aqua;
-	}
-
-	.square:nth-of-type(4n){
-		margin-right: 0px;
-	}
-
-	.physical{
-		display: block;
-		/* display: none; */
-	}
-
-	.emotional{
-		display: block;
-/*		display: none;*/
-		background-color: beige;
-	}
-
-	.intellectual{
-		display: block;
-/*		display: none;*/
-	}
-
-	.spiritual{
-		display: block;
-/*		display: none;*/
-	}
-
-	.social{
-		display: block;
-/*		display: none;*/
-	}
-
-	.financial{
-		display: block;
-/*		display: none;*/
-	}
-
-	.occupational{
-		display: block;
-/*		display: none;*/
-	}
-
-	.environmental{
-		display: block;
-/*		display: none;*/
-	}
-
-
-	.IslaAndMio{
-
-		background-image: url(../images/samPeskieLogoBlack.png);
-		background-size: 100%;
-
-	}
-
-
-/*	Designer PopUp Mobile /////////////////////////*/
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -219,236 +890,559 @@ nav a{
 	font-style: normal;
 	color: #042439;
 }
-
-
-.designerPageHolder{
-	width:100%;
-	position: fixed;
-	top: 0;
-	left: 0;
+.popUp{
+	display:none;
 	z-index: 99;
-	display:block;
-	background-color:lightgoldenrodyellow;
 }
 
 
-.designerInfoHolder{
-		width:100%;
-		height:90%;
-		display:inline-block;
-		background-color: #f2f1f3;
-}
+/* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 767px){
 
-.projectImagesHolder{
-		width: 100%;
-		height: 50%;
-		background-color: #f2f1f3;
-		background-color:lightseagreen;
-}
+	/* ================================================== JACK =================================================== */
+	.container{
+		width:87.5%; /* 280 pixels at a 320 pixel screen width (iPhone 3 / 4 / 5) */
+	}
+	.flexParentD{
+		display: block;
+	}
 
-.projectImagesHolder div{
-		width: 100%;
-		height: 50vh;
-		background-size: 100%;
+	.decorateRect{
+		width: 35vw;
+		height: 2vw;
+		margin-bottom: 2.5vw;
+		background-color: #0063b0;
+		animation: startGrow 1s ease-in-out;
+	}
+
+	@keyframes startGrow{
+		0%{
+			width: 0vw;
+		}
+		100%{
+			width: 35vw;
+		}
+	}
+
+	.heroTextCont{
+		margin-top: auto;
+		margin-bottom: 5vw;
+		width: 80%;
+		margin-left: 0;
+		position: absolute;
+		bottom: 0;
+		
+	}
+
+	.heroTitle{
+		font-size: 12vw;
+		font-weight: 800;
+		margin-bottom: 8vw;
+	}
+
+	.heroTime{
+		font-size: 10vw;
+		font-weight: 800;
+		margin-bottom: 2vw;
 	}
 	
-
-.flexParentM{
-	display:flex;
-	align-items: flex-start;
-}
-
-.closePopButton{
-	text-decoration:none;
-}
-
-	.closePopButton{
-		margin-top:6%;
-		margin-left:5%;
-		float:left;
+	.heroInfo1, .heroInfo2{
+		font-size: 5vw;
+		line-height: 6vw;
+		font-weight: bold;
+	}
+	
+	.heroInfo3{
+		margin-top: 1.5vw;
 		font-size: 4vw;
+		pointer-events:all;
 	}
 
-	.designerContent{
-		width: 80%;
-		margin-left: 10%;
-		margin-right:10%;
-		margin-top:20%;
+	.heroImg{
+		height: 50vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		text-align: center;
 	}
 
-	.logoPop{
-		width:20%;
-		padding-top:20%;
-		margin-right:5%;
-		background-image: url(../images/pestoLogo.png);
-		background-size: 100%;
+	/* ---------- FEATURE 2 ----------- */
+
+	.heroTextContW{
+		margin-bottom: 5vw;
+		width: 85%;
+		margin-left: 0;
+		position: absolute;
+		bottom: 0;
+		
 	}
 
-	.angelaHoltonLogoPop{
-		background-image: url(../images/angelaHoltonLogo.png);
-		background-size: 100%;
+	.rightColW, .leftColW{
+		width: 100%;
 	}
 
-	.samPeskieLogoPop{
-		background-image: url(../images/samPeskieLogo.png);
-		background-size: 100%;
+	.wellnessTitle{
+		font-size: 11vw;
+		margin-bottom: 6vw;
 	}
 
-	.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
-		display:none;
+	.wellnessCopy{
+		font-size: 3.75vw;
+		line-height: 4.5vw;
 	}
 
-
-	.projectNamePop{
-		font-size: 6.5vw;
-		margin-bottom:4%;
+	.decorateRectW{
+		width: 35vw;
+		height: 2vw;
+		margin-bottom: 3vw;
+		background-color: #0063b0;
+		animation: startGrow 1s ease-in-out;
 	}
 
-	.projectLinkPop{
+	@keyframes startGrow{
+		0%{
+			width: 0vw;
+		}
+		100%{
+			width: 35vw;
+		}
+	}
+
+	.exploreWellness{
+		text-align: center;
+		margin-top: 6vw;
+		font-weight: 800;
+		font-size: 6vw;
+	}
+
+	.heroImg2{
+		height: 80vw;
+		width: 80vw;
+		left: 50%;
+		margin-left: -40vw;
+		position: absolute;
+		opacity: 0;
+		margin-top: 3vh;
+	}
+
+	.arrowCont{
+		margin-top: 7vw;
+		display: none;
+	}
+
+	.arrowLeft, .arrowRight{
+		width: 8vw;
+		height: 8vw;
+	}
+
+	.viewSorter{
+		font-weight: 800;
+		font-size: 5vw;
+		line-height: 5vw;
+		margin-top: 1vw;
+	}
+
+	/* ================================================== CHAR =================================================== */
+
+	.pjwrapper{
+		row-gap: 3vw;
+		column-gap: 14.285714285714286%;
+/*		width: 100%;*/
+	}
+
+	.photoHolder{
+		width: 20vw;
+		padding-top: 20vw;
+		
+	}
+
+	.name{
 		font-size:3vw;
+		line-height: 3.25vw;
 	}
 
-	.dimensionPop{
-		margin-top:4%;
-		margin-bottom:3%;
-		font-size:3.75vw;
-	}
+	/* ================================================== SARAH =================================================== */
 
-	.projectDescription{
-		font-size:3vw;
-		line-height:4vw;
-		margin-bottom:10%;
-	}
-
-	.designerFace{
-		width:15%;
-		padding-top:15%;
-		margin-right:5%;
-		margin-bottom:2%;
-		background-image: url(../images/headshotCopy.png);
-		background-size: 100%;
+	.square{
+		width: 46.428571428571429%;
+		padding-top: 46.428571428571429%;
+		margin-bottom: 10.714285714285714%;
 		background-color: red;
 	}
 
-	.designerNamePop{
-		font-size:4vw;
-		margin-bottom:4%;
+	footer{
+		margin-left:auto;
+		margin-right:auto;
+		margin-top: 4%;
+		color:#5069b1;
+		font-family: "tgn-soft-round", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		width:100vw;
+	
+	
+	}
+	
+	
+	.leftFooter{
+
+		width: 85.05%;
+		display: flex;
+		justify-content: center;
+		margin-left: 9%;
+		margin-bottom: 4%;
+		
+	}
+	
+	.footerLocationPNG{
+		
+
+		background-size: cover;
+		max-width: 100%;
+		background-image:url(../images/Asset\ 27.png) ;
+		padding-top: 40.9vw;
+		width: 100%;
+		background-color: rgb(71, 5, 88);
+	
+	}
+	
+	.footerDate{
+	
+		margin-top: 15%;
+		font-weight: 800;
+		font-size: 31.6px;
+		
+	}
+	.footerTime{
+		margin-bottom: 4%;
+		font-weight: 700;
+		font-size: 20.23px;
+	}
+	.footerLocation{
+		font-weight: 400;
+		font-size: 17.3px;
+		margin-bottom: 4%;
+	}
+	
+	.FooterDivider{
+		margin-top: 3%;
+		margin-bottom: 3%;
+		background-color:#5069b1;
+		display: flex;
+		padding-top: .690909090909091vw;
+		width: 100%;
+	}
+	.rightFooter{
+		margin-right: 9%;
+		display: flex;
+		flex-direction:column;
+		width: 89.87%;
+	
+	}
+	
+	.footerTimeAndDate{
+		line-height: 200%;
+		align-content: center;
+		margin-top: 3%;
+		margin-left: 15%;
+	}
+	
+	
+	.sociamedia{
+		scale: 190%;
+		height: 3.5vw;
+		display: flex;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		width: 100%;
+		margin-left: 63%;
+	
+
+	}
+	.footherFacebook{
+		transition: ease-in-out 1s;
+		/* scale: 120%; */
+		max-width:1.99vw;
+		margin-top: 1%;
+		background-size: cover;
+		width: 1.99vw;
+		height: 3.57vw;
+		cursor: pointer;
+		background-image: url(../images/facebookB.png);
+	}
+	.footherFacebook:hover{
+		background-image: url(../images/facebookG.png);
+
+	}
+	.footerGram{
+		transition: ease-in-out 1s;
+		max-width:3.62vw;
+		margin-top: 1%;
+		background-size: cover;
+		width: 3.62vw;
+		height: 3.5vw;
+		cursor: pointer;
+	background-image: url(../images/theGramb.png);
+	}
+	.footerGram:hover{
+		
+		background-image: url(../images/theGramg.png);
+	}
+	.footerSocialIcon{
+		margin-bottom: 2%;
+		margin-right: 30px;
+	
+	   
+	}
+	.footerBigcredits{
+	
+		line-height: 100%;
+		margin-left: 6%;
+		align-content: center;	
+	}
+	.footerTopCredit{
+		font-weight: 700;
+		font-size: 12.2px;
+	}
+	.footerCredits{ 
+		
+		margin-top: 3%;
+    	/* margin-left: 15%; */
+		font-weight: 400;
+		font-size: 12.2px;
 	}
 
-	.designerLinksPop{
-		font-size:3vw;
-		margin-right:5%;
-	}
+	/* ============================== POPUP =========================== */
 
-	.designerDescription{
-		font-size:3vw;
-		line-height:4vw;
-		margin-bottom:20%;
+	.designerPageHolder{
 		width:100%;
+		height:100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		display:block;
+		background-color:#f2f1f3;
 	}
-
-	.flexChildDesigner{
-		width:50%;
-	}	
-
-	.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
-
-.slick-dots
-{
-    position: absolute;
-    left: 10px;
-    top: -30px;
-
-    display: block;
-
-    width: 200px;
-    height:30px;
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-
-    text-align: center;
-}
-.slick-dots li
-{
-    position: relative;
-
-   display: inline-block;
-
-    width: 15px;
-    height: 15px;
-    margin: 9px;
-    padding: 0;
-
-    cursor: pointer;
-}
-.slick-dots li button
-{
-    font-size: 0;
-    line-height: 0;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.slick-dots li button:hover,
-.slick-dots li button:focus
-{
-    outline: none;
-}
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before
-{
-    opacity: 1;
-}
-.slick-dots li button:before
-{
-    font-family: 'slick';
-/*    font-size: 15px;*/
-    line-height: 5px;
-    background-color: none;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width:7px;
-    height:7px;
-    border:2px solid #4B3D37;
-
-    content: '•';
-    text-align: center;
-
-    opacity: 1;
-    color: none;
-
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before
-{
-    opacity: 1;
-    color: none;
-    background-color: #4B3D37;
-    border-radius: 50%;
-   
-}
-
+	
+	
+	.designerInfoHolder{
+			width:100%;
+			height:50vh;
+			display:inline-block;
+			background-color: #f2f1f3;
+	}
+	
+	.projectImagesHolder{
+			width: 100%;
+	/*		height: 50%;*/
+			height: 50vh;
+			background-color: #f2f1f3;
+	}
+	
+	.projectImagesHolder div{
+			width: 100%;
+			height: 50vh;
+			background-size: 100%;
+		}
+		
+	
+	.flexParentM{
+		display:flex;
+		align-items: flex-start;
+	}
+	
+	.closePopButton{
+		text-decoration:none;
+	}
+	
+		.closePopButton{
+			margin-top:3vh;
+			margin-left:5%;
+			float:left;
+			font-size: 4vw;
+		}
+	
+		.designerContent{
+			width: 80%;
+			margin-left: 10%;
+			margin-right:10%;
+			margin-top:15%;
+		}
+	
+		.logoPop{
+			width:20%;
+			padding-top:20%;
+			margin-right:7%;
+		}
+	
+		.angelaHoltonLogoPop{
+			background-image: url(../images/angelaHoltonLogo.png);
+			background-size: 100%;
+		}
+	
+		.samPeskieLogoPop{
+			background-image: url(../images/samPeskieLogo.png);
+			background-size: 100%;
+		}
+	
+		.projectNamePop{
+			font-size: 6.5vw;
+			margin-bottom:4%;
+		}
+	
+		.projectLinkPop{
+			font-size:3vw;
+		}
+	
+		.dimensionPop{
+			margin-top:2%;
+			margin-bottom:3%;
+			font-size:3.75vw;
+		}
+	
+		.projectDescription{
+			font-size:3vw;
+			line-height:4vw;
+			margin-bottom:10%;
+		}
+	
+		.projectDescriptionLong{
+			display:none;
+		}
+	
+		.projectDescription{
+			font-size:3vw;
+			line-height:4vw;
+			margin-bottom:10%;
+		}
+	
+		.designerFace{
+			width:15%;
+			padding-top:15%;
+			margin-right:5%;
+			margin-bottom:2%;
+			background-image: url(../images/headshotCopy.png);
+			background-size: 100%;
+			background-color: red;
+		}
+	
+		.designerNamePop{
+			font-size:4vw;
+			margin-bottom:4%;
+		}
+	
+		.designerLinksPop{
+			font-size:3vw;
+			margin-right:5%;
+		}
+	
+		.designerDescription{
+			display:none;
+		}
+	
+		.flexChildDesigner{
+			width:50%;
+			margin-bottom:20%;
+		}	
+	
+		.slick-dotted.slick-slider{
+			margin-bottom: 30px;
+		}
+	
+		.slick-dots{
+			position: absolute;
+			left: 1px;
+			top: -30px;
+	
+			display: block;
+	
+			width: 200px;
+			height:30px;
+			padding: 0;
+			margin: 0;
+	
+			list-style: none;
+	
+			text-align: center;
+		}
+	
+		.slick-dots li{
+			position: relative;
+	
+		   display: inline-block;
+	
+			width: 15px;
+			height: 15px;
+			margin: 9px;
+			padding: 0;
+	
+			cursor: pointer;
+		}
+	
+		.slick-dots li button{
+			font-size: 0;
+			line-height: 0;
+	
+			display: block;
+	
+			width: 20px;
+			height: 20px;
+			padding: 5px;
+	
+			cursor: pointer;
+	
+			color: transparent;
+			border: 0;
+			outline: none;
+			background: transparent;
+		}
+		.slick-dots li button:hover, .slick-dots li button:focus{
+			outline: none;
+		}
+	
+		.slick-dots li button:hover:before, .slick-dots li button:focus:before{
+			opacity: 1;
+		}
+	
+		.slick-dots li button:before{
+			font-family: 'slick';
+		/*    font-size: 15px;*/
+			line-height: 5px;
+			background-color: none;
+			border-radius: 50%;
+	
+			position: absolute;
+			top: 0;
+			left: 0;
+	
+			width:7px;
+			height:7px;
+			border:2px solid #4B3D37;
+	
+			content: '•';
+			text-align: center;
+	
+			opacity: 1;
+			color: none;
+	
+	
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+	
+		.slick-dots li.slick-active button:before{
+			opacity: 1;
+			color: none;
+			background-color: #4B3D37;
+			border-radius: 50%;
+		   
+		}
+	
+		.slickTablet, .slickDesktop{
+			display:none;
+		}
 
 }
 
@@ -456,333 +1450,194 @@ nav a{
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 	.container{
 		width:93.75%; /* 720 pixels at a 768 pixel screen width (iPads) */
-		background-color:lightsteelblue;
 		
 	}
 
+/*	Big Grid Area (Tablet)*/
 
-	header{
-		height: 50px;
+	.pjwrapper{
+		row-gap: 1.166667vw;
+		column-gap: 8.166667%;
+	}
+
+	.photoHolder{
+		width: 13vw;
+		padding-top: 13vw;
 		
 	}
 
-	h1{
-		line-height: 50px;
+	.name{
+	  font-size: 1.75vw;
+	  line-height: 2vw;
 	}
 
-	.navButton{
-		display: none;
-	}
+	/* ================================================== SARAH =================================================== */
 
-	nav{
-/*		display: flex;*/
-		height: 100%;
-		margin-left: auto;
-	}
-
-	nav a{
-		line-height: 50px;
-		margin-left: 3vw;
-	}
-
-/*	Designer PopUp Tablet/////////*/
-
-
-	@keyframes spin {
-	  0% { transform: rotate(0deg); }
-	  100% { transform: rotate(360deg); }
-	}
-
-.loaderBackground{
-	width:100%;
-	height:100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 99;
-	background-color: #f2f1f3;
-}
-
-.loader {
-  border: 1vw solid blue; 
-  border-top: 1vw solid lightsteelblue; 
-  border-radius: 50%;
-  width: 5%;
-  padding-top: 5%;
-  animation: spin 2s linear infinite;
-  top:50%;
-  left:50%;
-  margin-top:-5%;
-  margin-left:-5%;
-  position:absolute;
-  display:none;
-}
-
-
-.tradeGothicHeavy{
-	font-family: "tgn-soft-round", sans-serif;
-	font-weight: 800;
-	font-style: normal;
-	color: #042439;
-}
-
-.tradeGothicBold{
-	font-family: "tgn-soft-round", sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	color: #042439;
-}
-
-.tradeGothicRegular{
-	font-family: "tgn-soft-round", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: #042439;
-}
-
-
-.designerPageHolder{
-	width:100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 99;
-	display:block;
-	background-color:lightgoldenrodyellow;
-}
-
-.designerInfoHolder{
-		width:100%;
-		display:inline-block;
-		background-color: #f2f1f3;
+	.square{
+		width: 17.916666666666667%;
+		padding-top: 17.916666666666667%;
+		margin-bottom: 10.714285714285714%;
 		background-color: red;
-}
+	}
 
-.projectImagesHolder{
-		width: 100%;
-/*		height: 40%;*/
-		background-color: #f2f1f3;
-		background-color:lightseagreen;
-}
-
-.projectImagesHolder div{
-		width: 100%;
-		height: 50vh;
-		background-size: 100%;
+	.flex{
+		display:flex;
+		justify-content: space-between;
+		
 	}
 	
-
-.flexParentM{
-	display:flex;
-	align-items: flex-start;
-}
-
-.flexChildT{
-/*	background-color: lightsteelblue;*/
-}
-
-.flexChildTLeft{
-	width:50%;
-	margin-right:10%;
-}
-
-.flexChildTRight{
-	width:35%;
-	margin-top:4%;
-}
-
-
-.closePopButton{
-	text-decoration:none;
-}
-
-	.closePopButton{
-		margin-top:6%;
-		margin-left:5%;
-		float:left;
-		font-size: 2.5vw;
+	.FooterDivider{
+		margin-top: 3%;
+		margin-bottom: 3%;
+		background-color:#5069b1;
+		display: flex;
+		padding-top: .990909090909091vw;
+		width: 100%;
 	}
-
-	.designerContent{
-		width: 90%;
-		margin-bottom:20%;
+	footer{
+		margin-left:auto;
+		margin-right:auto;
+		margin-top: 4.5%;
+		color:#5069b1;
+		font-family: "tgn-soft-round", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		width:100vw;
+	
+	
+	}
+	
+	
+	.leftFooter{
+		
+		width: 39.05%;
+		display: flex;
+		justify-content: center;
 		margin-left: 5%;
-		margin-right:5%;
-		margin-top:15%;
+		
+	}
+	/* <!-- Location map --> */
+	.footerLocationPNG{
+		scale: 85%;
+		background-size: cover;
+		max-width: 100%;
+		background-image:url(../images/Asset\ 27.png) ;
+		padding-top: 20.8vw;
+		width: 100%;
+		background-color: rgb(71, 5, 88);
+	
+	}
+	.divider{
+		background-color: #5069b1;
+		display: flex;
+		padding-top: 21.799999999999997vw;
+		width: .35%;
+	}
+	
+	/* <!-- Time and dates --> */
+	.footerDate{
+	
+		margin-top: 15%;
+		margin-bottom: 4%;
+		font-weight: 800;
+		font-size: 31.4px;
+		
+	}
+	.footerTime{
+		margin-bottom: 4%;
+		font-weight: 700;
+		font-size: 19.55px;
+	}
+	.footerLocation{
+		font-weight: 400;
+		font-size: 11.58px;
+		margin-bottom: 4%;
+	}
+	
+	
+	.rightFooter{
+		margin-right: 7.15%;
+		display: flex;
+		flex-direction: column;
+	
+		width: 39.87%;
+	
+	}
+	
+	.footerTimeAndDate{
+		line-height: 25px;
+		align-content: center;
+		margin-top: 1%;
+		margin-left: 13%;
+	}
+	
+	/* <!-- Social media links --> */
+	.sociamedia{
+	margin-top: 4%;
+		margin-bottom: 4%;
+		width: 40%;
+		margin-left: 13%;
+	}
+	.footherFacebook{
+		transition: ease-in-out 1s;
+		max-width:1.99vw;
+		margin-top: 1%;
+		background-size: cover;
+		width: 1.99vw;
+		height: 3.52vw;
+		cursor: pointer;
+		background-image: url(../images/facebookB.png);
+	}
+	.footherFacebook:hover{
+		
+		background-image: url(../images/facebookG.png);
+	}
+	.footerGram{
+		transition: ease-in-out 1s;
+		background-position: top;
+		transition-duration: 2s;
+		max-width:3.79vw;
+		background-size: cover;
+		margin-top: 1%;
+		width: 3.79vw;
+		height: 3.692781vw;
+		cursor: pointer;
+		background-image: url(../images/theGramb.png);
+	}
+	.footerGram:hover{
+		
+		background-image: url(../images/theGramg.png);
+	}
+	.footerSocialIcon{
+		margin-bottom: 4%;
+		margin-right: 30px;
+	
+	   
+	}
+	
+	/* <!-- credits --> */
+	.footerBigcredits{
+	
+		line-height: 100%;
+		margin-left: 13%;
+		align-content: center;	
+	}
+	.footerTopCredit{
+		font-weight: 700;
+		font-size: 12.2px;
+	}
+	.footerCredits{ 
+		width: 80%;;
+		margin-left: 13%;
+		font-weight: 400;
+		font-size: 12.2px;
 	}
 
-	.logoPop{
-		width:20%;
-		padding-top:20%;
-		margin-right:5%;
-		background-image: url(../images/pestoLogo.png);
-		background-size: 100%;
-	}
-
-	.angelaHoltonLogoPop{
-		background-image: url(../images/angelaHoltonLogo.png);
-		background-size: 100%;
-	}
-
-	.samPeskieLogoPop{
-		background-image: url(../images/samPeskieLogo.png);
-		background-size: 100%;
-	}
-
-	.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
+	.slickMobile, .slickDesktop{
 		display:none;
 	}
 
 
-	.projectNamePop{
-		font-size: 3.5vw;
-		margin-bottom:5%;
-	}
-
-	.projectLinkPop{
-		font-size:1.75vw;
-	}
-
-	.dimensionPop{
-		margin-top:4%;
-		margin-bottom:3%;
-		font-size:2vw;
-	}
-
-	.projectDescription{
-		font-size:1.75vw;
-		line-height:2.2vw;
-		margin-bottom:10%;
-	}
-
-	.designerFace{
-		width:25%;
-		padding-top:25%;
-		margin-right:5%;
-		margin-bottom:5%;
-		background-image: url(../images/headshotCopy.png);
-		background-size: 100%;
-		background-color: red;
-	}
-
-	.designerNamePop{
-		font-size:2.5vw;
-		margin-bottom:3%;
-	}
-
-	.designerLinksPop{
-		font-size:1.5vw;
-		margin-right:3%;
-	}
-
-	.designerDescription{
-		font-size:1.75vw;
-		line-height:2.2vw;
-		margin-bottom:20%;
-		width:100%;
-	}
-
-	.flexChildDesigner{
-		width:70%;
-	}	
-
-	.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
-
-.slick-dots
-{
-    position: absolute;
-    left: 10px;
-    top: -50px;
-
-    display: block;
-
-    width: 200px;
-    height:30px;
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-
-    text-align: center;
-}
-.slick-dots li
-{
-    position: relative;
-
-   display: inline-block;
-
-    width: 15px;
-    height: 15px;
-    margin: 9px;
-    padding: 0;
-
-    cursor: pointer;
-}
-.slick-dots li button
-{
-    font-size: 0;
-    line-height: 0;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.slick-dots li button:hover,
-.slick-dots li button:focus
-{
-    outline: none;
-}
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before
-{
-    opacity: 1;
-}
-.slick-dots li button:before
-{
-    font-family: 'slick';
-/*    font-size: 15px;*/
-    line-height: 5px;
-    background-color: none;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width:9px;
-    height:9px;
-    border:3px solid #4B3D37;
-
-    content: '•';
-    text-align: center;
-
-    opacity: 1;
-    color: none;
-
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before
-{
-    opacity: 1;
-    color: none;
-    background-color: #4B3D37;
-    border-radius: 50%;
-   
-}
 }
 
 /* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -792,800 +1647,323 @@ nav a{
 		width:95.5%;
 	}
 
-	header{
-		height: 60px;
-		display: flex;
-	}
-
-	h1{
-		line-height: 60px;
-	}
-
-	.navButton{
-		display: none;
-	}
-
-	nav{
-		height: 100%;
-		margin-left: auto;
-		
-	}
-
-	nav a{
-		line-height: 60px;
-		margin-left: 2.5vw;
-	}
-/*}         Bracket Here ////////////////////////////////*/
-
-/*.navBar{
-	border-bottom: solid
-}*/
-
-.container{
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.flexParent{
-	display: flex;
-	justify-content: space-between;
-}
-
-.feature{
-	background-color: #f2f1f3;
-}
-
-.featureText{
-	width: 31.2883%;
-	height: 100vh;
-	border-right: dotted;
-}
-
-
-.title{
-	height: 30%;
-	border-bottom: dotted;
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-	padding-right: 3.0675%;
-}
-
-.title h1{
-	font-size: 4vw;
-	font-weight: 800;
-}
-
-.location{
-	border-bottom: dotted;
-	height: 20%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding-right: 3.0675%;
-}
-
-.location h2{
-	font-size: 2.5vw; 
-	/* margin-bottom: 0.5vw; */
-}
-
-.location h3{
-	font-size: 1vw;
-	/* margin-bottom: 0.25vw; */
-}
-
-.info{
-	display: flex;
-	height: 20%;
-    flex-direction: column;
-    justify-content: center;
-	padding-right: 3.0675%;
-	border-bottom: dotted;
-}
-
-.info h1{
-	font-size: 3vw;
-	font-weight: 800;
-}
-
-.info h3{
-	font-size: 1vw;
-}
-
-.para{
-	height: 20%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding-right: 3.0675%;
-	border-bottom: dashed;
-}
-
-.para p{
-	font-size: 1vw;
-}
-
-.viewProjects{
-	height: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding-right: 3.0675%;
-}
-
-.viewProjects a{
-	text-decoration: none;
-	color: #000;
-}
-
-.blob{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 65.6442%;
-}
-
-.blob img{
-	height: 55vw;
-	width: 55vw;
-	object-fit: cover;
-}
-
-
-
-
-/*------ Feature Area 2 */
-
-.feature2{
-	display: none;
-}
-
-.titleBlurb h1{
-	font-size: 3vw;
-}
-
-.titleBlurb{
-	height: 30%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-bottom: dotted;
-	padding-right: 3.0675%;
-}
-
-.blurbDesc{
-	height: 60%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-bottom: dotted;
-	padding-right: 3.0675%;
-}
-
-.viewProject2{
-	height: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-/* Specific Grid Area */
-.gallerySpecific{
-	display: flex;
-	flex-wrap: wrap;
-}
-.square{
-	width: 222px;
-	height: 222px;
-
-	margin-right: 30px;
-	margin-bottom: 60px;
-
-	background-size: contain;
-	background-repeat: no-repeat;
-
-	background-color: aqua;
-}
-.square:nth-of-type(4n){
-	margin-right: 0px;
-}
-/*.physical{
-	display: block;
-}*/
-
-	.Blush{
-		
-	}
-	.Blush:hover{
-
-	}
-	.Combi{
-		
-	}
-	.Combi:hover{
-
-	}
-	.ForagedBlends{
-
-	}
-	.ForagedBlends:hover{
-
-	}
-	.Lumi{
-
-	}
-	.Lumi:hover{
-
-	}
-	.MyVCP{
-
-	}
-	.MyVCP:hover{
-
-	}
-	.Openit{
-
-	}
-	.Openit:hover{
-
-	}
-	.Resalve{
-
-	}
-	.Resalve:hover{
-
-	}
-	.Ruted{
-
-	}
-	.Ruted:hover{
-
-	}
-	.Silphi{
-
-	}
-	.Silphi:hover{
-
-	}
-	.Solace{
-		background-image: url(../Logos/Solace/LogoBandW.png);
-	}
-	.Solace:hover{
-		background-image: url(../Logos/Solace/LogoDarkB.png);
-	}
-	.Somid{
-
-	}
-	.Somid:hover{
-		
-	}
-/*.emotional{
-	display: block;
-	display: none;
-	background-color: beige;
-}*/
-	.AdoptYourself{
-
-	}
-	.AdoptYourself:hover{
-
-	}
-	.BlumeBar{
-
-	}
-	.BlumeBar:hover{
-
-	}
-	.DiaBuddy{
-		
-	}
-	.DiaBuddy:hover{
-
-	}
-	.Fake{
-
-	}
-	.Fake:hover{
-
-	}
-	.HealInk{
-
-	}
-	.HealInk:hover{
-
-	}
-	.IntroSpec{
-
-	}
-	.IntroSpec:hover{
-
-	}
-	.IslaAndMio{
-
-		background-image: url(../images/samPeskieLogoBlack.png);
-		background-size: 100%;
-
-	}
-	.IslaAndMio:hover{
-		
-	}
-	.Journei{
-
-	}
-	.Journei:hover{
-
-	}
-	.Listenupp{
-
-	}
-	.Listenupp:hover{
+	/*--- big grid area (Desktop) */
 
+	.pjwrapper{
+		row-gap: 0.5vw;
+		column-gap: 6.704158%;
 	}
-	.MUUD{
 
-	}
-	.MUUD:hover{
-
-	}
-	.Neuros{
-
-	}
-	.Neuros:hover{
-
-	}
-	.Ritual{
-
-	}
-	.Ritual:hover{
-
-	}
-	.Tranquillo{
-
-	}
-	.Tranquillo:hover{
-
-	}
-/*.intellectual{
-	display: block;
-	display: none;
-}*/
-	.Hatch{
-
-	}
-	.Hatch:hover{
-
-	}
-	.Skildr{
-
-	}
-	.Skildr:hover{
-
-	}
-/*.spiritual{
-	display: block;
-	display: none;
-}
-.social{
-	display: block;
-	display: none;
-}*/
-	.Bday{
-		
-	}
-	.Bday:hover{
-
-	}
-	.Courage{
-
-	}
-	.Courage:hover{
-
-	}
-	.FederationAudio{
-
-	}
-	.FederationAudio:hover{
-
-	}
-	.JustATip{
-
-	}
-	.JustATip:hover{
-
-	}
-	.Unbubl{
-
-	}
-	.Unbubl:hover{
-
-	}
-/*.financial{
-	display: block;
-	display: none;
-}*/
-	.BeaverCreek{
-
-	}
-	.BeaverCreek:hover{
-
-	}
-/*.occupational{
-	display: block;
-	display: none;
-}*/
-	.DoThat{
-
-	}
-	.DoThat:hover{
-
-	}
-.environmental{
-	display: block;
-/*	display: none;*/
-}
-	.EcoArt{
-
-	}
-	.EcoArt:hover{
-
-	}
-	.Pesto{
-
-	}
-	.Pesto:hover{
-
-	}
-	.Rngr{
+	/*Individual holder*/
 
+	.photoHolder{
+		width: 11vw;
+		padding-top: 11vw;	
 	}
-	.Rngr:hover{
 
+	.name{
+	  	font-size: 1.5vw;
+	  	line-height: 1.75vw;
 	}
-	.Slole{
-		background-image: url(../images/samPeskieLogoBlack.png);
-		background-size: 100%;
-	}
-	.Slole:hover{
-		background-image: url(../images/samPeskieLogo.png);
-		background-size: 100%;
-	}
-
-
-/*--- big grid area */
-
-
-/*Grid Holder*/
-
-.pjwrapper{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;	
-
-	row-gap: 1.704158145875937vw;
-	column-gap: 1.704158145875937%;
-
-	width: 90vw;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-/*Individual square holder*/
-
-.photoHolder{
-	width: 10vw;
-	padding-top: 10vw;
-/*	background-color: red;*/
-	background-color: #f2f1f3;
-	
-	background-size: cover;
-	position:relative;
-	cursor: pointer;
-}
-
-.name{
-	position: absolute;
-  	top: 50%;
-  	right:50%;
-  	transform: translateY(-50%) translateX(50%);
-
-  	text-align: center;
-  	text-transform: uppercase;
-  	font-size: 1.25vw;
-  	color: #4B3D37;
-	font-weight: 700;
-}
-
-
-/*Logo holder with hovers*/
-
-
-.CharGreen:hover{
-	background-image: url(../images/NMC.png);
-}
-
-/*.samPeskie{
-	background-image: url(../images/samPeskieLogo.png);
-	background-size:100%;
-	display:none;
-}*/
-
-.samPeskie:hover{
-	background-image: url(../images/samPeskieLogo.png);
-	background-size:100%;
-}
-
-
-
-.angelaHolton:hover{
-	background-image: url(../images/angelaHoltonLogo.png);
-	background-size:100%;
-}
-
-
-/*Designer PopUp*/
-
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.tradeGothicHeavy{
-	font-family: "tgn-soft-round", sans-serif;
-	font-weight: 800;
-	font-style: normal;
-	color: #042439;
-}
-
-.tradeGothicBold{
-	font-family: "tgn-soft-round", sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	color: #042439;
-}
-
-.tradeGothicRegular{
-	font-family: "tgn-soft-round", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: #042439;
-}
 
+	/* ================================================== SARAH =================================================== */
 
-.designerPageHolder{
-	width:100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 99;
-}
-
-.loaderBackground{
-	width:100%;
-	height:100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 99;
-	background-color: #f2f1f3;
-}
-
-.loader {
-  border: 1vw solid blue; 
-  border-top: 1vw solid lightsteelblue; 
-  border-radius: 50%;
-  width: 5%;
-  padding-top: 5%;
-  animation: spin 2s linear infinite;
-  top:50%;
-  left:50%;
-  margin-top:-5%;
-  margin-left:-5%;
-  position:absolute;
-  display:none;
-}
-
-.logoPop{
-/*	background-color: #f2f1f3;*/
-}
-
-
-.flexParentPop{
-	display:flex;
-	align-items: flex-start;
-}
-
-.closePopButton{
-	text-decoration:none;
-}
-
-	.closePopButton{
-		margin-top:3%;
-		margin-left:5%;
-		float:left;
-		font-size: 1.25vw;
-	}
-
-	.designerInfoHolder{
-		width:50%;
-		height: 100vh;
-		background-color: #f2f1f3;
-	}
-
-	.projectImagesHolder{
-		width: 50%;
-		height: 100vh;
-		background-color: #f2f1f3;
-	}
-
-	.designerContent{
-		width: 80%;
-		margin-left: 10%;
-		margin-right:10%;
-		margin-top: 15%;
-	}
-
-	.logoPop{
-		width:16%;
-		padding-top:16%;
-		margin-right:5%;
-		background-image: url(../images/pestoLogo.png);
-		background-size: 100%;
-	}
-
-	.angelaHoltonLogoPop{
-		background-image: url(../images/angelaHoltonLogo.png);
-		background-size: 100%;
-	}
-
-	.samPeskieLogoPop{
-		background-image: url(../images/samPeskieLogo.png);
-		background-size: 100%;
-	}
-
-	.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
-		display:none;
-	}
-
-
-	.projectNamePop{
-		font-size: 2.75vw;
-		margin-bottom:6%;
-	}
-
-	.projectLinkPop{
-		font-size:1.1vw;
-	}
-
-	.dimensionPop{
-		margin-top:3%;
-		margin-bottom:2%;
-	}
+	.gallerSpecificDescription{
+		font-size: 2vw;
+		margin-bottom: 6.1%;
+		line-height: 2.75vw;
 
-	.projectDescription{
-		font-size:1vw;
-		line-height:1.3vw;
-		margin-bottom:20%;
 	}
 
-	.designerFace{
-		width:10%;
-		padding-top:10%;
-		margin-right:5%;
-		margin-bottom:2%;
-		background-image: url(../images/headshotCopy.png);
-		background-size: 100%;
+	.square{
+		width: 11vw;
+		padding-top: 11vw;
+		background-size: cover;
+		display: block;
 		background-color: red;
+		margin-bottom: 5vw;
 	}
 
-	.designerNamePop{
-		font-size:1.25vw;
-		margin-bottom:5%;
-	}
-
-	.designerLinksPop{
-		font-size:1vw;
-		margin-right:5%;
-	}
-
-	.designerDescription{
-		font-size:.9vw;
-		line-height:1.3vw;
-		margin-bottom:20%;
-		width:70%;
-	}
-
-	.flexChildDesigner{
-		width:50%;
-	}
-
-	.projectImagesHolder div{
-		width: 100%;
-		height: 100vh;
-		background-size: 100%;
-	}
-
-
-
-/* Nadiyah's Section (Footer) */
 	.flex{
-		display: flex;
+		display:flex;
 		justify-content: space-between;
 		
 	}
+	
+	.FooterDivider{
+		margin-top: 3%;
+		margin-bottom: 3%;
+		background-color:#5069b1;
+		display: flex;
+		padding-top: .990909090909091vw;
+		width: 100%;
+	}
 	footer{
+		margin-top: 4.5%;
+		color:#5069b1;
 		font-family: "tgn-soft-round", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-		width:100vw;
-		height: 500px;
+		font-weight: 400;
+		font-style: normal;
+		width:85%;
+		overflow: hidden;
+	}
+	
+	
+	.leftFooter{
+		
+		width: 39.05%;
+		display: flex;
+		justify-content: center;
+		margin-left: 5%;
+		
+	}
+	/* <!-- Location map --> */
+	.footerLocationPNG{
+		scale: 85%;
+		background-size: cover;
+		max-width: 100%;
+		background-image:url(../images/Asset\ 27.png) ;
+		padding-top: 20.8vw;
+		width: 100%;
+		background-color: rgb(71, 5, 88);
 	
 	}
+	.divider{
+		background-color: #5069b1;
+		display: flex;
+		padding-top: 21.799999999999997vw;
+		width: .35%;
+	}
+	
+	/* <!-- Time and dates --> */
+
+
 	.footerDate{
+	
+		margin-top: 15%;
+		margin-bottom: 4%;
 		font-weight: 800;
-		font-size: 46.6px;
+		font-size: 31.4px;
 		
 	}
 	.footerTime{
+		margin-bottom: 4%;
 		font-weight: 700;
-		font-size: 29.23px;
+		font-size: 19.55px;
 	}
 	.footerLocation{
 		font-weight: 400;
-		font-size: 17.3px;
+		font-size: 11.58px;
+		margin-bottom: 4%;
 	}
-	.leftFooter{
-		
-		height: 100%;
-		width: 57.05%;
-		display: flex;
-		justify-content: center;
-		
-	}
+	
 	
 	.rightFooter{
+		margin-right: 7.15%;
 		display: flex;
-	flex-direction: column;
-	justify-content: center;
-		height: 100%;
+		flex-direction: column;
+	
 		width: 39.87%;
 	
+	}
+	
+	.footerTimeAndDate{
+		line-height: 25px;
+		align-content: center;
+		margin-top: 1%;
+		margin-left: 13%;
+	}
+	
+	/* <!-- Social media links --> */
+	.sociamedia{
+	margin-top: 4%;
+		margin-bottom: 4%;
+		width: 40%;
+		margin-left: 13%;
+	}
+	.footherFacebook{
+		transition: ease-in-out 1s;
+		max-width:1.99vw;
+		margin-top: 1%;
+		background-size: cover;
+		width: 1.99vw;
+		height: 3.52vw;
+		cursor: pointer;
+		background-image: url(../images/facebookB.png);
+	}
+	.footherFacebook:hover{
+		
+		background-image: url(../images/facebookG.png);
+	}
+	.footerGram{
+		transition: ease-in-out 1s;
+		background-position: top;
+		transition-duration: 2s;
+		max-width:3.79vw;
+		background-size: cover;
+		margin-top: 1%;
+		width: 3.79vw;
+		height: 3.692781vw;
+		cursor: pointer;
+		background-image: url(../images/theGramb.png);
+	}
+	.footerGram:hover{
+		
+		background-image: url(../images/theGramg.png);
+	}
+	.footerSocialIcon{
+		margin-bottom: 4%;
+		margin-right: 30px;
+	}
+	
+	/* <!-- credits --> */
+	.footerBigcredits{
+	
+		line-height: 100%;
+		margin-left: 13%;
+		align-content: center;	
 	}
 	.footerTopCredit{
 		font-weight: 700;
 		font-size: 12.2px;
 	}
-	.footerCredits{
+	.footerCredits{ 
+		width: 80%;;
+		margin-left: 13%;
 		font-weight: 400;
 		font-size: 12.2px;
 	}
 
-	.footerLocationPNG{
-		background-image:url(../images/Asset\ 3-8.png) ;
-		
-		height:340px;
-		width: 58.6%;
+	.designerPageHolder{
+		width:100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
 	}
 	
-	.footerTimeAndDate{
-		align-content: center;
 	
-		
+	.flexParentPop{
+		display:flex;
+		align-items: flex-start;
 	}
-	.footerBigcredits{
-		
-		align-content: center;
 	
-		
+	.closePopButton{
+		text-decoration:none;
 	}
-	.footerSocialIcon{
-		margin-right: 30px;
-		width: 4.5vw;
-		height: 4.5vw;
-		background-color:rgba(0, 0, 0, 0.5);
-	}
+	
+		.closePopButton{
+			margin-top:3%;
+			margin-left:5%;
+			float:left;
+			font-size: 1.25vw;
+		}
+	
+		.designerInfoHolder{
+			width:50%;
+			height: 100vh;
+			background-color: #f2f1f3;
+		}
+	
+		.projectImagesHolder{
+			width: 50%;
+			height: 100vh;
+			background-color: #f2f1f3;
+		}
+	
+		.designerContent{
+			width: 80%;
+			margin-left: 10%;
+			margin-right:10%;
+			margin-top: 15%;
+		}
+	
+		.logoPop{
+			width:16%;
+			padding-top:16%;
+			margin-right:5%;
+			background-image: url(../images/pestoLogo.png);
+			background-size: 100%;
+		}
+	
+		.angelaHoltonLogoPop{
+			background-image: url(../images/angelaHoltonLogo.png);
+			background-size: 100%;
+		}
+	
+		.samPeskieLogoPop{
+			background-image: url(../images/samPeskieLogo.png);
+			background-size: 100%;
+		}
+	
+		.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
+			display:none;
+		}
+	
+	
+		.projectNamePop{
+			font-size: 2.75vw;
+			margin-bottom:6%;
+		}
+	
+		.projectLinkPop{
+			font-size:1.1vw;
+		}
+	
+		.dimensionPop{
+			margin-top:3%;
+			margin-bottom:2%;
+		}
+	
+		.projectDescription{
+			font-size:1vw;
+			line-height:1.3vw;
+			margin-bottom:20%;
+		}
+	
+		.projectDescriptionShort{
+			display:none;
+		}
+	
+		.designerFace{
+			width:10%;
+			padding-top:10%;
+			margin-right:5%;
+			margin-bottom:2%;
+			background-image: url(../images/headshotCopy.png);
+			background-size: 100%;
+			background-color: red;
+		}
+	
+		.designerNamePop{
+			font-size:1.25vw;
+			margin-bottom:5%;
+		}
+	
+		.designerLinksPop{
+			font-size:1vw;
+			margin-right:5%;
+		}
+	
+		.designerDescription{
+			font-size:.9vw;
+			line-height:1.3vw;
+			margin-bottom:20%;
+			width:70%;
+		}
+	
+		.flexChildDesigner{
+			width:50%;
+		}
+	
+		.projectImagesHolder div{
+			width: 100%;
+			height: 100vh;
+			background-size: 100%;
+		}
+	
+		.slickMobile, .slickTablet{
+			display:none;
+		}
 
 }
-
-	
