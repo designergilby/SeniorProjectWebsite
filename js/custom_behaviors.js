@@ -231,48 +231,27 @@ $(document).ready(function() {
 		dots:true,
 		arrows:false,
 	});
-
-
-	 // $('.angelaHolton').hover(function() {
-	 //    $(".angelaHolton p").css({"opacity": "0"});
-	 //  }, function() {
-	 //    $(".angelaHolton p").css({"opacity": "100"});
-	 //  })
-
 	
 
-		$('.angelaHolton').click(function() {
-			$("body").addClass("stopScroll")
-		   $(".loaderBackground").fadeIn(400, function(){
-			   $(".loader").delay(100).fadeIn(400, function(){
-					$(".angelaHoltonPop").fadeIn(800, function(){
-					   $(".loader").delay(2000).fadeOut(400, function(){
-						   $(".loaderBackground").fadeOut(400)
-					   })
-					   })
-			   })
-		   })
-		 })
+	$('.angelaHolton, .Slole').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".angelaHoltonPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
 
-
-	 $('.Slole').click(function() {
-	 	$("body").addClass("stopScroll")
-	    $(".loaderBackground").fadeIn(400, function(){
-	    	$(".loader").delay(100).fadeIn(400, function(){
-	    		 $(".angelaHoltonPop").fadeIn(800, function(){
-	    			$(".loader").delay(2000).fadeOut(400, function(){
-	    				$(".loaderBackground").fadeOut(400)
-	    			})
-	   			 })
-	    	})
-	    })
-	  })
 
 	
-	$(".angelaClose").click(function(){
+	$(".closePopButton").click(function(){
 		event.preventDefault()
 
-		$(".angelaHoltonPop").fadeOut(500)
+		$(".popUp").fadeOut(500)
 		$("body").removeClass("stopScroll")
 	})
 	

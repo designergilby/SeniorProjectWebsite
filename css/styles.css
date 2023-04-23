@@ -639,6 +639,7 @@ section{
 .square{
 	background-size: cover;
 	display: block;
+	cursor: pointer;
 }
 
 .Blush{
@@ -1069,6 +1070,7 @@ section{
 		padding-top: 46.428571428571429%;
 		margin-bottom: 10.714285714285714%;
 		background-color: red;
+		cursor: pointer;
 	}
 
 	footer{
@@ -1478,6 +1480,7 @@ section{
 		padding-top: 17.916666666666667%;
 		margin-bottom: 10.714285714285714%;
 		background-color: red;
+		cursor: pointer;
 	}
 
 	.flex{
@@ -1682,6 +1685,7 @@ section{
 		display: block;
 		background-color: red;
 		margin-bottom: 5vw;
+		cursor: pointer;
 	}
 
 	.flex{
