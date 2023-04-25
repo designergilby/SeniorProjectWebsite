@@ -897,6 +897,72 @@ section{
 	z-index: 99;
 }
 
+/* ==================== FOOTER ================== */
+
+.mapCont{
+	width: 55%;
+}
+.footerText{
+	width: 40%;
+	color:#0063b0;
+}
+
+footer{
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+}
+
+.socialsCont{
+	width: 50%;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+
+.footerText h1{
+	font-size: 4vw;
+	font-weight: 800;
+	margin-bottom: 0.75vw;
+}
+
+.footerText h2{
+	font-size: 2vw;
+	margin-bottom: 0.5vw;
+}
+
+.footerText h3{
+	margin-bottom: 1vw;
+	font-size: 1.5vw
+}
+
+.socialsCont{
+	margin-bottom: 2vw;
+}
+
+.socialIcon{
+	width: 2vw;
+	height: 2vw;
+}
+
+.mapCont img{
+	width: 90%;
+}
+
+.mapCont{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.credits h2{
+	font-size: 1.5vw;
+	font-weight: 800;
+}
+
+.credits h3{
+	font-size: 1vw;
+	width: 60%;
+}
+
 
 /* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 767px){
@@ -1078,146 +1144,75 @@ section{
 		cursor: pointer;
 	}
 
-	footer{
-		margin-left:auto;
-		margin-right:auto;
-		margin-top: 4%;
-		color:#5069b1;
-		font-family: "tgn-soft-round", sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		width:100vw;
-	
-	
+	.mapCont{
+		width: 100%;
+		margin-bottom: 5vw;
+		margin-top: 5vw;
+	}
+	.footerText{
+		width: 100%;
 	}
 	
+	footer{
+		padding-top: 3vw;
+		padding-bottom: 3vw;
+	}
 	
-	.leftFooter{
+	.socialsCont{
+		width: 50%;
+		margin-top: 2vw;
+		margin-bottom: 2vw;
+	}
+	
+	.footerText h1{
+		font-size: 10vw;
+		font-weight: 800;
+		margin-bottom: 2vw;
+	}
+	
+	.footerText h2{
+		font-size: 7vw;
+		margin-bottom: 1.5vw;
+	}
 
-		width: 85.05%;
+	.footTime{
+		margin-bottom: 3vw;
+	}
+	
+	.footerText h3{
+		margin-bottom: 5vw;
+		font-size: 4vw
+	}
+	
+	.socialsCont{
+		width: 100%;
+		justify-content: space-around;
+		margin-bottom: 5vw;
+	}
+	
+	.socialIcon{
+		width: 10vw;
+		height: 10vw;
+	}
+	
+	.mapCont img{
+		width: 90%;
+	}
+	
+	.mapCont{
 		display: flex;
 		justify-content: center;
-		margin-left: 9%;
-		margin-bottom: 4%;
-		
+		align-items: center;
 	}
 	
-	.footerLocationPNG{
-		
-
-		background-size: cover;
-		max-width: 100%;
-		background-image:url(../images/Asset\ 27.png) ;
-		padding-top: 40.9vw;
-		width: 100%;
-		background-color: rgb(71, 5, 88);
-	
-	}
-	
-	.footerDate{
-	
-		margin-top: 15%;
+	.credits h2{
+		font-size: 4vw;
 		font-weight: 800;
-		font-size: 31.6px;
-		
-	}
-	.footerTime{
-		margin-bottom: 4%;
-		font-weight: 700;
-		font-size: 20.23px;
-	}
-	.footerLocation{
-		font-weight: 400;
-		font-size: 17.3px;
-		margin-bottom: 4%;
 	}
 	
-	.FooterDivider{
-		margin-top: 3%;
-		margin-bottom: 3%;
-		background-color:#5069b1;
-		display: flex;
-		padding-top: .690909090909091vw;
-		width: 100%;
-	}
-	.rightFooter{
-		margin-right: 9%;
-		display: flex;
-		flex-direction:column;
-		width: 89.87%;
-	
-	}
-	
-	.footerTimeAndDate{
-		line-height: 200%;
-		align-content: center;
-		margin-top: 3%;
-		margin-left: 15%;
-	}
-	
-	
-	.sociamedia{
-		scale: 190%;
-		height: 3.5vw;
-		display: flex;
-		margin-top: 10%;
-		margin-bottom: 10%;
-		width: 100%;
-		margin-left: 63%;
-	
-
-	}
-	.footherFacebook{
-		transition: ease-in-out 1s;
-		/* scale: 120%; */
-		max-width:1.99vw;
-		margin-top: 1%;
-		background-size: cover;
-		width: 1.99vw;
-		height: 3.57vw;
-		cursor: pointer;
-		background-image: url(../images/facebookB.png);
-	}
-	.footherFacebook:hover{
-		background-image: url(../images/facebookG.png);
-
-	}
-	.footerGram{
-		transition: ease-in-out 1s;
-		max-width:3.62vw;
-		margin-top: 1%;
-		background-size: cover;
-		width: 3.62vw;
-		height: 3.5vw;
-		cursor: pointer;
-	background-image: url(../images/theGramb.png);
-	}
-	.footerGram:hover{
-		
-		background-image: url(../images/theGramg.png);
-	}
-	.footerSocialIcon{
-		margin-bottom: 2%;
-		margin-right: 30px;
-	
-	   
-	}
-	.footerBigcredits{
-	
-		line-height: 100%;
-		margin-left: 6%;
-		align-content: center;	
-	}
-	.footerTopCredit{
-		font-weight: 700;
-		font-size: 12.2px;
-	}
-	.footerCredits{ 
-		
-		margin-top: 3%;
-    	/* margin-left: 15%; */
-		font-weight: 400;
-		font-size: 12.2px;
+	.credits h3{
+		font-size: 3vw;
+		width: 80%;
 	}
 
 	/* ============================== MOBILE POPUP =========================== */
