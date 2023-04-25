@@ -1,25 +1,10 @@
-const handleOnMouseMove = e => {
-	const { currentTarget: target } = e;
-	console.log("hit1");
 
-	const rect = target.getBoundingClientRect(),
-		x = e.clientX - rect.left,
-		y = e.clientY - rect.top;
-
-	target.style.setProperty("--mouse-x", `${x}px`);
-	target.style.setProperty("--mouse-y", `${y}px`);
-	console.log("hit1");
-}
-
-for(const card of document.querySelectorAll(".background")){
-	card.onmousemove = e => handleOnMouseMove(e);
-	console.log("hit2");
-}
 
 $(document).ready(function() {
 					
 	// VARIABLES
 	var dimension = 1;
+	var whichArrow = 0;
 	
 	// EVENT HANDLERS
 
@@ -54,10 +39,11 @@ $(document).ready(function() {
 		$(".decorateRectW").animate({
 			"opacity":"0"
 		}, 1000)
+		$(".social").fadeIn(1000);
 
 		countStep()
 
-
+		
 
 
 	})
@@ -72,6 +58,8 @@ $(document).ready(function() {
 		}
 		console.log(dimension)
 
+		whichArrow = 1;
+
 		countStep()
 	})
 
@@ -84,6 +72,8 @@ $(document).ready(function() {
 			dimension--;
 		}
 
+		whichArrow = 2;
+
 		countStep()
 
 
@@ -92,31 +82,56 @@ $(document).ready(function() {
 	// FUNCTIONS
 	function countStep(){
 		if(dimension == 1){
-			//Physical
+			//Social
 			$(".heroImg2").animate({
 				"rotate":"0deg"
 			})
 			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Physical wellness encourages people to choose what feels good, create a balanced routine, and listen to one’s bodily needs. Design for physical wellness should be adaptable, functional, and tangible.")
+				$(this).text("Social wellness is related to our personal relationships and how we interact with others in public and private spaces. Design for social wellness should be influential, communal, and connectible.")
 			  }).fadeIn(250);
 			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("PHYSICAL")
+				$(this).text("SOCIAL")
 				$(this).css("color","#ee739b")
 			}).fadeIn(250);
+			$(".viewSorter").fadeIn(200)
+
+			if(whichArrow == 1){
+				console.log("arrow right")
+				$(".financial").fadeOut(250, function(){
+					$(".social").fadeIn(250);
+				});
+			}
+
+			if(whichArrow == 2){
+				console.log("arrow left")
+				
+				$(".social").fadeIn(250);
+				
+			}
 			
 		}
 		else if(dimension == 2){
-			//emotional
+			//Spiritual
 			$(".heroImg2").animate({
 				"rotate":"45deg"
 			})
 			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Emotional wellness inspires caring for oneself, adapting to difficult times, relaxation, and stress management. Design for emotional wellness should be interpretable, inclusive, responsive, and personalized.")
+				$(this).text("Spiritual wellness allows us to be in tune with our spiritual selves and to discover our individual beliefs and values in this world. Design for spiritual wellness should be ethical, equitable, ritualistic, and transcendental.")
 			  }).fadeIn(250);
 			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("EMOTIONAL")
-				$(this).css("color","#4f6ab2")
+				$(this).text("SPIRITUAL")
+				$(this).css("color","#00a45b")
 			}).fadeIn(250);
+			$(".viewSorter").fadeOut(200)
+
+			if(whichArrow == 1){
+				$(".social").fadeOut(250)
+			}
+
+			if(whichArrow == 2){
+				$(".intellectual").fadeOut(250)
+			}
+
 		}
 		else if(dimension == 3){
 			//Intellectual
@@ -131,47 +146,101 @@ $(document).ready(function() {
 				$(this).css("color","#85459b")
 			}).fadeIn(250);
 			$(".viewSorter").fadeIn(200)
+
+			if(whichArrow == 1){
+				console.log("arrow right")
+				$(".intellectual").fadeIn(250)
+			}
+
+			if(whichArrow == 2){
+				console.log("arrow left")
+				$(".emotional").fadeOut(250, function(){
+					$(".intellectual").fadeIn(250);
+				});
+			}
 		}
 		else if(dimension == 4){
-			//Spiritual
+			//EMOTIONAL
 			$(".heroImg2").animate({
 				"rotate":"135deg"
 			})
 			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Spiritual wellness allows us to be in tune with our spiritual selves and to discover our individual beliefs and values in this world. Design for spiritual wellness should be ethical, equitable, ritualistic, and transcendental.")
+				$(this).text("Emotional wellness inspires caring for oneself, adapting to difficult times, relaxation, and stress management. Design for emotional wellness should be interpretable, inclusive, responsive, and personalized.")
 			  }).fadeIn(250);
 			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("SPIRITUAL")
-				$(this).css("color","#00a45b")
+				$(this).text("EMOTIONAL")
+				$(this).css("color","#4f6ab2")
 			}).fadeIn(250);
-			$(".viewSorter").fadeOut(200)
+
+			if(whichArrow == 1){
+				console.log("arrow right")
+				$(".intellectual").fadeOut(250, function(){
+					$(".emotional").fadeIn(250);
+				});
+			}
+
+			if(whichArrow == 2){
+				console.log("arrow left")
+				$(".physical").fadeOut(250, function(){
+					$(".intellectual").fadeIn(250);
+				});
+			}
+
 		}
 		else if(dimension == 5){
-			//Social
+			//Physical
 			$(".heroImg2").animate({
 				"rotate":"180deg"
 			})
 			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Social wellness is related to our personal relationships and how we interact with others in public and private spaces. Design for social wellness should be influential, communal, and connectible.")
+				$(this).text("Physical wellness encourages people to choose what feels good, create a balanced routine, and listen to one’s bodily needs. Design for physical wellness should be adaptable, functional, and tangible.")
 			  }).fadeIn(250);
 			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("SOCIAL")
+				$(this).text("PHYSICAL")
 				$(this).css("color","#ee739b")
 			}).fadeIn(250);
-			$(".viewSorter").fadeIn(200)
+
+			if(whichArrow == 1){
+				console.log("arrow right")
+				$(".emotional").fadeOut(250, function(){
+					$(".physical").fadeIn(250);
+				});
+			}
+
+			if(whichArrow == 2){
+				console.log("arrow left")
+				$(".environmental").fadeOut(250, function(){
+					$(".physical").fadeIn(250);
+				});
+			}
+
 		}
 		else if(dimension == 6){
-			//Financial
+			//ENVIRONMENTAL
 			$(".heroImg2").animate({
 				"rotate":"225deg"
 			})
 			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Financial wellness focuses on knowing monetary processes and resources while understanding your own financial situation and prospects. Design for financial wellness should be affordable, secure, and resourceful.")
+				$(this).text("Environmental wellness inspires us to live a lifestyle that is respectful of our surroundings. Design for environmental wellness should be inhabitable, resilient, spatial, and accessible.")
 			  }).fadeIn(250);
 			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("FINANCIAL")
-				$(this).css("color","#51c0aa")
+				$(this).text("ENVIRONMENTAL")
+				$(this).css("color","#99ca43")
 			}).fadeIn(250);
+
+			if(whichArrow == 1){
+				console.log("arrow right")
+				$(".physical").fadeOut(250, function(){
+					$(".environmental").fadeIn(250);
+				});
+			}
+
+			if(whichArrow == 2){
+				console.log("arrow left")
+				$(".occupational").fadeOut(250, function(){
+					$(".environmental").fadeIn(250);
+				});
+			}
 		}
 		else if(dimension == 7){
 			//Occupational
@@ -185,19 +254,48 @@ $(document).ready(function() {
 				$(this).text("OCCUPATIONAL")
 				$(this).css("color","#6acdea")
 			}).fadeIn(250);
+
+			if(whichArrow == 1){
+				console.log("arrow right")
+				$(".environmental").fadeOut(250, function(){
+					$(".occupational").fadeIn(250);
+				});
+			}
+
+			if(whichArrow == 2){
+				console.log("arrow left")
+				$(".financial").fadeOut(250, function(){
+					$(".occupational").fadeIn(250);
+				});
+			}
 		}
 		else if(dimension == 8){
-			//Environmental
+			//FINANCIAL
 			$(".heroImg2").animate({
 				"rotate":"315deg"
 			})
 			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Environmental wellness inspires us to live a lifestyle that is respectful of our surroundings. Design for environmental wellness should be inhabitable, resilient, spatial, and accessible.")
+				$(this).text("Financial wellness focuses on knowing monetary processes and resources while understanding your own financial situation and prospects. Design for financial wellness should be affordable, secure, and resourceful.")
 			  }).fadeIn(250);
 			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("ENVIRONMENTAL")
-				$(this).css("color","#99ca43")
+				$(this).text("FINANCIAL")
+				$(this).css("color","#51c0aa")
 			}).fadeIn(250);
+
+			if(whichArrow == 1){
+				console.log("arrow right")
+				$(".occupational").fadeOut(250, function(){
+					$(".financial").fadeIn(250);
+				});
+			}
+
+			if(whichArrow == 2){
+				console.log("arrow left")
+				$(".social").fadeOut(250, function(){
+					$(".financial").fadeIn(250);
+				});
+			}
+
 		}
 	}
 	
