@@ -329,6 +329,9 @@ $(document).ready(function() {
 		dots:true,
 		arrows:false,
 	});
+
+
+	// ======================================== POPUP ======================
 	
 
 	$('.angelaHolton, .Slole').click(function() {

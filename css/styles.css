@@ -868,13 +868,14 @@ section{
 	top: 0;
 	left: 0;
 	z-index: 99;
-	background-color: #f2f1f3;
 	position: fixed; bottom: 0%; top: 0%; overflow: scroll; height: 100vh;
+	background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+	animation: gradient 15s ease infinite;
 }
 
 .loader {
-  border: 1vw solid blue; 
-  border-top: 1vw solid lightsteelblue; 
+  border: 1vw solid #0063b0; 
+  border-top: 1vw solid #83cbe7; 
   border-radius: 50%;
   width: 5%;
   padding-top: 5%;
@@ -892,26 +893,335 @@ section{
 	font-family: "tgn-soft-round", sans-serif;
 	font-weight: 800;
 	font-style: normal;
-	color: #042439;
+	color: #03507F;
 }
 
 .tradeGothicBold{
 	font-family: "tgn-soft-round", sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	color: #042439;
+	color: #03507F;
 }
 
 .tradeGothicRegular{
 	font-family: "tgn-soft-round", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	color: #042439;
+	color: #03507F;
 }
 .popUp{
 	display:none;
 	z-index: 99;
 }
+
+/* ===POPUPS LOGOD================================ */
+
+.salmanAhmedLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonLogoPop.png");
+}
+
+.jasmineBussieLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.katelynChristiansenLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.AutumnFrantzLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.jasmineFredrickLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.jackGilbertLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.charlotteGreenLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.hallieGroeschelLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.anikaGuggisbergLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.eleniHeinLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.christianHeoLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.indigoHoffmanLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.angelaHoltonLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.ashleyJandroLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.danielleJohnsonLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.jamieKerwinLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.ceciliaKnudsenLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.alyssaKoepkeLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.kaliKoesterLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.tjorvenLandwehrLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.emmaLarsonLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.beauLuzarLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.seringMcHughLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.harlanMckayLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.carlyMeyerLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.nadiyahMCLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.joeMischkeLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.sarahMorrisLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.tylerMullinLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.lilyNessLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.laurenPechmanLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.samPeskieLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.kaylaPurneyLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.natalieReberLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.isabelRobertsLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.jadynSchoppersLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.destinySwenLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.vaughnVandeLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.alexWooLogoPop{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+
+
+/* ===POPUPS FACES ================================ */
+
+.salmanAhmedFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.jasmineBussieFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.katelynChristiansenFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.AutumnFrantzFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.jasmineFredrickFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.jackGilbertFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.charlotteGreenFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.hallieGroeschelFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.anikaGuggisbergFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.eleniHeinFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.christianHeoFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.indigoHoffmanFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.angelaHoltonFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.ashleyJandroFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.danielleJohnsonFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.jamieKerwinFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+.ceciliaKnudsenFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.alyssaKoepkeFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.kaliKoesterFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.tjorvenLandwehrFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.emmaLarsonFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.beauLuzarFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.seringMcHughFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.harlanMckayFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.carlyMeyerFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.nadiyahMCFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.joeMischkeFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.sarahMorrisFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.tylerMullinFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.lilyNessFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.laurenPechmanFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.samPeskieFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.kaylaPurneyFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.natalieReberFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.isabelRobertsFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.jadynSchoppersFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.destinySwenFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.vaughnVandeFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
+.alexWooFace{
+  	background-image: url("../images/Headshots/angelaHoltonFace.png");
+}
+
 
 /* ==================== FOOTER ================== */
 
@@ -1240,29 +1550,29 @@ footer{
 	.designerPageHolder{
 		width:100%;
 		height:100vh;
-/*		height:100%;*/
 		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 99;
 		display:block;
-		background-color:#f2f1f3;
+		background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+		animation: gradient 15s ease infinite;
 	}
 	
 	
 	.designerInfoHolder{
 			width:100%;
 			height:50vh;
-/*			height:50%;*/
 			display:inline-block;
-			background-color: #f2f1f3;
+			background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+			animation: gradient 15s ease infinite;
 	}
 	
 	.projectImagesHolder{
 			width: 100%;
-	/*		height: 50%;*/
 			height: 50%;
-			background-color: #f2f1f3;
+			background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+			animation: gradient 15s ease infinite;
 	}
 	
 	.projectImagesHolder div{
@@ -1299,17 +1609,9 @@ footer{
 			width:20%;
 			padding-top:20%;
 			margin-right:7%;
-		}
-	
-		.angelaHoltonLogoPop{
-			background-image: url(../images/angelaHoltonLogo.png);
 			background-size: 100%;
 		}
 	
-		.samPeskieLogoPop{
-			background-image: url(../images/samPeskieLogo.png);
-			background-size: 100%;
-		}
 	
 		.projectNamePop{
 			font-size: 6.5vw;
@@ -1347,9 +1649,7 @@ footer{
 			padding-top:15%;
 			margin-right:5%;
 			margin-bottom:2%;
-			background-image: url(../images/headshotCopy.png);
 			background-size: 100%;
-			background-color: red;
 		}
 	
 		.designerNamePop{
@@ -1443,7 +1743,7 @@ footer{
 	
 			width:7px;
 			height:7px;
-			border:2px solid #4B3D37;
+			border:2px solid #00517F;
 	
 			content: '•';
 			text-align: center;
@@ -1459,12 +1759,12 @@ footer{
 		.slick-dots li.slick-active button:before{
 			opacity: 1;
 			color: none;
-			background-color: #4B3D37;
+			background-color: #00517F;
 			border-radius: 50%;
 		   
 		}
 	
-		.slickTablet, .slickDesktop{
+		.slickDesktop{
 			display:none;
 		}
 
@@ -1684,13 +1984,15 @@ footer{
 		width:100%;
 		height:50vh;
 		display:inline-block;
-		background-color: #f2f1f3;
+		background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+		animation: gradient 15s ease infinite;
 }
 
 .projectImagesHolder{
 		width: 100%;
 		height: 50%;
-		background-color: #f2f1f3;
+		background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+		animation: gradient 15s ease infinite;
 }
 
 .projectImagesHolder div{
@@ -1705,9 +2007,6 @@ footer{
 	align-items: flex-start;
 }
 
-.flexChildT{
-/*	background-color: lightsteelblue;*/
-}
 
 .flexChildTLeft{
 	width:50%;
@@ -1743,24 +2042,8 @@ footer{
 		width:20%;
 		padding-top:20%;
 		margin-right:5%;
-		background-image: url(../images/pestoLogo.png);
 		background-size: 100%;
 	}
-
-	.angelaHoltonLogoPop{
-		background-image: url(../images/angelaHoltonLogo.png);
-		background-size: 100%;
-	}
-
-	.samPeskieLogoPop{
-		background-image: url(../images/samPeskieLogo.png);
-		background-size: 100%;
-	}
-
-	.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
-		display:none;
-	}
-
 
 	.projectNamePop{
 		font-size: 3.5vw;
@@ -1792,7 +2075,6 @@ footer{
 		padding-top:25%;
 		margin-right:5%;
 		margin-bottom:5%;
-		background-image: url(../images/headshotCopy.png);
 		background-size: 100%;
 		background-color: red;
 	}
@@ -1895,7 +2177,7 @@ footer{
 
     width:9px;
     height:9px;
-    border:3px solid #4B3D37;
+    border:3px solid #00517F;
 
     content: '•';
     text-align: center;
@@ -1911,12 +2193,12 @@ footer{
 {
     opacity: 1;
     color: none;
-    background-color: #4B3D37;
+    background-color: #00517F;
     border-radius: 50%;
    
 }
 
-	.slickMobile, .slickDesktop{
+	.slickDesktop{
 		display:none;
 	}
 
@@ -2134,8 +2416,7 @@ footer{
 		left: 0;
 		z-index: 99;
 	}
-	
-	
+		
 	.flexParentPop{
 		display:flex;
 		align-items: flex-start;
@@ -2156,12 +2437,15 @@ footer{
 			width:50%;
 			height: 100vh;
 			background-color: #f2f1f3;
+			background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+			animation: gradient 15s ease infinite;
 		}
 	
 		.projectImagesHolder{
 			width: 50%;
 			height: 100vh;
-			background-color: #f2f1f3;
+			background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+			animation: gradient 15s ease infinite;
 		}
 	
 		.designerContent{
@@ -2175,28 +2459,12 @@ footer{
 			width:16%;
 			padding-top:16%;
 			margin-right:5%;
-			background-image: url(../images/pestoLogo.png);
 			background-size: 100%;
 		}
-	
-		.angelaHoltonLogoPop{
-			background-image: url(../images/angelaHoltonLogo.png);
-			background-size: 100%;
-		}
-	
-		.samPeskieLogoPop{
-			background-image: url(../images/samPeskieLogo.png);
-			background-size: 100%;
-		}
-	
-		.loaderBackground, .angelaHoltonPop, .samPeskiePop, .templatePop{
-			display:none;
-		}
-	
 	
 		.projectNamePop{
 			font-size: 2.75vw;
-			margin-bottom:6%;
+			margin-bottom:8%;
 		}
 	
 		.projectLinkPop{
@@ -2223,9 +2491,7 @@ footer{
 			padding-top:10%;
 			margin-right:5%;
 			margin-bottom:2%;
-			background-image: url(../images/headshotCopy.png);
 			background-size: 100%;
-			background-color: red;
 		}
 	
 		.designerNamePop{
@@ -2255,7 +2521,7 @@ footer{
 			background-size: 100%;
 		}
 	
-		.slickMobile, .slickTablet{
+		.slickTablet{
 			display:none;
 		}
 
