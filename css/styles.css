@@ -111,7 +111,13 @@ section{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	
+	cursor: pointer;
+	transition: 250ms;
+}
+
+.heroSVG:hover{
+	width: 110%;
+	height: 110%;
 }
 
 #PHYS, #FINAN, #OCCU, #ENVIRON {
@@ -266,6 +272,7 @@ section{
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	
 }
 
 .physW{
@@ -402,6 +409,12 @@ section{
 	margin-top: 2vw;
 	font-weight: 800;
 	font-size: 2vw;
+	cursor: pointer;
+	transition: 250ms;
+}
+
+.exploreWellness:hover{
+	font-size: 2.2vw;
 }
 
 .arrowLeft, .arrowRight{
@@ -977,6 +990,10 @@ footer{
 		display: block;
 	}
 
+	.heroSVG{
+		transition: none;
+	}
+
 	.decorateRect{
 		width: 35vw;
 		height: 2vw;
@@ -1458,6 +1475,12 @@ footer{
 		width:93.75%; /* 720 pixels at a 768 pixel screen width (iPads) */
 		
 	}
+	.heroSVG{
+		transition: none;
+	}
+	.exploreWellness{
+		transition: none;
+	}
 
 /*	Big Grid Area (Tablet)*/
 
@@ -1911,6 +1934,13 @@ footer{
 	.pjwrapper{
 		row-gap: 0.5vw;
 		column-gap: 6.704158%;
+	}
+
+	.heroSVG{
+		transition: 250ms;
+	}
+	.exploreWellness{
+		transition: 250ms;
 	}
 
 	/*Individual holder*/
