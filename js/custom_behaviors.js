@@ -78,7 +78,7 @@ $(document).ready(function() {
 			}).fadeIn(250);
 			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
 				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
-				$(this).css("color","#009f98")
+				$(this).css("color","#0063b0")
 		}).fadeIn(250);
 	});
 
@@ -96,7 +96,7 @@ $(document).ready(function() {
 			}).fadeIn(250);
 			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
 				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
-				$(this).css("color","#009f98")
+				$(this).css("color","#0063b0")
 		}).fadeIn(250);
 	});
 
@@ -114,7 +114,7 @@ $(document).ready(function() {
 			}).fadeIn(250);
 			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
 				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
-				$(this).css("color","#009f98")
+				$(this).css("color","#0063b0")
 		}).fadeIn(250);
 	});
 
@@ -132,7 +132,7 @@ $(document).ready(function() {
 			}).fadeIn(250);
 			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
 				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
-				$(this).css("color","#009f98")
+				$(this).css("color","#0063b0")
 		}).fadeIn(250);
 	});
 
@@ -150,7 +150,7 @@ $(document).ready(function() {
 			}).fadeIn(250);
 			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
 				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
-				$(this).css("color","#009f98")
+				$(this).css("color","#0063b0")
 		}).fadeIn(250);
 	});
 
@@ -168,7 +168,7 @@ $(document).ready(function() {
 			}).fadeIn(250);
 			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
 				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
-				$(this).css("color","#009f98")
+				$(this).css("color","#0063b0")
 		}).fadeIn(250);
 	});
 
@@ -186,7 +186,7 @@ $(document).ready(function() {
 			}).fadeIn(250);
 			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
 				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
-				$(this).css("color","#009f98")
+				$(this).css("color","#0063b0")
 		}).fadeIn(250);
 	});
 
@@ -204,7 +204,7 @@ $(document).ready(function() {
 			}).fadeIn(250);
 			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
 				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
-				$(this).css("color","#009f98")
+				$(this).css("color","#0063b0")
 		}).fadeIn(250);
 	});
 	
