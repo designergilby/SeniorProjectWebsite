@@ -1372,29 +1372,13 @@ footer{
 		height: 1.5vw;
 		margin-bottom: 1vw;
 		background-color: #0063b0;
+		animation: none;
 	}
 
 	.decorateRectSmall{
 		width: 9vw;
 		height: 1.25vw;
-	}
-
-	@keyframes startGrowSmall{
-		0%{
-			width: 0vw;
-		}
-		100%{
-			width: 9vw;
-		}
-	}
-
-	@keyframes startGrow{
-		0%{
-			width: 0vw;
-		}
-		100%{
-			width: 23vw;
-		}
+		animation: none;
 	}
 
 	.heroTextCont{
@@ -1440,6 +1424,7 @@ footer{
 		margin-top: 1.5vw;
 		font-size: 4vw;
 		pointer-events:all;
+		margin-bottom: 5vw;
 	}
 
 	.heroImg{
