@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 486 486">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4 {
+        fill: #d26baa;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7 {
+        letter-spacing: .01em;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        font-family: TradeGothicNextSRPro-Bd, 'Trade Gothic Next SR Pro';
+        font-size: 8px;
+      }
+
+      .cls-5 {
+        fill: #4ebfa8;
+      }
+
+      .cls-13 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        fill: #f1729a;
+      }
+
+      .cls-14 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-16 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-8 {
+        fill: #5069b1;
+      }
+
+      .cls-9 {
+        fill: #47bdde;
+      }
+
+      .cls-10 {
+        fill: #85459b;
+      }
+
+      .cls-11 {
+        fill: #7fb53d;
+      }
+
+      .cls-12 {
+        fill: #00a45b;
+      }
+
+      .cls-17 {
+        fill: url(#radial-gradient-6);
+      }
+
+      .cls-18 {
+        fill: url(#radial-gradient-5);
+      }
+
+      .cls-19 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-20 {
+        fill: url(#radial-gradient-4);
+      }
+
+      .cls-21 {
+        fill: url(#radial-gradient-8);
+      }
+
+      .cls-22 {
+        fill: url(#radial-gradient-7);
+      }
+
+      .cls-23 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-24 {
+        letter-spacing: 0em;
+      }
+
+      .cls-25 {
+        letter-spacing: 0em;
+      }
+
+      .cls-26 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-27 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-1" d="m290.58,233.51c.25,8.96-7.18,16.63-11.8,23.38-4.34,6.35-11.53,16.15-27.85,16.96-13.4.67-20.57-6.15-26.68-14.25-8.6-11.4-11.42-13.71-11.42-25.11s8.7-18.93,15.74-26.3c7.19-7.53,16.32-8,27.68-8.04,7.51-.03,13.51,6.15,18.81,10.48,9.69,7.9,15.31,15.13,15.53,22.89ZM243,0C109.02,0,0,109.01,0,243s109.02,243,243,243,243-109.02,243-243S376.99,0,243,0Z"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="255.07" cy="235.93" fx="255.07" fy="235.93" r="198.39" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d26caa" stop-opacity="0"/>
+      <stop offset=".34" stop-color="#d26caa" stop-opacity="0"/>
+      <stop offset=".48" stop-color="#d26caa" stop-opacity=".04"/>
+      <stop offset=".59" stop-color="#d26caa" stop-opacity=".1"/>
+      <stop offset=".68" stop-color="#d26caa" stop-opacity=".19"/>
+      <stop offset=".75" stop-color="#d26caa" stop-opacity=".3"/>
+      <stop offset=".82" stop-color="#d26caa" stop-opacity=".43"/>
+      <stop offset=".89" stop-color="#d26caa" stop-opacity=".59"/>
+      <stop offset=".94" stop-color="#d26caa" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#d26caa" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#d26caa"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="251.91" cy="258.07" fx="251.91" fy="258.07" r="187.46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#85499c" stop-opacity="0"/>
+      <stop offset=".36" stop-color="#85499c" stop-opacity=".01"/>
+      <stop offset=".52" stop-color="#85499c" stop-opacity=".06"/>
+      <stop offset=".63" stop-color="#85499c" stop-opacity=".14"/>
+      <stop offset=".72" stop-color="#85499c" stop-opacity=".25"/>
+      <stop offset=".81" stop-color="#85499c" stop-opacity=".4"/>
+      <stop offset=".88" stop-color="#85499c" stop-opacity=".58"/>
+      <stop offset=".95" stop-color="#85499c" stop-opacity=".79"/>
+      <stop offset="1" stop-color="#85499c"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="257.44" cy="260.55" fx="376.17" fy="155.47" r="158.55" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#50c0a9" stop-opacity="0"/>
+      <stop offset=".39" stop-color="#50c0a9" stop-opacity="0"/>
+      <stop offset=".53" stop-color="#50c0a9" stop-opacity=".05"/>
+      <stop offset=".63" stop-color="#50c0a9" stop-opacity=".11"/>
+      <stop offset=".72" stop-color="#50c0a9" stop-opacity=".2"/>
+      <stop offset=".79" stop-color="#50c0a9" stop-opacity=".31"/>
+      <stop offset=".85" stop-color="#50c0a9" stop-opacity=".45"/>
+      <stop offset=".91" stop-color="#50c0a9" stop-opacity=".62"/>
+      <stop offset=".96" stop-color="#50c0a9" stop-opacity=".81"/>
+      <stop offset="1" stop-color="#50c0a9"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-4" cx="1685.55" cy="1310.98" fx="1685.55" fy="1310.98" r="165.86" gradientTransform="translate(2390.58 84.69) rotate(137.75)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#506ab2" stop-opacity="0"/>
+      <stop offset=".35" stop-color="#506ab2" stop-opacity=".01"/>
+      <stop offset=".5" stop-color="#506ab2" stop-opacity=".05"/>
+      <stop offset=".61" stop-color="#506ab2" stop-opacity=".12"/>
+      <stop offset=".7" stop-color="#506ab2" stop-opacity=".22"/>
+      <stop offset=".78" stop-color="#506ab2" stop-opacity=".35"/>
+      <stop offset=".85" stop-color="#506ab2" stop-opacity=".51"/>
+      <stop offset=".92" stop-color="#506ab2" stop-opacity=".7"/>
+      <stop offset=".98" stop-color="#506ab2" stop-opacity=".91"/>
+      <stop offset="1" stop-color="#506ab2"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-5" cx="128.2" cy="216.03" fx="128.2" fy="216.03" r="159.1" gradientTransform="translate(126.41 57.76) scale(.89)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#69cdea" stop-opacity="0"/>
+      <stop offset=".33" stop-color="#69cdea" stop-opacity="0"/>
+      <stop offset=".47" stop-color="#69cdea" stop-opacity=".04"/>
+      <stop offset=".57" stop-color="#69cdea" stop-opacity=".09"/>
+      <stop offset=".66" stop-color="#69cdea" stop-opacity=".17"/>
+      <stop offset=".73" stop-color="#69cdea" stop-opacity=".27"/>
+      <stop offset=".8" stop-color="#69cdea" stop-opacity=".39"/>
+      <stop offset=".86" stop-color="#69cdea" stop-opacity=".53"/>
+      <stop offset=".92" stop-color="#69cdea" stop-opacity=".7"/>
+      <stop offset=".97" stop-color="#69cdea" stop-opacity=".89"/>
+      <stop offset="1" stop-color="#69cdea"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-6" cx="148.47" cy="217.38" fx="148.47" fy="217.38" r="151.13" gradientTransform="translate(126.41 57.76) scale(.89)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00a45b" stop-opacity="0"/>
+      <stop offset=".36" stop-color="#00a45b" stop-opacity=".01"/>
+      <stop offset=".51" stop-color="#00a45b" stop-opacity=".06"/>
+      <stop offset=".62" stop-color="#00a45b" stop-opacity=".13"/>
+      <stop offset=".71" stop-color="#00a45b" stop-opacity=".24"/>
+      <stop offset=".8" stop-color="#00a45b" stop-opacity=".38"/>
+      <stop offset=".87" stop-color="#00a45b" stop-opacity=".55"/>
+      <stop offset=".93" stop-color="#00a45b" stop-opacity=".76"/>
+      <stop offset=".99" stop-color="#00a45b" stop-opacity=".99"/>
+      <stop offset="1" stop-color="#00a45b"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-7" cx="263.79" cy="244.25" fx="263.79" fy="244.25" r="135.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9aca42" stop-opacity="0"/>
+      <stop offset=".34" stop-color="#9aca42" stop-opacity=".01"/>
+      <stop offset=".48" stop-color="#9aca42" stop-opacity=".05"/>
+      <stop offset=".59" stop-color="#9aca42" stop-opacity=".11"/>
+      <stop offset=".68" stop-color="#9aca42" stop-opacity=".2"/>
+      <stop offset=".76" stop-color="#9aca42" stop-opacity=".31"/>
+      <stop offset=".83" stop-color="#9aca42" stop-opacity=".45"/>
+      <stop offset=".89" stop-color="#9aca42" stop-opacity=".62"/>
+      <stop offset=".95" stop-color="#9aca42" stop-opacity=".81"/>
+      <stop offset="1" stop-color="#9aca42"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-8" cx="264.95" cy="244.34" fx="264.95" fy="244.34" r="118.27" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ef739a" stop-opacity=".1"/>
+      <stop offset=".04" stop-color="#ef739a" stop-opacity=".1"/>
+      <stop offset=".32" stop-color="#ef739a" stop-opacity=".11"/>
+      <stop offset=".46" stop-color="#ef739a" stop-opacity=".14"/>
+      <stop offset=".57" stop-color="#ef739a" stop-opacity=".2"/>
+      <stop offset=".66" stop-color="#ef739a" stop-opacity=".27"/>
+      <stop offset=".74" stop-color="#ef739a" stop-opacity=".37"/>
+      <stop offset=".81" stop-color="#ef739a" stop-opacity=".5"/>
+      <stop offset=".88" stop-color="#ef739a" stop-opacity=".65"/>
+      <stop offset=".94" stop-color="#ef739a" stop-opacity=".81"/>
+      <stop offset="1" stop-color="#ef739a"/>
+    </radialGradient>
+  </defs>
+  <g id="FRONT_GRAPHIC" data-name="FRONT GRAPHIC">
+    <g id="GRAPHIC">
+      <g class="cls-15">
+        <g id="BUBBLES">
+          <g id="PHYS">
+            <path class="cls-27" d="m426.2,271.82c-8.48,11.54-16.22,32.67-17.19,46.95l-3.22,47.14c-.98,14.29-13.39,27.53-27.58,29.43l-34.17,4.57c-14.19,1.9-35.21,10.44-46.71,18.97l-22.08,16.39c-11.5,8.53-30.81,9.26-42.92,1.62l-88.83-56.06c-12.11-7.64-27.17-24.42-33.47-37.28l-39.9-81.49c-6.3-12.86-7.02-34.23-1.6-47.48l36.11-88.4c5.42-13.26,19.99-29.96,32.39-37.12l91.71-52.97c12.4-7.16,33.37-8.55,46.6-3.07l104.55,43.23c13.23,5.47,27.55,21.13,31.81,34.8l31.76,101.91c4.26,13.67.81,34.3-7.67,45.84l-9.57,13.03Z"/>
+          </g>
+          <g id="INTELL">
+            <path class="cls-23" d="m366.26,308.5c-11.94,7.9-29.13,23.44-38.19,34.52l-60.43,73.93c-9.06,11.09-24.98,12.09-35.37,2.24l-63.71-60.44c-10.39-9.86-27.65-25.7-38.36-35.2l-75.72-67.23c-10.71-9.51-10.24-24.5,1.04-33.33l35.34-27.64c11.28-8.82,18.9-27.64,16.93-41.83l-5.75-41.48c-1.97-14.18,7.74-22.74,21.56-19.01l29.45,7.94c13.83,3.73,32.56,8.19,41.63,9.91,9.07,1.72,25.39-2.51,36.26-9.4,10.87-6.89,31.46-11.95,45.76-11.23l89.77,4.5c14.3.72,31.24,11.78,37.65,24.59l50.04,100.02c6.41,12.81,1.88,29.75-10.06,37.65l-77.85,51.51Z"/>
+          </g>
+          <g id="FINAN">
+            <path class="cls-19" d="m234.49,116.53c12.54-6.92,34.5-13.2,48.8-13.97l82.4-4.43c14.3-.77,28.09,10.13,30.64,24.22l15.02,82.93c2.55,14.09-2.5,34.91-11.22,46.27l-37.21,48.47c-8.72,11.36-23.69,29.36-33.27,40.01l-61.84,68.75c-9.58,10.65-28.81,16.64-42.74,13.31l-101.43-24.21c-13.93-3.32-23.04-17.54-20.24-31.58l21.86-109.85c2.8-14.04,9.55-36.36,15.01-49.6l10.55-25.57c5.46-13.24,20.19-29.72,32.73-36.64l50.94-28.1Z"/>
+          </g>
+          <g id="EMO">
+            <path class="cls-20" d="m221.64,402.26c12.85,6.33,34.65,8.39,48.46,4.59l91.95-25.34c13.8-3.8,27.05-18.47,29.44-32.59l2.14-12.64c2.39-14.12,3.8-33.71,3.13-43.55s7.78-25.39,18.77-34.57l3.14-2.63c10.99-9.18,13.77-26.63,6.19-38.78l-10.91-17.47c-7.58-12.15-19.19-32.48-25.78-45.19l-5.45-10.51c-6.6-12.71-23.52-25.17-37.62-27.7l-16.65-2.98c-14.1-2.52-33.61-13.17-43.36-23.65l-16.02-17.21c-9.76-10.48-25.35-10.15-34.66.73l-14.76,17.26c-9.31,10.88-28.45,21.87-42.54,24.41l-17.75,3.2c-14.09,2.54-28.7,15.93-32.45,29.74l-4.6,16.93c-3.76,13.82-15.68,32.8-26.5,42.18l-17.46,15.14c-10.82,9.38-10.7,24.6.25,33.82l8.96,7.54c10.96,9.22,24.29,27.63,29.64,40.92l13.81,34.33c5.35,13.28,20.23,29.33,33.08,35.66l57.57,28.35Z"/>
+          </g>
+          <g id="OCCU">
+            <path class="cls-18" d="m390.42,214.46c4.8,13.49.96,33.29-8.54,44.01l-26.94,30.38c-9.5,10.71-25.75,27.57-36.1,37.46l-47.43,45.27c-10.36,9.89-28.09,10.79-39.4,2.02l-9.65-7.49c-11.31-8.78-31.45-17.32-44.75-18.98s-30.94-12.59-39.21-24.28l-44.46-62.89c-8.27-11.69-7.46-30.2,1.79-41.13l45.44-53.69c9.25-10.93,28.15-16.89,41.99-13.24l2.16.57c13.85,3.65,33.24-1.86,43.11-12.24l3.53-3.72c9.86-10.38,29.59-17.76,43.85-16.39l57.98,5.57c14.25,1.37,29.84,13.53,34.65,27.02l21.99,61.78Z"/>
+          </g>
+          <g id="SPIRIT">
+            <path class="cls-17" d="m390.18,208.14c7.45,12.23,10.95,33.66,7.78,47.62l-18.23,80.21c-3.17,13.96-17.34,27.22-31.48,29.45l-80.8,12.76c-14.14,2.23-33.28-4.89-42.52-15.82l-6.38-7.55c-9.24-10.94-27.51-23.8-40.6-28.57-13.09-4.78-29.46-18.94-36.39-31.47l-17.78-32.17c-6.93-12.53-8.2-33.65-2.83-46.92l19.89-49.17c5.37-13.27,21.32-22.19,35.44-19.82l4.39.74c14.12,2.37,34.52-2.93,45.32-11.78,10.8-8.85,31.19-14.1,45.3-11.66l49.91,8.62c14.11,2.44,31.75,14.43,39.2,26.66l29.78,48.89Z"/>
+          </g>
+          <g id="ENVIRON">
+            <path class="cls-22" d="m378.32,223.37c11.46,8.59,13.01,24.35,3.46,35.01l-5.16,5.76c-9.55,10.67-18.3,30.72-19.44,44.55s-13.75,26.14-28.02,27.34l-13.22,1.11c-14.27,1.2-32,12.21-39.4,24.47l-11.77,19.5c-7.4,12.26-19.1,12.02-25.99-.53l-13.28-24.18c-6.89-12.55-20.83-26.55-30.96-31.11s-19.32-19.91-20.4-34.11c-1.09-14.2-11.65-31.97-23.47-39.48s-14.66-23.18-6.3-34.81l2.13-2.97c8.36-11.63,13.05-32.66,10.42-46.74l-.83-4.43c-2.62-14.08,5.82-30.61,18.75-36.74l52.4-24.83c12.94-6.13,30.96-2.09,40.05,8.97l4.59,5.6c9.09,11.07,27.94,22.73,41.9,25.93l2.51.57c13.96,3.19,27.89,17.25,30.96,31.23l1.4,6.36c3.07,13.99,14.95,32.46,26.41,41.05l3.28,2.46Z"/>
+          </g>
+          <g id="SOCIAL">
+            <path class="cls-21" d="m367.61,228.7c10.81,9.39,9.47,22.86-2.98,29.94l-8.18,4.65c-12.45,7.07-20.96,22.61-18.92,34.51s-7.01,23.13-20.12,24.93-31.01,12.54-39.78,23.87l-10.96,14.15c-8.77,11.32-24.76,12.88-35.55,3.46l-38.68-33.8c-10.78-9.42-19.63-26.71-19.66-38.43s-5.04-28.53-11.14-37.37-8.43-27.48-5.17-41.43l9.6-41.14c3.25-13.94,16.67-30,29.81-35.68l36.18-15.64c13.14-5.68,30.79-.98,39.21,10.44s26.99,19.95,41.28,18.95l3.15-.22c14.28-1,25.98,9.89,25.98,24.21v6.04c0,14.32,8.86,33.72,19.66,43.11l6.27,5.45Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="COLOR_AREAS" data-name="COLOR AREAS">
+      <text class="cls-4" transform="translate(231.18 16.76)"><tspan x="0" y="0">PHYSICAL</tspan></text>
+      <text class="cls-8" transform="translate(390.07 65.31) rotate(45)"><tspan class="cls-7" x="0" y="0">EM</tspan><tspan class="cls-13" x="11.68" y="0">O</tspan><tspan class="cls-24" x="17.06" y="0">TIONAL</tspan></text>
+      <text class="cls-10" transform="translate(470.56 209.02) rotate(90)"><tspan class="cls-7" x="0" y="0">INTELLECT</tspan><tspan class="cls-3" x="40.99" y="0">U</tspan><tspan class="cls-7" x="46.65" y="0">AL</tspan></text>
+      <text class="cls-12" transform="translate(420.11 378.94) rotate(135)"><tspan class="cls-7" x="0" y="0">SPIRIT</tspan><tspan class="cls-2" x="24.95" y="0">U</tspan><tspan class="cls-7" x="30.61" y="0">AL</tspan></text>
+      <text class="cls-6" transform="translate(261.82 457.72) rotate(-180)"><tspan x="0" y="0">SOCIAL</tspan></text>
+      <text class="cls-5" transform="translate(108.78 407.65) rotate(-135)"><tspan x="0" y="0">FINANCIAL</tspan></text>
+      <text class="cls-9" transform="translate(29.63 266.81) rotate(-90)"><tspan class="cls-7" x="0" y="0">OCCU</tspan><tspan class="cls-14" x="21.88" y="0">P</tspan><tspan class="cls-26" x="26.64" y="0">A</tspan><tspan class="cls-25" x="31.42" y="0">TIONAL</tspan></text>
+      <text class="cls-11" transform="translate(70.94 104.65) rotate(-45)"><tspan class="cls-7" x="0" y="0">ENVIRONMEN</tspan><tspan class="cls-16" x="52.67" y="0">T</tspan><tspan class="cls-7" x="56.74" y="0">AL</tspan></text>
+    </g>
+  </g>
+</svg>
