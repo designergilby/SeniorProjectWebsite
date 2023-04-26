@@ -1368,11 +1368,24 @@ footer{
 	}
 
 	.decorateRect{
-		width: 35vw;
-		height: 2vw;
-		margin-bottom: 2.5vw;
+		width: 23vw;
+		height: 1.5vw;
+		margin-bottom: 1vw;
 		background-color: #0063b0;
-		animation: startGrow 1s ease-in-out;
+	}
+
+	.decorateRectSmall{
+		width: 9vw;
+		height: 1.25vw;
+	}
+
+	@keyframes startGrowSmall{
+		0%{
+			width: 0vw;
+		}
+		100%{
+			width: 9vw;
+		}
 	}
 
 	@keyframes startGrow{
@@ -1380,7 +1393,7 @@ footer{
 			width: 0vw;
 		}
 		100%{
-			width: 35vw;
+			width: 23vw;
 		}
 	}
 
@@ -1397,7 +1410,7 @@ footer{
 	.heroTitle{
 		font-size: 12vw;
 		font-weight: 800;
-		margin-bottom: 8vw;
+		margin-bottom: 5vw;
 	}
 
 	.heroTime{
@@ -1482,14 +1495,6 @@ footer{
 	.wellnessCopy{
 		font-size: 3.75vw;
 		line-height: 4.5vw;
-	}
-
-	.decorateRectW{
-		width: 35vw;
-		height: 2vw;
-		margin-bottom: 3vw;
-		background-color: #0063b0;
-		animation: startGrow 1s ease-in-out;
 	}
 
 	@keyframes startGrow{
