@@ -35,7 +35,7 @@ section{
 /* ---------------- BACKGROUND EFFECT ---------------- */
 
 .background{
-	background: linear-gradient(112.02deg, #b3bbfd 5.64%, #ffd1e9 47.83%, #e2f2fc 96.3%);
+	background: linear-gradient(112.02deg, #b3bbfd 5.64%, #fae0ee 47.83%, #e2f2fc 96.3%);
 	opacity: 100%;
 	background-size: 400% 400%;
 	position:fixed;
