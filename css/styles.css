@@ -424,13 +424,13 @@ section{
 }
 
 .heroImg2{
-	height: 55vw;
-	width: 55vw;
+	height: 50vw;
+	width: 50vw;
 	right: 4vw;
 	position: absolute;
 	opacity: 0;
 	top: 50%;
-	margin-top: -27.5vw;
+	margin-top: -25vw;
 	z-index: 10;
 }
 
