@@ -36,7 +36,7 @@ section{
 
 .background{
 	background: linear-gradient(112.02deg, #b3bbfd 5.64%, #ffbddf 47.83%, #EBF1F5 96.3%);
-	opacity: 50%;
+	opacity: 100%;
 	background-size: 400% 400%;
 	position:fixed;
 	top:0;
@@ -61,34 +61,16 @@ section{
 	
 }
 
-.background::before{
-	position: absolute;
-	background: radial-gradient(
-		150vw circle at var(--mouse-x) var(--mouse-y),
-		#ffb0f1,
-		transparent 60%
-	);
-	content: "";
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top:0;
-	width: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: opacity 500ms;
-}
-
-.background:hover::before{
-	opacity: 1;
-}
-
 /* ---------------- FEATURE AREA 1 ---------------- */
 
 .feature1, .feature2{
-	height: 100vh;
+	min-height: 100vh;
 	color: #0063b0;
 	z-index: 5;
+}
+
+.feature1{
+	overflow: hidden;
 }
 
 .revealedContent{
@@ -99,37 +81,175 @@ section{
 /* Hero Image */
 
 .heroImg{
-	height: 75vh;
+	height: 50vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	text-align: center;
+	position: absolute; 
+	right: 5vw;
+	width: 50vw;
+	top: 50%;
+	margin-top: -25vw;
 }
 
 .heroSVG{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	cursor: pointer;
-	transition: 250ms;
+	
 }
 
-.heroSVG:hover{
-	width: 110%;
-	height: 110%;
-}
-
-#PHYS, #FINAN, #OCCU, #ENVIRON {
-	animation: breathe1 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+#PHYS{
+	/* backmost */
+	animation: physMove 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
 	transform-origin: center;
 }
 
-#INTELL, #EMO, #SPIRIT, #SOCIAL {
-	animation: breathe2 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+@keyframes physMove{
+	0%, 100%{
+		scale: 100%;
+		opacity: 100%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 98%;
+		opacity: 95%;
+		rotation: 0deg;
+	}
+}
+
+
+
+#INTELL{
+	animation: intellMove 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
 	transform-origin: center;
 }
 
+@keyframes intellMove{
+	0%, 100%{
+		scale: 100%;
+		opacity: 100%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 96%;
+		opacity: 95%;
+		rotation: 0deg;
+	}
+}
+#FINAN{
+	animation: finanMove 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+	transform-origin: center;
+}
+
+@keyframes finanMove{
+	0%, 100%{
+		scale: 100%;
+		opacity: 100%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 94%;
+		opacity: 95%;
+		rotation: 0deg;
+	}
+}
+#EMO{
+	animation: emoMove 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+	transform-origin: center;
+}
+
+@keyframes emoMove{
+	0%, 100%{
+		scale: 100%;
+		opacity: 100%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 92%;
+		opacity: 95%;
+		rotation: 0deg;
+	}
+}
+#OCCU{
+	animation: occuMove 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+	transform-origin: center;
+}
+
+@keyframes occuMove{
+	0%, 100%{
+		scale: 100%;
+		opacity: 100%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 90%;
+		opacity: 95%;
+		rotation: 0deg;
+	}
+}
+
+#SPIRIT{
+	animation: spiritMove 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+	transform-origin: center;
+}
+
+@keyframes spiritMove{
+	0%, 100%{
+		scale: 100%;
+		opacity: 100%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 88%;
+		opacity: 95%;
+		rotation: 0deg;
+	}
+}
+#ENVIRON{
+	animation: environMove 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+	transform-origin: center;
+}
+
+@keyframes environMove{
+	0%, 100%{
+		scale: 100%;
+		opacity: 100%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 86%;
+		opacity: 95%;
+		rotation: 0deg;
+	}
+}
+#SOCIAL{
+	animation: socialMove 7s infinite cubic-bezier(0.325, 0.485, 0.715, 0.485);
+	transform-origin: center;
+}
+
+@keyframes socialMove{
+	0%, 100%{
+		scale: 100%;
+		opacity: 100%;
+		rotation: 2deg;
+	}
+
+	50%{
+		scale: 84%;
+		opacity: 95%;
+		rotation: 0deg;
+	}
+}
 .transitionText{
 	position: absolute;
 	font-size: 1vw;
@@ -171,22 +291,66 @@ section{
 	}
 }
 
+.advanceFeature{
+	width: 20vw;
+	height: 4vw;
+	text-align: center;
+	font-size: 1vw;
+	font-weight: 800;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1.9vw;
+	margin-left: -9.3vw;
+	z-index: 5;
+	transition: 250ms;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.advanceFeature:hover{
+	color:#009f98;
+	opacity: 1;
+}
+
 /* Hero Text */
 
 .heroTextCont{
-	width: 65.6442%;
-	margin-left:17.1779%;
-	margin-top: auto;
-	margin-bottom: auto;
+	width: 50%;
 	position: absolute;
-	bottom: 2.5vw;
+	bottom: 5vh;
+	
 }
 
 .decorateRect{
 	width: 10vw;
-	height: 1vw;
+	height: 0.8vw;
 	background-color: #0063b0;
 	animation: startGrow 1s ease-in-out;
+}
+
+.decorateRectSmall{
+	width: 5.5vw;
+	height: 0.75vw;
+	background-color: #0063b0;
+	animation: startGrowSmall 1s ease-in-out;
+	margin-bottom: 0.75vw;
+}
+
+.heroInfo{
+	margin-top: 2vw;
+	margin-bottom: 2.5vw;
+}
+
+.heroInfo h1{
+	font-size: 2.5vw;
+	margin-bottom: 0.75vw;
+	font-weight: 700;
+}
+
+.heroInfo h2{
+	font-size: 1.25vw;
+	margin-bottom: 0.5vw;
 }
 
 @keyframes startGrow{
@@ -198,8 +362,17 @@ section{
 	}
 }
 
+@keyframes startGrowSmall{
+	0%{
+		width: 0vw;
+	}
+	100%{
+		width: 5.5vw;
+	}
+}
+
 .heroTitle{
-	font-size: 5vw;
+	font-size: 3.5vw;
 	font-weight: 800;
 	margin-bottom: 3vw;
 }
@@ -211,8 +384,8 @@ section{
 }
 
 .heroInfo1, .heroInfo2{
-	font-size: 1.75vw;
-	line-height: 1.75vw;
+	font-size: 1.5vw;
+	line-height: 1.5vw;
 	font-weight: bold;
 }
 
@@ -227,6 +400,7 @@ section{
 .feature2{
 	overflow: hidden;
 	color: #009f98;
+	border-bottom: solid 1vw #0063b0;
 }
 
 .decorateRectW{
@@ -237,11 +411,9 @@ section{
 }
 
 .heroTextContW{
-	width: 65.6442%;
-	margin-left:17.1779%;
+	width: 60%;
 	margin-top: auto;
 	margin-bottom: auto;
-	margin-top: 5vw;
 	position: absolute;
 	bottom: 5vh;
 }
@@ -253,34 +425,39 @@ section{
 }
 
 .wellnessCopy{
-	font-size: 1.5vw;
+	font-size: 1.25vw;
 	margin-top: 1vw;
-	line-height: 2vw;
+	line-height: 1.5vw;
 }
 
 .heroImg2{
-	height: 30vw;
-	width: 30vw;
-	left: 50%;
-	margin-left: -17.5vw;
+	height: 55vw;
+	width: 55vw;
+	right: 4vw;
 	position: absolute;
 	opacity: 0;
-	margin-top: 3vh;
+	top: 50%;
+	margin-top: -27.5vw;
+	z-index: 10;
 }
 
 .heroSVG2{
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	
+	width: 70%;
+	height: 70%;
+	top: 15%;
+	left: 15%;
+	animation: pulse 5s infinite;
 }
 
-.physW{
-	animation: pulseW1 5s infinite;
-	transform-origin: center;
+.dimensionNames{
+	position: absolute;
+	top: 6%;
+	z-index: 10;
+	pointer-events: none;
 }
 
-@keyframes pulseW1{
+@keyframes pulse{
 	0%, 100%{
 		scale: 100%;
 	}
@@ -289,147 +466,41 @@ section{
 	}
 }
 
-.emoW{
-	animation: pulseW2 5s infinite;
+.physW, .environW, .finanW, .socialW, .spiritW, .intelW, .emoW, .occW{
+	transition: 250ms;
+	scale: 95%;
 	transform-origin: center;
-}
-
-@keyframes pulseW2{
-	0%, 100%{
-		scale: 100%;
-	}
-	50%{
-		scale: 97%;
-	}
-}
-
-.intelW{
-	animation: pulseW3 5s infinite;
-	transform-origin: center;
-}
-
-@keyframes pulseW3{
-	0%, 100%{
-		scale: 100%;
-	}
-	50%{
-		scale: 97%;
-	}
-}
-
-.spiritW{
-	animation: pulseW4 5s infinite;
-	transform-origin: center;
-}
-
-@keyframes pulseW4{
-	0%, 100%{
-		scale: 100%;
-	}
-	50%{
-		scale: 97%;
-	}
-}
-
-.socialW{
-	animation: pulseW5 5s infinite;
-	transform-origin: center;
-}
-
-@keyframes pulseW5{
-	0%, 100%{
-		scale: 100%;
-	}
-	50%{
-		scale: 97%;
-	}
-}
-
-.finanW{
-	animation: pulseW6 5s infinite;
-	transform-origin: center;
-}
-
-@keyframes pulseW6{
-	0%, 100%{
-		scale: 100%;
-	}
-	50%{
-		scale: 97%;
-	}
-}
-
-.occW{
-	animation: pulseW7 5s infinite;
-	transform-origin: center;
-}
-
-@keyframes pulseW7{
-	0%, 100%{
-		scale: 100%;
-	}
-	50%{
-		scale: 97%;
-	}
-}
-
-.environW{
-	animation: pulseW8 5s infinite;
-	transform-origin: center;
-}
-
-@keyframes pulseW8{
-	0%, 100%{
-		scale: 100%;
-	}
-	50%{
-		scale: 97%;
-	}
-}
-
-.placeHolder{
-	height: 100vh;
-}
-
-.arrowCont{
-	margin-top: 2vw;
-	display: none;
-}
-
-.viewSorter{
-	font-weight: 800;
-	font-size: 1.25vw;
 	cursor: pointer;
-	text-decoration: none;
-	color: #0063b0;
 }
 
-.exploreWellness{
-	text-align: center;
+.physW:hover, .environW:hover, .finanW:hover, .socialW:hover, .spiritW:hover, .intelW:hover, .emoW:hover, .occW:hover{
+	scale: 100%;
+}
+
+.viewAllProjectsBelow{
 	margin-top: 2vw;
 	font-weight: 800;
 	font-size: 2vw;
-	cursor: pointer;
+	color:#009f98;
+	cursor:pointer;
 	transition: 250ms;
 }
 
-.exploreWellness:hover{
+.viewAllProjectsBelow:hover{
 	font-size: 2.2vw;
 }
 
-.arrowLeft, .arrowRight{
-	width: 1.25vw;
-	height: 1.25vw;
-	cursor:pointer;
+.downarrow{
+	width: 1.5vw;
+	height: 1.5vw;
 }
-
 
 
 
 /* ---------------- sorted ---------------- */
 
 .sortedProjects{
-	background-color: grey;
+	/* background-color: grey; */
 }
 
 .sortedIcon{
@@ -456,9 +527,8 @@ section{
 	margin-right:auto;
 }
 
-#viewAllProjects{
-	border-top:solid 2vw #0063b0;
-	border-bottom: solid 2vw #0063b0;
+#viewAllProjects .container{
+	border-bottom: solid 1vw #0063b0;
 }
 
 .photoHolder{
@@ -840,11 +910,14 @@ section{
 
 	}
 
-.physical, .emotional, .intellectual, .social, .financial, .occupational, .environmental{
+/* .physical, .emotional, .intellectual, .social, .financial, .occupational, .environmental{
 	display: none;
+} */
+
+.sortCont{
+	border-bottom: #0063b0 1vw solid;
+	margin-top: 10vw;
 }
-
-
 /* footer{
 	z-index: 99;
 } */
@@ -1301,10 +1374,6 @@ footer{
 		display: block;
 	}
 
-	.heroSVG{
-		transition: none;
-	}
-
 	.decorateRect{
 		width: 35vw;
 		height: 2vw;
@@ -1328,7 +1397,7 @@ footer{
 		width: 80%;
 		margin-left: 0;
 		position: absolute;
-		bottom: 0;
+		top: 90vw;
 		
 	}
 
@@ -1349,6 +1418,17 @@ footer{
 		line-height: 6vw;
 		font-weight: bold;
 	}
+
+	.heroInfo h1{
+		font-size: 5vw;
+		margin-bottom: 1vw;
+		font-weight: 700;
+	}
+	
+	.heroInfo h2{
+		font-size: 3vw;
+		margin-bottom: 1vw;
+	}
 	
 	.heroInfo3{
 		margin-top: 1.5vw;
@@ -1357,22 +1437,43 @@ footer{
 	}
 
 	.heroImg{
-		height: 50vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
+		height: 90vw;
+		width: 90vw;
+		position: absolute;
+		top: 25vw;
+		left: 3vw;
+	}
+
+	.advanceFeature{
+		width: 20vw;
+		height: 4vw;
 		text-align: center;
+		font-size: 3vw;
+		font-weight: 800;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -8.5vw;
+		margin-top: -4.5vw;
+	
+		z-index: 5;
+		transition: 250ms;
+		cursor: pointer;
 	}
 
 	/* ---------- FEATURE 2 ----------- */
+
+	.feature2{
+		height: auto;
+	}
+	
 
 	.heroTextContW{
 		margin-bottom: 5vw;
 		width: 85%;
 		margin-left: 0;
-		position: absolute;
-		bottom: 0;
+		position: relative;
+		margin-top: 105vw;
 		
 	}
 
@@ -1381,7 +1482,7 @@ footer{
 	}
 
 	.wellnessTitle{
-		font-size: 11vw;
+		font-size: 10vw;
 		margin-bottom: 6vw;
 	}
 
@@ -1407,38 +1508,29 @@ footer{
 		}
 	}
 
-	.exploreWellness{
-		text-align: center;
-		margin-top: 6vw;
-		font-weight: 800;
-		font-size: 6vw;
-	}
-
 	.heroImg2{
-		height: 80vw;
-		width: 80vw;
+		height: 90vw;
+		width: 90vw;
 		left: 50%;
-		margin-left: -40vw;
+		margin-left: -45vw;
 		position: absolute;
-		opacity: 0;
-		margin-top: 3vh;
+		margin-top: 1vh;
+		top: 0;
 	}
 
-	.arrowCont{
-		margin-top: 7vw;
-		display: none;
+	.viewProjectsCont{
+		margin-top: 2.5vh;
 	}
 
-	.arrowLeft, .arrowRight{
-		width: 8vw;
-		height: 8vw;
-	}
 
-	.viewSorter{
-		font-weight: 800;
+	.viewAllProjectsBelow{
 		font-size: 5vw;
-		line-height: 5vw;
-		margin-top: 1vw;
+		transition: none;
+		margin-top: 5vh;
+	}
+
+	.viewAllProjectsBelow:hover{
+		font-size: 5vw;
 	}
 
 	/* ================================================== CHAR =================================================== */

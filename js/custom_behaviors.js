@@ -3,12 +3,10 @@
 $(document).ready(function() {
 					
 	// VARIABLES
-	var dimension = 1;
-	var whichArrow = 0;
 	
 	// EVENT HANDLERS
 
-	$(".heroSVG").on("click", function(event){
+	$(".advanceFeature").on("click", function(event){
 		event.preventDefault();
 		$(".feature1").fadeOut(1000, function(){
 			$(".revealedContent").fadeIn(1000);
@@ -18,286 +16,198 @@ $(document).ready(function() {
 		}, 2000)
 	})
 
-	$(".exploreWellness").on("click", function(event){
-		event.preventDefault();
-		$(".heroImg2").animate({
-			"width":"60vw",
-			"height":"60vw",
-			"margin-left":"-30vw",
-			"top":"-30vw"
-		}, 1000)
-		$(".heroTextContW").animate({
-			"top":"60vh"
-		}, 1000)
-		$(".physW").animate({
-			"scale":"120%"
-		})
-		$(".exploreWellness").fadeOut(500, function(){
-			$(".arrowCont").css("display","flex")
-			$(".wellnessCopy").css("color","#007db6")
-		})
-		$(".decorateRectW").animate({
-			"opacity":"0"
-		}, 1000)
-		$(".social").fadeIn(1000);
+	$(".viewAllProjectsBelow").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $("#viewAllProjects").offset().top
+		}, 1000);
+	});
 
-		countStep()
+	$(".physW").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".physical").offset().top
+		}, 1000);
+	});
 
-		
+	$(".emoW").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".emotional").offset().top
+		}, 1000);
+	});
 
+	$(".intelW").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".intellectual").offset().top
+		}, 1000);
+	});
 
-	})
+	$(".socialW").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".social").offset().top
+		}, 1000);
+	});
 
-	$(".arrowRight").on("click", function(event){
-		event.preventDefault();
-		if(dimension == 8){
-			dimension = 1;
-		}
-		else{
-			dimension++;
-		}
-		console.log(dimension)
+	$(".finanW").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".financial").offset().top
+		}, 1000);
+	});
 
-		whichArrow = 1;
+	$(".occW").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".occupational").offset().top
+		}, 1000);
+	});
 
-		countStep()
-	})
+	$(".environW").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".environmental").offset().top
+		}, 1000);
+	});
 
-	$(".arrowLeft").on("click", function(event){
-		event.preventDefault();
-		if(dimension == 1){
-			dimension = 8;
-		}
-		else{
-			dimension--;
-		}
+	$(".physW").hover(function(){
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("Physical wellness encourages people to choose what feels good, create a balanced routine, and listen to one’s bodily needs. Design for physical wellness should be adaptable, functional, and tangible.")
+		}).fadeIn(250);
+		$(".wellnessTitle").stop(true, false).fadeOut(250,function() {
+			$(this).text("PHYSICAL")
+			$(this).css("color","#ee739b")
+		}).fadeIn(250);
+	}, function() {
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("We are experiencing unprecedented economic, social, and environmental shifts that motivate us to become wellness-seekers. We aim to heal and guide users through adaptive and responsive brand archetypes, all while utilizing the eight dimensions of wellness.")
+			}).fadeIn(250);
+			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
+				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
+				$(this).css("color","#009f98")
+		}).fadeIn(250);
+	});
 
-		whichArrow = 2;
+	$(".emoW").hover(function(){
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("Emotional wellness inspires caring for oneself, adapting to difficult times, relaxation, and stress management. Design for emotional wellness should be interpretable, inclusive, responsive, and personalized.")
+		}).fadeIn(250);
+		$(".wellnessTitle").stop(true, false).fadeOut(250,function() {
+			$(this).text("EMOTIONAL")
+			$(this).css("color","#4f6ab2")
+		}).fadeIn(250);
+	}, function() {
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("We are experiencing unprecedented economic, social, and environmental shifts that motivate us to become wellness-seekers. We aim to heal and guide users through adaptive and responsive brand archetypes, all while utilizing the eight dimensions of wellness.")
+			}).fadeIn(250);
+			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
+				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
+				$(this).css("color","#009f98")
+		}).fadeIn(250);
+	});
 
-		countStep()
+	$(".intelW").hover(function(){
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("Intellectual wellness encourages learning and open-mindedness, as well as engaging in mentally stimulating activities and exploring new ideas. Design for intellectual wellness should be reasonable, understandable, and interactive.")
+		}).fadeIn(250);
+		$(".wellnessTitle").stop(true, false).fadeOut(250,function() {
+			$(this).text("INTELLECTUAL")
+			$(this).css("color","#85459b")
+		}).fadeIn(250);
+	}, function() {
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("We are experiencing unprecedented economic, social, and environmental shifts that motivate us to become wellness-seekers. We aim to heal and guide users through adaptive and responsive brand archetypes, all while utilizing the eight dimensions of wellness.")
+			}).fadeIn(250);
+			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
+				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
+				$(this).css("color","#009f98")
+		}).fadeIn(250);
+	});
 
+	$(".spiritW").hover(function(){
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("Spiritual wellness allows us to be in tune with our spiritual selves and to discover our individual beliefs and values in this world. Design for spiritual wellness should be ethical, equitable, ritualistic, and transcendental.")
+		}).fadeIn(250);
+		$(".wellnessTitle").stop(true, false).fadeOut(250,function() {
+			$(this).text("SPIRITUAL")
+			$(this).css("color","#00a45b")
+		}).fadeIn(250);
+	}, function() {
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("We are experiencing unprecedented economic, social, and environmental shifts that motivate us to become wellness-seekers. We aim to heal and guide users through adaptive and responsive brand archetypes, all while utilizing the eight dimensions of wellness.")
+			}).fadeIn(250);
+			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
+				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
+				$(this).css("color","#009f98")
+		}).fadeIn(250);
+	});
 
-	})
+	$(".socialW").hover(function(){
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("Social wellness is related to our personal relationships and how we interact with others in public and private spaces. Design for social wellness should be influential, communal, and connectible.")
+		}).fadeIn(250);
+		$(".wellnessTitle").stop(true, false).fadeOut(250,function() {
+			$(this).text("SOCIAL")
+			$(this).css("color","#ee739b")
+		}).fadeIn(250);
+	}, function() {
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("We are experiencing unprecedented economic, social, and environmental shifts that motivate us to become wellness-seekers. We aim to heal and guide users through adaptive and responsive brand archetypes, all while utilizing the eight dimensions of wellness.")
+			}).fadeIn(250);
+			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
+				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
+				$(this).css("color","#009f98")
+		}).fadeIn(250);
+	});
+
+	$(".finanW").hover(function(){
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("Financial wellness focuses on knowing monetary processes and resources while understanding your own financial situation and prospects. Design for financial wellness should be affordable, secure, and resourceful.")
+		}).fadeIn(250);
+		$(".wellnessTitle").stop(true, false).fadeOut(250,function() {
+			$(this).text("FINANCIAL")
+			$(this).css("color","#51c0aa")
+		}).fadeIn(250);
+	}, function() {
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("We are experiencing unprecedented economic, social, and environmental shifts that motivate us to become wellness-seekers. We aim to heal and guide users through adaptive and responsive brand archetypes, all while utilizing the eight dimensions of wellness.")
+			}).fadeIn(250);
+			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
+				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
+				$(this).css("color","#009f98")
+		}).fadeIn(250);
+	});
+
+	$(".occW").hover(function(){
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("Occupational wellness inspires one to prepare for work that they love. Participation reflects personal interests, values, and beliefs. Design for occupational wellness should be learnable, practical, and inventive.")
+		}).fadeIn(250);
+		$(".wellnessTitle").stop(true, false).fadeOut(250,function() {
+			$(this).text("OCCUPATIONAL")
+			$(this).css("color","#6acdea")
+		}).fadeIn(250);
+	}, function() {
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("We are experiencing unprecedented economic, social, and environmental shifts that motivate us to become wellness-seekers. We aim to heal and guide users through adaptive and responsive brand archetypes, all while utilizing the eight dimensions of wellness.")
+			}).fadeIn(250);
+			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
+				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
+				$(this).css("color","#009f98")
+		}).fadeIn(250);
+	});
+
+	$(".environW").hover(function(){
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("Environmental wellness inspires us to live a lifestyle that is respectful of our surroundings. Design for environmental wellness should be inhabitable, resilient, spatial, and accessible.")
+		}).fadeIn(250);
+		$(".wellnessTitle").stop(true, false).fadeOut(250,function() {
+			$(this).text("ENVIRONMENTAL")
+			$(this).css("color","#99ca43")
+		}).fadeIn(250);
+	}, function() {
+		$(".wellnessCopy").stop(true, false).fadeOut(250,function() {
+			$(this).text("We are experiencing unprecedented economic, social, and environmental shifts that motivate us to become wellness-seekers. We aim to heal and guide users through adaptive and responsive brand archetypes, all while utilizing the eight dimensions of wellness.")
+			}).fadeIn(250);
+			$(".wellnessTitle").stop(true,false).fadeOut(250,function() {
+				$(this).text("THE EIGHT DIMENSIONS OF WELLNESS")
+				$(this).css("color","#009f98")
+		}).fadeIn(250);
+	});
 	
-	// FUNCTIONS
-	function countStep(){
-		if(dimension == 1){
-			//Social
-			$(".heroImg2").animate({
-				"rotate":"0deg"
-			})
-			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Social wellness is related to our personal relationships and how we interact with others in public and private spaces. Design for social wellness should be influential, communal, and connectible.")
-			  }).fadeIn(250);
-			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("SOCIAL")
-				$(this).css("color","#ee739b")
-			}).fadeIn(250);
-			$(".viewSorter").fadeIn(200)
-
-			if(whichArrow == 1){
-				console.log("arrow right")
-				$(".financial").fadeOut(250, function(){
-					$(".social").fadeIn(250);
-				});
-			}
-
-			if(whichArrow == 2){
-				console.log("arrow left")
-				
-				$(".social").fadeIn(250);
-				
-			}
-			
-		}
-		else if(dimension == 2){
-			//Spiritual
-			$(".heroImg2").animate({
-				"rotate":"45deg"
-			})
-			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Spiritual wellness allows us to be in tune with our spiritual selves and to discover our individual beliefs and values in this world. Design for spiritual wellness should be ethical, equitable, ritualistic, and transcendental.")
-			  }).fadeIn(250);
-			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("SPIRITUAL")
-				$(this).css("color","#00a45b")
-			}).fadeIn(250);
-			$(".viewSorter").fadeOut(200)
-
-			if(whichArrow == 1){
-				$(".social").fadeOut(250)
-			}
-
-			if(whichArrow == 2){
-				$(".intellectual").fadeOut(250)
-			}
-
-		}
-		else if(dimension == 3){
-			//Intellectual
-			$(".heroImg2").animate({
-				"rotate":"90deg"
-			})
-			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Intellectual wellness encourages learning and open-mindedness, as well as engaging in mentally stimulating activities and exploring new ideas. Design for intellectual wellness should be reasonable, understandable, and interactive.")
-			  }).fadeIn(250);
-			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("INTELLECTUAL")
-				$(this).css("color","#85459b")
-			}).fadeIn(250);
-			$(".viewSorter").fadeIn(200)
-
-			if(whichArrow == 1){
-				console.log("arrow right")
-				$(".intellectual").fadeIn(250)
-			}
-
-			if(whichArrow == 2){
-				console.log("arrow left")
-				$(".emotional").fadeOut(250, function(){
-					$(".intellectual").fadeIn(250);
-				});
-			}
-		}
-		else if(dimension == 4){
-			//EMOTIONAL
-			$(".heroImg2").animate({
-				"rotate":"135deg"
-			})
-			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Emotional wellness inspires caring for oneself, adapting to difficult times, relaxation, and stress management. Design for emotional wellness should be interpretable, inclusive, responsive, and personalized.")
-			  }).fadeIn(250);
-			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("EMOTIONAL")
-				$(this).css("color","#4f6ab2")
-			}).fadeIn(250);
-
-			if(whichArrow == 1){
-				console.log("arrow right")
-				$(".intellectual").fadeOut(250, function(){
-					$(".emotional").fadeIn(250);
-				});
-			}
-
-			if(whichArrow == 2){
-				console.log("arrow left")
-				$(".physical").fadeOut(250, function(){
-					$(".intellectual").fadeIn(250);
-				});
-			}
-
-		}
-		else if(dimension == 5){
-			//Physical
-			$(".heroImg2").animate({
-				"rotate":"180deg"
-			})
-			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Physical wellness encourages people to choose what feels good, create a balanced routine, and listen to one’s bodily needs. Design for physical wellness should be adaptable, functional, and tangible.")
-			  }).fadeIn(250);
-			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("PHYSICAL")
-				$(this).css("color","#ee739b")
-			}).fadeIn(250);
-
-			if(whichArrow == 1){
-				console.log("arrow right")
-				$(".emotional").fadeOut(250, function(){
-					$(".physical").fadeIn(250);
-				});
-			}
-
-			if(whichArrow == 2){
-				console.log("arrow left")
-				$(".environmental").fadeOut(250, function(){
-					$(".physical").fadeIn(250);
-				});
-			}
-
-		}
-		else if(dimension == 6){
-			//ENVIRONMENTAL
-			$(".heroImg2").animate({
-				"rotate":"225deg"
-			})
-			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Environmental wellness inspires us to live a lifestyle that is respectful of our surroundings. Design for environmental wellness should be inhabitable, resilient, spatial, and accessible.")
-			  }).fadeIn(250);
-			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("ENVIRONMENTAL")
-				$(this).css("color","#99ca43")
-			}).fadeIn(250);
-
-			if(whichArrow == 1){
-				console.log("arrow right")
-				$(".physical").fadeOut(250, function(){
-					$(".environmental").fadeIn(250);
-				});
-			}
-
-			if(whichArrow == 2){
-				console.log("arrow left")
-				$(".occupational").fadeOut(250, function(){
-					$(".environmental").fadeIn(250);
-				});
-			}
-		}
-		else if(dimension == 7){
-			//Occupational
-			$(".heroImg2").animate({
-				"rotate":"270deg"
-			})
-			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Occupational wellness inspires one to prepare for work that they love. Participation reflects personal interests, values, and beliefs. Design for occupational wellness should be learnable, practical, and inventive.")
-			  }).fadeIn(250);
-			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("OCCUPATIONAL")
-				$(this).css("color","#6acdea")
-			}).fadeIn(250);
-
-			if(whichArrow == 1){
-				console.log("arrow right")
-				$(".environmental").fadeOut(250, function(){
-					$(".occupational").fadeIn(250);
-				});
-			}
-
-			if(whichArrow == 2){
-				console.log("arrow left")
-				$(".financial").fadeOut(250, function(){
-					$(".occupational").fadeIn(250);
-				});
-			}
-		}
-		else if(dimension == 8){
-			//FINANCIAL
-			$(".heroImg2").animate({
-				"rotate":"315deg"
-			})
-			$(".wellnessCopy").fadeOut(250,function() {
-				$(this).text("Financial wellness focuses on knowing monetary processes and resources while understanding your own financial situation and prospects. Design for financial wellness should be affordable, secure, and resourceful.")
-			  }).fadeIn(250);
-			$(".wellnessTitle").fadeOut(250,function() {
-				$(this).text("FINANCIAL")
-				$(this).css("color","#51c0aa")
-			}).fadeIn(250);
-
-			if(whichArrow == 1){
-				console.log("arrow right")
-				$(".occupational").fadeOut(250, function(){
-					$(".financial").fadeIn(250);
-				});
-			}
-
-			if(whichArrow == 2){
-				console.log("arrow left")
-				$(".social").fadeOut(250, function(){
-					$(".financial").fadeIn(250);
-				});
-			}
-
-		}
-	}
 	
 	// INITIALIZATION
 
