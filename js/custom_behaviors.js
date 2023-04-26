@@ -257,7 +257,7 @@ $(document).ready(function() {
 		})
 	})
 
-
+	
 	
 	$(".closePopButton").click(function(){
 		event.preventDefault()
