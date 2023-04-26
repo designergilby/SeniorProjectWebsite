@@ -244,11 +244,420 @@ $(document).ready(function() {
 	// ======================================== POPUP ======================
 	
 
+
+	$('.salmenAhmed, .Bday').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".salmenAhmedPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.jasmineBussie, .BlumeBar').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".jasmineBussiePop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.katelynChristiansen, .DoThat').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".katelynChristiansenPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.autumnFrantz, .DiaBuddy').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".autumnFrantzPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.JasmineFredrick, .Fake').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".JasmineFredrickPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.hallieGroeschel, .Muud').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".hallieGroeschelPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.anikaGuggisberg, .Somind').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".anikaGuggisbergPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.eleniHein, .Neuros').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".eleniHeinPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.christianHeo, .Listenupp').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".christianHeoPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.indigoHoffman, .Lumi').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".indigoHoffmanPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
 	$('.angelaHolton, .Slole').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
 			$(".loader").delay(100).fadeIn(400, function(){
 				$(".angelaHoltonPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.ashleyJandro, .Ruted').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".ashleyJandroPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.ceciliaKnudsen, .MyVCP').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".ceciliaKnudsenPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.seringaMcHugh, .AdoptYourself').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".seringaMcHughPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.harlanMckay, .IntroSpec').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".harlanMckayPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.alyssaKoepke, .BeaverCreek').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".alyssaKoepkePop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.kaliKoester, .Ritual').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".kaliKoesterPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.emmaLarson, .Openit').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".emmaLarsonPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.beauLuzar, .Blush').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".beauLuzarPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.tylerMullin, .Rngr').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".tylerMullinPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.lilyNess, .ForagedBlends').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".lilyNessPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.laurenPechman, .Resalve').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".laurenPechmanPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.samPeskie, .IslaAndMio').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".samPeskiePop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.kaylaPurney, .Combi').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".kaylaPurneyPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.natalieReber, .Silphi').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".natalieReberPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.isabelRoberts, .Hatch').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".isabelRobertsPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.jaydenSchoppers, .EcoArt').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".jaydenSchoppersPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.destinySwen, .JustATip').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".destinySwenPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.alexWoo, .Tranquillo').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".alexWooPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.nadiyahMC, .Journei').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".nadiyahMCPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.sarahMorris, .Healink').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".sarahMorrisPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.tjorvenLandwehr, .Pesto').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".tjorvenLandwehrPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.jamieKerwin, .Solace').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".jamieKerwinPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.charlotteGreen, .Courage').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".charlotteGreenPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+	$('.jackGilbert, .Skildr').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".jackGilbertPop").fadeIn(800, function(){
 					$(".loader").delay(2000).fadeOut(400, function(){
 						$(".loaderBackground").fadeOut(400)
 					 })
