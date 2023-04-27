@@ -1303,7 +1303,7 @@ section{
 
 /* ==================== FOOTER ================== */
 
-.mapCont{
+..mapCont{
 	width: 55%;
 }
 .footerText{
