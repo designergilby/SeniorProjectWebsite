@@ -575,7 +575,7 @@ section{
 }
 
 .jackGilbert:hover{
-  	background-image: url("../images/jackGilbertHomeLogo.png");
+  	background-image: url("../images/homeLogo/jackGilbertHomeLogo.png");
 }
 
 .charlotteGreen:hover{
@@ -850,7 +850,7 @@ section{
 	}
 	
 	.Skildr{
-		background-image: url(../images/jackGilbertHomeLogo.png);
+		background-image: url(../images/homeLogo/jackGilbertHomeLogo.png);
 
 	}
 
