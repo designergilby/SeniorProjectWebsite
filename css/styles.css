@@ -2534,6 +2534,7 @@ footer{
 		max-width:1.99vw;
 		margin-top: 1%;
 		background-size: cover;
+		background:100%;
 		width: 1.99vw;
 		height: 3.52vw;
 		cursor: pointer;
@@ -2549,6 +2550,7 @@ footer{
 		transition-duration: 2s;
 		max-width:3.79vw;
 		background-size: cover;
+		background:100%;
 		margin-top: 1%;
 		width: 3.79vw;
 		height: 3.692781vw;
@@ -2581,7 +2583,6 @@ footer{
 		font-weight: 400;
 		font-size: 12.2px;
 	}
-
 	/* ================================================== DESKTOP POPUP =================================================== */
 
 	.designerPageHolder{
