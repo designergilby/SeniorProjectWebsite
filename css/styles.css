@@ -1376,7 +1376,7 @@ footer{
 }
 .credits{
  display: flex;
- width: 100%;
+ width: 130%;
 }
 .credits h2{
 	font-size: 1.5vw;
