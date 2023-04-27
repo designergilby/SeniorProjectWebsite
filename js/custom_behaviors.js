@@ -238,6 +238,7 @@ $(document).ready(function() {
 		speed:2000,
 		dots:true,
 		arrows:false,
+		lazyLoad: 'ondemand',
 	});
 
 
