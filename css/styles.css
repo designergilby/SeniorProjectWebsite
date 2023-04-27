@@ -1370,13 +1370,14 @@ footer{
 }
 
 .mapCont{
+	width: 80%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .credits{
  display: flex;
- width: 130%;
+ width: 100%;
 }
 .credits h2{
 	font-size: 1.5vw;
@@ -2096,7 +2097,7 @@ footer{
 		width: 3.79vw;
 		height: 3.692781vw;
 		cursor: pointer;
-		background-image: url(../images/theGramb.png);
+		background-image: url(../images/theGramB.png);
 	}
 	.footerGram:hover{
 		
@@ -2452,7 +2453,7 @@ footer{
 		font-family: "tgn-soft-round", sans-serif;
 		font-weight: 400;
 		font-style: normal;
-		width:85%;
+		width:90%;
 		/* overflow: hidden; */
 	}
 	
