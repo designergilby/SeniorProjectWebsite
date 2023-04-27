@@ -2452,8 +2452,8 @@ footer{
 		font-family: "tgn-soft-round", sans-serif;
 		font-weight: 400;
 		font-style: normal;
-		width:100%;
-		overflow: hidden;
+		width:85%;
+		/* overflow: hidden; */
 	}
 	
 	
@@ -2555,7 +2555,7 @@ footer{
 		width: 3.79vw;
 		height: 3.692781vw;
 		cursor: pointer;
-		background-image: url(../images/theGramb.png);
+		background-image: url(../images/theGramB.png);
 	}
 	.footerGram:hover{
 		
