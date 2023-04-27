@@ -1343,13 +1343,13 @@ footer{
 }
 
 .facebookB {
-	transition: ease-in-out .5s;
+	transition: ease-in-out 250ms;
 	margin-right: 15%;
 	width: 1vw;
 	height: 2vw;
 }
 .theGramB {
-	transition: ease-in-out .5s;
+	transition: ease-in-out .250ms;
 	width: 2vw;
 	height: 2vw;
 }
