@@ -1342,9 +1342,27 @@ footer{
 	margin-bottom: 2vw;
 }
 
-.socialIcon{
+.facebookB {
+	transition: ease-in-out .5s;
+	margin-right: 15%;
+	width: 1vw;
+	height: 2vw;
+}
+.theGramB {
+	transition: ease-in-out .5s;
 	width: 2vw;
 	height: 2vw;
+}
+.facebookB:hover{
+		
+	width: 1.2vw;
+	height: 2.2vw;
+}
+
+.theGramB:hover{
+	
+	width: 2.2vw;
+	height: 2.2vw;
 }
 
 .mapCont img{
@@ -1356,7 +1374,10 @@ footer{
 	justify-content: center;
 	align-items: center;
 }
-
+.credits{
+ display: flex;
+ width: 100%;
+}
 .credits h2{
 	font-size: 1.5vw;
 	font-weight: 800;
@@ -1364,7 +1385,7 @@ footer{
 
 .credits h3{
 	font-size: 1vw;
-	width: 60%;
+	width: 80%;
 }
 
 .sortedTitle{
