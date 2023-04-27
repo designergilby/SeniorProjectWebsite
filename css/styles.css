@@ -723,6 +723,8 @@ section{
 	cursor: pointer;
 }
 
+
+
 .Blush{
 		background-image: url(../images/homeLogo/beauLuzarHomeLogo.png);
 
@@ -1365,6 +1367,40 @@ footer{
 	width: 60%;
 }
 
+.sortedTitle{
+		font-weight: 800;
+		font-size: 2vw;
+		color:#0063b0;
+	}
+
+	.sortedPhyColor{
+		color: #D26BAA;
+	}
+
+	.sortedEmoColor{
+		color: #506AB2;
+	}
+
+	.sortedIntelColor{
+		color: #86489C;
+	}
+
+	.sortedSocColor{
+		color: #EE739B;
+	}
+
+	.sortedFinColor{
+		color: #4BC0A9;
+	}
+
+	.sortedOccColor{
+		color: #68CDEC;
+	}
+
+	.sortedEnvirColor{
+		color: #99CA44;
+	}
+
 
 /* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 767px){
@@ -1376,6 +1412,12 @@ footer{
 	.flexParentD{
 		display: block;
 	}
+
+	.sortedTitle{
+		margin-bottom: 10%;
+		font-size: 3.5vw;
+	}
+	
 
 	.decorateRect{
 		width: 23vw;
@@ -1866,6 +1908,12 @@ footer{
 		width:93.75%; /* 720 pixels at a 768 pixel screen width (iPads) */
 		
 	}
+
+	.sortedTitle{
+		margin-bottom: 6%;
+		font-size: 2.75vw;
+	}
+
 	.heroSVG{
 		transition: none;
 	}
@@ -2308,7 +2356,17 @@ footer{
 		width:95.5%;
 	}
 
+	/*--- sorted area (Desktop) */
+
+	.sortedTitle{
+		margin-bottom: 5%;
+		font-size: 2vw;
+
+	}
+
 	/*--- big grid area (Desktop) */
+
+
 
 	.pjwrapper{
 		row-gap: 0.5vw;
