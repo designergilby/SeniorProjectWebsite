@@ -1377,7 +1377,7 @@ footer{
 }
 .credits{
  display: flex;
- width: 100%;
+ width: 10%;
 }
 .credits h2{
 	font-size: 1.5vw;
@@ -2097,7 +2097,7 @@ footer{
 		width: 3.79vw;
 		height: 3.692781vw;
 		cursor: pointer;
-		background-image: url(../images/theGramB.png);
+		background-image: url(../images/theGramB\ copy.png);
 	}
 	.footerGram:hover{
 		
@@ -2454,7 +2454,6 @@ footer{
 		font-weight: 400;
 		font-style: normal;
 		width:90%;
-		
 		/* overflow: hidden; */
 	}
 	
@@ -2557,7 +2556,7 @@ footer{
 		width: 3.79vw;
 		height: 3.692781vw;
 		cursor: pointer;
-		background-image: url(../images/theGramB.png);
+		background-image: url(../images/theGramB\ copy.png);
 	}
 	.footerGram:hover{
 		
