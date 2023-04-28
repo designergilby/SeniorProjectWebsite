@@ -700,7 +700,7 @@ section{
 }
 
 .vaughnVande:hover{
-  	background-image: url("../images/homeLogo/vaughnVandeHomeLogo.png");
+  	background-image: url("../images/homeLogo/joeMischkeHomeLogo.png");
 }
 
 .alexWoo:hover{
@@ -867,7 +867,7 @@ section{
 	}
 	
 	.FederationAudio{
-		background-image: url(../images/homeLogo/vaughnVandeHomeLogo.png);
+		background-image: url(../images/homeLogo/.png);
 
 	}
 	
@@ -1300,6 +1300,11 @@ section{
 .carlyDanielleFace{
   	background-image: url("../images/Headshots/carlyDanielleFace.png");
 }
+
+.vaughnJoeFace{
+  	background-image: url("../images/Headshots/vaughnJoeFace.png");
+}
+
 
 
 /* ==================== FOOTER ================== */
@@ -2687,9 +2692,9 @@ footer{
 			font-size:1vw;
 			margin-right:5%;
 		}
-	
+
 		.designerDescription{
-			font-size:.9vw;
+			font-size:1vw;
 			line-height:1.3vw;
 			margin-bottom:20%;
 			width:70%;

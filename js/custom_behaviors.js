@@ -238,7 +238,9 @@ $(document).ready(function() {
 		speed:2000,
 		dots:true,
 		arrows:false,
-		lazyLoad: 'ondemand',
+		// lazyLoad: 'ondemand',
+		// // slidesToShow:1,
+		// // slidesToScroll:1,
 	});
 
 
@@ -619,6 +621,7 @@ $(document).ready(function() {
 			})
 		})
 	})
+
 	$('.tjorvenLandwehr, .Pesto').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
@@ -631,6 +634,7 @@ $(document).ready(function() {
 			})
 		})
 	})
+	
 	$('.jamieKerwin, .Solace').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
@@ -701,6 +705,45 @@ $(document).ready(function() {
 		$(".loaderBackground").fadeIn(400, function(){
 			$(".loader").delay(100).fadeIn(400, function(){
 				$(".unbublPop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+
+	$('.joeMischke').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".joeMischkePop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+
+	$('.vaughnVande').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".vaughnVandePop").fadeIn(800, function(){
+					$(".loader").delay(2000).fadeOut(400, function(){
+						$(".loaderBackground").fadeOut(400)
+					 })
+				})
+			})
+		})
+	})
+
+	$('.ederationAudio').click(function() {
+		$("body").addClass("stopScroll")
+		$(".loaderBackground").fadeIn(400, function(){
+			$(".loader").delay(100).fadeIn(400, function(){
+				$(".federationAudioPop").fadeIn(800, function(){
 					$(".loader").delay(2000).fadeOut(400, function(){
 						$(".loaderBackground").fadeOut(400)
 					 })
