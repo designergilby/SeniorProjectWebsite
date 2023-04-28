@@ -944,6 +944,7 @@ section{
 	z-index: 99;
 	position: fixed; bottom: 0%; top: 0%; overflow: scroll; height: 100vh;
 	background: linear-gradient(112.02deg, #d1d5f3 5.64%, #F0E1E9 47.83%, #EBF1F5 96.3%);
+	background-color: lightsteelblue;
 	animation: gradient 15s ease infinite;
 }
 
@@ -1379,6 +1380,7 @@ footer{
  display: flex;
  width: 100%;
 }
+
 .credits h2{
 	font-size: 1.5vw;
 	font-weight: 800;
