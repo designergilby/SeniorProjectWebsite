@@ -215,7 +215,7 @@ $(document).ready(function() {
 	// ======================================== CHAR ======================
 	///Hover function for the names to disapear////BG image is added in css/////
 
-	var names = ['salmanAhmed', 'jasmineBussie', 'katelynChristiansen', 'AutumnFrantz', 'jasmineFredrick', 'jackGilbert', 'charlotteGreen', 'hallieGroeschel', 'anikaGuggisberg', 'eleniHein', 'christianHeo', 'indigoHoffman', 'angelaHolton', 'ashleyJandro', 'danielleJohnson', 'jamieKerwin','ceciliaKnudsen', 'alyssaKoepke', 'kaliKoester', 'tjorvenLandwehr', 'emmaLarson', 'beauLuzar', 'seringMcHugh', 'harlanMckay', 'carlyMeyer', 'nadiyahMC', 'joeMischke', 'sarahMorris', 'tylerMullin', 'lilyNess', 'laurenPechman', 'samPeskie', 'kaylaPurney', 'natalieReber', 'isabelRoberts', 'jadynSchoppers', 'destinySwen', 'vaughnVande', 'alexWoo'];
+	var names = ['salmanAhmed', 'jasmineBussie', 'katelynChristiansen', 'jasmineFredrick', 'jackGilbert', 'charlotteGreen', 'hallieGroeschel', 'anikaGuggisberg', 'eleniHein', 'christianHeo', 'indigoHoffman', 'angelaHolton', 'ashleyJandro', 'danielleJohnson', 'jamieKerwin','ceciliaKnudsen', 'alyssaKoepke', 'kaliKoester', 'tjorvenLandwehr', 'emmaLarson', 'beauLuzar', 'seringMcHugh', 'harlanMckay', 'carlyMeyer', 'nadiyahMC', 'joeMischke', 'sarahMorris', 'tylerMullin', 'lilyNess', 'laurenPechman', 'samPeskie', 'kaylaPurney', 'natalieReber', 'isabelRoberts', 'jadynSchoppers', 'destinySwen', 'vaughnVande', 'alexWoo'];
 	$.each(names, function(index, name) {
 	hoverEffect(name);
 	});
@@ -249,11 +249,11 @@ $(document).ready(function() {
 	
 
 
-	$('.salmenAhmed, .Bday').click(function() {
+	$('.salmanAhmed, .Bday').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
 			$(".loader").delay(100).fadeIn(400, function(){
-				$(".salmenAhmedPop").fadeIn(800, function(){
+				$(".salmanAhmedPop").fadeIn(800, function(){
 					$(".loader").delay(2000).fadeOut(400, function(){
 						$(".loaderBackground").fadeOut(400)
 					 })
@@ -285,23 +285,12 @@ $(document).ready(function() {
 			})
 		})
 	})
-	$('.autumnFrantz, .DiaBuddy').click(function() {
+	
+	$('.jasmineFredrick, .Fake').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
 			$(".loader").delay(100).fadeIn(400, function(){
-				$(".autumnFrantzPop").fadeIn(800, function(){
-					$(".loader").delay(2000).fadeOut(400, function(){
-						$(".loaderBackground").fadeOut(400)
-					 })
-				})
-			})
-		})
-	})
-	$('.JasmineFredrick, .Fake').click(function() {
-		$("body").addClass("stopScroll")
-		$(".loaderBackground").fadeIn(400, function(){
-			$(".loader").delay(100).fadeIn(400, function(){
-				$(".JasmineFredrickPop").fadeIn(800, function(){
+				$(".jasmineFredrickPop").fadeIn(800, function(){
 					$(".loader").delay(2000).fadeOut(400, function(){
 						$(".loaderBackground").fadeOut(400)
 					 })

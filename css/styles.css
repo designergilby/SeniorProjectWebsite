@@ -566,9 +566,6 @@ section{
   	background-image: url("../images/homeLogo/katelynChristiansenHomeLogo.png");
 }
 
-.AutumnFrantz:hover{
-  	background-image: url("../images/homeLogo/AutumnFrantzHomeLogo.png");
-}
 
 .jasmineFredrick:hover{
   	background-image: url("../images/homeLogo/jasmineFredrickHomeLogo.png");
@@ -788,10 +785,6 @@ section{
 
 	}
 	
-	.DiaBuddy{
-		background-image: url(../images/homeLogo/autumnFrantzHomeLogo.png);
-		
-	}
 	
 	.Fake{
 		background-image: url(../images/homeLogo/jasmineFredrick.png);
@@ -992,6 +985,7 @@ section{
 /* ===POPUPS LOGOD theirNameLogoPop================================ */
 
 .salmanAhmedLogoPop{
+		background-repeat: no-repeat;
   	background-image: url("../images/logoPop/salmanAhmedLogoPop.png");
 }
 
@@ -1000,11 +994,8 @@ section{
 }
 
 .katelynChristiansenLogoPop{
+		background-repeat: no-repeat;
   	background-image: url("../images/logoPop/katelynChristiansenLogoPop.png");
-}
-
-.AutumnFrantzLogoPop{
-  	background-image: url("../images/logoPop/AutumnFrantzLogoPop.png");
 }
 
 .jasmineFredrickLogoPop{
@@ -1024,6 +1015,7 @@ section{
 }
 
 .anikaGuggisbergLogoPop{
+		background-repeat: no-repeat;
   	background-image: url("../images/logoPop/anikaGuggisbergLogoPop.png");
 }
 
@@ -1151,16 +1143,14 @@ section{
 }
 
 .jasmineBussieFace{
-  	background-image: url("../images/Headshots/angelaHoltonFace.png");
-}
-
-.katelynChristiansenFace{
   	background-image: url("../images/Headshots/jasmineBussieFace.png");
 }
 
-.AutumnFrantzFace{
-  	background-image: url("../images/Headshots/AutumnFrantzFace.png");
+.katelynChristiansenFace{
+  	
+  	background-image: url("../images/Headshots/katelynChristiansenFace.png");
 }
+
 
 .jasmineFredrickFace{
   	background-image: url("../images/Headshots/jasmineFredrickFace.png");
@@ -1770,7 +1760,7 @@ footer{
 			width:20%;
 			padding-top:20%;
 			margin-right:7%;
-			background-size: 100%;
+			background-size: cover;
 		}
 	
 	
