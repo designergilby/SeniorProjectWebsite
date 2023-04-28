@@ -511,7 +511,6 @@ section{
 }
 
 /* ================================================== CHAR/GALLERY =================================================== */
-
 .pjwrapper{
 	display: flex;
 	flex-wrap: wrap;
@@ -723,7 +722,7 @@ section{
 
 
 .Blush{
-		background-image: url(../images/homeLogo/beauLuzarHomeLogo.png);
+		background-image: url(../images/homeLogo/beauLuzarHomeLogo);
 
 	}
 	
@@ -733,7 +732,7 @@ section{
 	}
 	
 	.ForagedBlends{
-		background-image: url(../images/homeLogo/lilyNessHomeLogo.png);
+		background-image: url(../images/homeLogo/lilyNessHomeLogo);
 
 	}
 	
@@ -748,12 +747,12 @@ section{
 	}
 	
 	.Openit{
-		background-image: url(../images/homeLogo/emmaLarsonHomeLogo.png);
+		background-image: url(../images/homeLogo/emmaLarsonHomeLogo);
 
 	}
 	
 	.Resalve{
-		background-image: url(../images/homeLogo/laurenPechmanHomeLogo.png);
+		background-image: url(../images/homeLogo/laurenPechmanHomeLogo);
 
 	}
 	
@@ -810,7 +809,7 @@ section{
 	}
 	
 	.Journei{
-		background-image: url(../images/homeLogo/nadiyahMCHomeLogo.png);
+		background-image: url(../images/homeLogo/nadiyahMCHomeLogo);
 
 	}
 	
@@ -830,7 +829,7 @@ section{
 	}
 
 	.Ritual{
-		background-image: url(../images/homeLogo/kaliKoesterHomeLogo.png);
+		background-image: url(../images/homeLogo/kaliKoesterHomeLogo);
 
 	}
 
@@ -875,7 +874,7 @@ section{
 	}
 
 	.BeaverCreek{
-		background-image: url(../images/homeLogo/alyssaKoepkeHomeLogo.png);
+		background-image: url(../images/homeLogo/alyssaKoepkeHomeLogo);
 
 	}
 
@@ -895,7 +894,7 @@ section{
 	}
 	
 	.Rngr{
-		background-image: url(../images/homeLogo/tylerMullinHomeLogo.png);
+		background-image: url(../images/homeLogo/tylerMullinHomeLogo);
 
 	}
 	
@@ -1295,11 +1294,9 @@ section{
   	background-image: url("../images/Headshots/vaughnJoeFace.png");
 }
 
-
-
 /* ==================== FOOTER ================== */
 
-..mapCont{
+.mapCont{
 	width: 55%;
 }
 .footerText{
