@@ -796,6 +796,7 @@ section{
 
 	.FederationAudio{
 		background-image: url(../images/homeLogo/joeMischkeHomeLogo.png);
+		background-color: blue;
 	}
 	
 	.IntroSpec{
