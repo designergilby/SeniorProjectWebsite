@@ -574,7 +574,7 @@ $(document).ready(function() {
 			})
 		})
 	})
-	$('.alexWoo, .Tranquillo').click(function() {
+	$('.alexWoo, .Tranqillo').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
 			$(".loader").delay(100).fadeIn(400, function(){
