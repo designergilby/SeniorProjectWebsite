@@ -1091,7 +1091,8 @@ section{
 }
 
 .tylerMullinLogoPop{
-  	background-image: url("../images/homeLogo/tylerMullin_homeLogo.png");
+  	background-image: url("../images/logoPop/tylerMullinLogoPop.png");
+	  background-repeat: no-repeat;
 }
 
 .lilyNessLogoPop{
