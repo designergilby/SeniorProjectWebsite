@@ -611,6 +611,7 @@ $(document).ready(function() {
 		})
 	})
 
+
 	$('.tjorvenLandwehr, .Pesto').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
@@ -624,6 +625,7 @@ $(document).ready(function() {
 		})
 	})
 	
+
 	$('.jamieKerwin, .Solace').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
@@ -728,7 +730,7 @@ $(document).ready(function() {
 		})
 	})
 
-	$('.ederationAudio').click(function() {
+	$('.FederationAudio').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
 			$(".loader").delay(100).fadeIn(400, function(){
