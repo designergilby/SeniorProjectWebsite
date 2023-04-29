@@ -1375,7 +1375,16 @@ footer{
 }
 .credits{
  display: flex;
+ justify-content: space-between;
  width: 100%;
+}
+
+.rightCredits{
+	width:45%;
+}
+
+.leftCredits{
+	width:45%;
 }
 
 .credits h2{
