@@ -909,7 +909,7 @@ section{
 
 .sortCont{
 	border-bottom: #0063b0 1vw solid;
-	margin-top: 10vw;
+	padding-top: 5vw;
 }
 /* footer{
 	z-index: 99;
@@ -1393,28 +1393,56 @@ footer{
 		color: #D26BAA;
 	}
 
+	.physical{
+		background-color: rgba(210, 107, 170, 0.2);
+	}
+
 	.sortedEmoColor{
 		color: #506AB2;
+	}
+
+	.emotional{
+		background-color: rgba(80, 106, 178, 0.2);
 	}
 
 	.sortedIntelColor{
 		color: #86489C;
 	}
 
+	.intellectual{
+		background-color: rgba(134, 72, 156, 0.2)
+	}
+
 	.sortedSocColor{
 		color: #EE739B;
+	}
+
+	.social{
+		background-color: rgba(238, 115, 155, 0.2)
 	}
 
 	.sortedFinColor{
 		color: #4BC0A9;
 	}
 
+	.financial{
+		background-color: rgba(75, 192, 169, 0.2)
+	}
+
 	.sortedOccColor{
 		color: #68CDEC;
 	}
 
+	.occupational{
+		background-color: rgba(104, 205, 236, 0.2);
+	}
+
 	.sortedEnvirColor{
 		color: #99CA44;
+	}
+
+	.environmental{
+		background-color: rgba(153, 202, 68, 0.2)
 	}
 
 
