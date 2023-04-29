@@ -795,7 +795,8 @@ section{
 	}
 
 	.FederationAudio{
-		background-image: url(../images/homeLogo/primaryhealinkLogo.png);
+		background-image: url(../images/homeLogo/joeMischkeHomeLogo.png);
+		background-color: blue;
 	}
 	
 	.IntroSpec{
@@ -858,7 +859,7 @@ section{
 	}
 	
 	.FederationAudio{
-		background-image: url(../images/homeLogo/.png);
+		background-image: url(../images/homeLogo/joeMischkeHomeLogo.png);
 
 	}
 	
