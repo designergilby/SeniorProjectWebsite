@@ -550,11 +550,11 @@ $(document).ready(function() {
 			})
 		})
 	})
-	$('.jaydenSchoppers, .EcoArt').click(function() {
+	$('.jadynSchoppers, .EcoArt').click(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
 			$(".loader").delay(100).fadeIn(400, function(){
-				$(".jaydenSchoppersPop").fadeIn(800, function(){
+				$(".jadynSchoppersPop").fadeIn(800, function(){
 					$(".loader").delay(2000).fadeOut(400, function(){
 						$(".loaderBackground").fadeOut(400)
 					 })
