@@ -1047,6 +1047,7 @@ section{
 
 .alyssaKoepkeLogoPop{
   	background-image: url("../images/homeLogo/AlyssaKoepke_HomeLogo.png");
+	background-repeat: no-repeat;
 }
 
 .kaliKoesterLogoPop{
