@@ -35,13 +35,14 @@ section{
 
 nav{
 	display:none;
+
 }
 
 nav a{
 	text-decoration: none;
 	color: rgb(0,99,176);
 	font-size: 1.25vw;
-	margin-right:2vw;
+	margin-right:2.75vw;
 	transform: scale(1);
 	transition: transform 250ms ease-in-out;
 }
@@ -51,6 +52,7 @@ nav a{
 	line-height: 2vw;
 	width: 20%;
 	display: flex;
+
 }
 
 .blobNavElement{
