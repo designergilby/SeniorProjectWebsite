@@ -52,7 +52,20 @@ nav a{
 	line-height: 2vw;
 	width: 20%;
 	display: flex;
+	animation: fading 1s;
+}
 
+.navElement1, .navElement2{
+	padding-top: 1.65vw;
+}
+
+@keyframes fading{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 .blobNavElement{
@@ -140,7 +153,12 @@ nav a:hover{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	
+	transition: 250ms;
+	cursor: pointer;
+}
+
+.heroSVG:hover{
+	scale: 104%;
 }
 
 #PHYS{
@@ -1521,6 +1539,15 @@ footer{
 	
 	.revealNav{
 		display: none;
+	}
+
+	@keyframes fading{
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
 	}
 
 	.decorateRect{

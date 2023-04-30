@@ -24,14 +24,42 @@ $(document).ready(function() {
 		}, 2000)
 	})
 
-	// Jack if you could link the blob in the nav to go back to the opening screen that would be great
+	$(".heroSVG").on("click", function(event){
+		event.preventDefault();
+		$(".feature1").fadeOut(1000, function(){
+			$(".revealedContent").fadeIn(1000);
+
+			if(window.innerWidth >=768){
+				$("nav").addClass("revealNav")
+				$("nav").fadeIn(1000);
+			} else {
+				$("nav").css("display", "none")
+			}
+		});
+
+		$(".heroImg2").animate({
+			"opacity":"1"
+		}, 2000)
+	})
+
 	$(".blobNavElement").on("click", function(event){
 		event.preventDefault();
+		$(".revealedContent").fadeOut(1000, function(){
+			$(".feature1").fadeIn(1000);
+		});
 
-		$([document.documentElement, document.body]).animate({
-			scrollTop: $("#viewAllProjects").offset().top
-		}, 1000);
+		if(window.innerWidth >=768){
+			$("nav").fadeOut(1000);
+		}
+
+		$(".heroImg2").animate({
+			"opacity":"0"
+		}, 2000)
 	})
+
+	
+
+	// Jack if you could link the blob in the nav to go back to the opening screen that would be great
 
 	$(".navElement1").on("click", function(event){
 		event.preventDefault();
