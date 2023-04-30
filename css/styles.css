@@ -1760,6 +1760,8 @@ footer{
 
 	.mobileHero2{
 		display: block;
+		width: 100%;
+		height: 90%;
 	}
 
 	.dimensionNames{
