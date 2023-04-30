@@ -172,16 +172,18 @@ nav a:hover{
 }
 
 @keyframes physMove{
-	0%, 100%{
+	0%{
 		scale: 100%;
 		opacity: 100%;
-		rotation: 2deg;
 	}
 
 	50%{
 		scale: 98%;
 		opacity: 95%;
-		rotation: 0deg;
+	}
+	100%{
+		scale: 100%;
+		opacity: 100%;
 	}
 }
 
@@ -193,16 +195,19 @@ nav a:hover{
 }
 
 @keyframes intellMove{
-	0%, 100%{
+	0%{
 		scale: 100%;
 		opacity: 100%;
-		rotation: 2deg;
+		
 	}
 
 	50%{
 		scale: 96%;
 		opacity: 95%;
-		rotation: 0deg;
+	}
+	100%{
+		scale: 100%;
+		opacity: 100%;
 	}
 }
 #FINAN{
@@ -211,16 +216,18 @@ nav a:hover{
 }
 
 @keyframes finanMove{
-	0%, 100%{
+	0%{
 		scale: 100%;
 		opacity: 100%;
-		rotation: 2deg;
 	}
 
 	50%{
 		scale: 94%;
 		opacity: 95%;
-		rotation: 0deg;
+	}
+	100%{
+		scale: 100%;
+		opacity: 100%;
 	}
 }
 #EMO{
@@ -229,16 +236,18 @@ nav a:hover{
 }
 
 @keyframes emoMove{
-	0%, 100%{
+	0%{
 		scale: 100%;
 		opacity: 100%;
-		rotation: 2deg;
 	}
 
 	50%{
 		scale: 92%;
 		opacity: 95%;
-		rotation: 0deg;
+	}
+	100%{
+		scale: 100%;
+		opacity: 100%;
 	}
 }
 #OCCU{
@@ -247,16 +256,18 @@ nav a:hover{
 }
 
 @keyframes occuMove{
-	0%, 100%{
+	0%{
 		scale: 100%;
 		opacity: 100%;
-		rotation: 2deg;
 	}
 
 	50%{
 		scale: 90%;
 		opacity: 95%;
-		rotation: 0deg;
+	}
+	100%{
+		scale: 100%;
+		opacity: 100%;
 	}
 }
 
@@ -266,16 +277,18 @@ nav a:hover{
 }
 
 @keyframes spiritMove{
-	0%, 100%{
+	0%{
 		scale: 100%;
 		opacity: 100%;
-		rotation: 2deg;
 	}
 
 	50%{
 		scale: 88%;
 		opacity: 95%;
-		rotation: 0deg;
+	}
+	100%{
+		scale: 100%;
+		opacity: 100%;
 	}
 }
 #ENVIRON{
@@ -284,16 +297,18 @@ nav a:hover{
 }
 
 @keyframes environMove{
-	0%, 100%{
+	0%{
 		scale: 100%;
 		opacity: 100%;
-		rotation: 2deg;
 	}
 
 	50%{
 		scale: 86%;
 		opacity: 95%;
-		rotation: 0deg;
+	}
+	100%{
+		scale: 100%;
+		opacity: 100%;
 	}
 }
 #SOCIAL{
@@ -302,17 +317,17 @@ nav a:hover{
 }
 
 @keyframes socialMove{
-	0%, 100%{
+	0%{
 		scale: 100%;
 		opacity: 100%;
-		rotation: 2deg;
 	}
 
 	50%{
 		scale: 84%;
 		opacity: 95%;
-		rotation: 0deg;
 	}
+
+	
 }
 .transitionText{
 	position: absolute;
@@ -457,6 +472,10 @@ nav a:hover{
 	margin-top: 0.8vw;
 	font-size: 1.5vw;
 	pointer-events:all;
+}
+
+.mobilePointer{
+	display: none;
 }
 
 /* FEATURE 2*/
@@ -1620,7 +1639,30 @@ footer{
 		width: 85vw;
 		position: absolute;
 		top: 25vw;
-		left: 3vw;
+		left: 7vw;
+	}
+
+	.mobilePointer{
+		display: block;
+		position: absolute;
+	
+		width: 15vw;
+		height: 15vw;
+		bottom: 0vw;
+		right: 10vw;
+		animation: pointing 2s infinite;
+	}
+
+	@keyframes pointing{
+		0%{
+			bottom: 0vw;
+		}
+		50%{
+			bottom: 2vw;
+		}
+		100%{
+			bottom: 0vw;
+		}
 	}
 
 	.mobileHero1{

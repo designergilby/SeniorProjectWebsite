@@ -24,7 +24,7 @@ $(document).ready(function() {
 		}, 2000)
 	})
 
-	$(".heroSVG").on("click", function(event){
+	$(".heroImg").on("click", function(event){
 		event.preventDefault();
 		$(".feature1").fadeOut(1000, function(){
 			$(".revealedContent").fadeIn(1000);
