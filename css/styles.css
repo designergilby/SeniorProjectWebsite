@@ -32,6 +32,46 @@ section{
 	justify-content: space-between;
 }
 
+
+nav{
+	display:none;
+}
+
+nav a{
+	text-decoration: none;
+	color: rgb(0,99,176);
+	font-size: 1.25vw;
+	margin-right:2vw;
+	transform: scale(1);
+	transition: transform 250ms ease-in-out;
+}
+
+.revealNav{
+	padding-top:2vw;
+	line-height: 2vw;
+	width: 20%;
+	display: flex;
+}
+
+.blobNavElement{
+	display: block;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 6%;
+	padding-top:6%;
+	background-image: url("../images/icon.svg");
+}
+
+nav a:hover{
+	transform: scale(1.1);
+	transition: transform 250ms ease-in-out;
+
+}
+
+
+
+
+
 /* ---------------- BACKGROUND EFFECT ---------------- */
 
 .background{
@@ -1477,6 +1517,9 @@ footer{
 		font-size: 3.5vw;
 	}
 	
+	.revealNav{
+		display: none;
+	}
 
 	.decorateRect{
 		width: 23vw;
