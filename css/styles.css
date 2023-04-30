@@ -516,6 +516,10 @@ nav a:hover{
 	z-index: 10;
 }
 
+.mobileHero2{
+	display: none;
+}
+
 .heroSVG2{
 	position: absolute;
 	width: 70%;
@@ -1752,6 +1756,18 @@ footer{
 		position: absolute;
 		margin-top: 1vh;
 		top: 0;
+	}
+
+	.mobileHero2{
+		display: block;
+	}
+
+	.dimensionNames{
+		display: none;
+	}
+
+	.heroSVG2{
+		display: none;
 	}
 
 	.viewProjectsCont{
