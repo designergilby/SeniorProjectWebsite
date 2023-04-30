@@ -24,6 +24,24 @@ $(document).ready(function() {
 		}, 2000)
 	})
 
+	$(".heroSVG").on("click", function(event){
+		event.preventDefault();
+		$(".feature1").fadeOut(1000, function(){
+			$(".revealedContent").fadeIn(1000);
+
+			if(window.innerWidth >=768){
+				$("nav").addClass("revealNav")
+				$("nav").fadeIn(1000);
+			} else {
+				$("nav").css("display", "none")
+			}
+		});
+
+		$(".heroImg2").animate({
+			"opacity":"1"
+		}, 2000)
+	})
+
 	$(".blobNavElement").on("click", function(event){
 		event.preventDefault();
 		$(".revealedContent").fadeOut(1000, function(){
