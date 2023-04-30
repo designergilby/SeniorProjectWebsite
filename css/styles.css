@@ -32,6 +32,48 @@ section{
 	justify-content: space-between;
 }
 
+
+nav{
+	display:none;
+
+}
+
+nav a{
+	text-decoration: none;
+	color: rgb(0,99,176);
+	font-size: 1.25vw;
+	margin-right:2.75vw;
+	transform: scale(1);
+	transition: transform 250ms ease-in-out;
+}
+
+.revealNav{
+	padding-top:2vw;
+	line-height: 2vw;
+	width: 20%;
+	display: flex;
+
+}
+
+.blobNavElement{
+	display: block;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 6%;
+	padding-top:6%;
+	background-image: url("../images/icon.svg");
+}
+
+nav a:hover{
+	transform: scale(1.1);
+	transition: transform 250ms ease-in-out;
+
+}
+
+
+
+
+
 /* ---------------- BACKGROUND EFFECT ---------------- */
 
 .background{
@@ -627,7 +669,7 @@ section{
 }
 
 .beauLuzar:hover{
-  	background-image: url("../images/homeLogo/BeauLuzar_homeLogo.png");
+  	background-image: url("../images/homeLogo/beauLuzarHomeLogo.png");
 }
 
 .seringMcHugh:hover{
@@ -721,7 +763,7 @@ section{
 
 
 .Blush{
-		background-image: url(../images/homeLogo/beauLuzarHomeLogo);
+		background-image: url(../images/homeLogo/beauLuzarHomeLogo.png);
 
 	}
 	
@@ -809,7 +851,7 @@ section{
 	}
 	
 	.Journei{
-		background-image: url(../images/homeLogo/nadiyahMCHomeLogo.ng);
+		background-image: url(../images/homeLogo/nadiyahMCHomeLogo.png);
 
 	}
 	
@@ -1067,7 +1109,7 @@ section{
 }
 
 .beauLuzarLogoPop{
-  	background-image: url("../images/homeLogo/BeauLuzar_homeLogo.png");
+  	background-image: url("../images/homeLogo/beauLuzarHomeLogo.png");
 }
 
 .seringMcHughLogoPop{
@@ -1477,6 +1519,9 @@ footer{
 		font-size: 3.5vw;
 	}
 	
+	.revealNav{
+		display: none;
+	}
 
 	.decorateRect{
 		width: 23vw;
