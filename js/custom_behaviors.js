@@ -471,7 +471,7 @@ $(document).ready(function() {
 		$("body").addClass("stopScroll")
 		$(".loaderBackground").fadeIn(400, function(){
 			$(".loader").delay(100).fadeIn(400, function(){
-				$(".harlanMckayPop").fadeIn(800, function(){
+				$(".harlanMcKayPop").fadeIn(800, function(){
 					$(".loader").delay(2000).fadeOut(400, function(){
 						$(".loaderBackground").fadeOut(400)
 					 })
