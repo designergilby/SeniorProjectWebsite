@@ -380,7 +380,7 @@ nav a:hover{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -1.9vw;
+	margin-top: -1.7vw;
 	margin-left: -9.3vw;
 	z-index: 5;
 	transition: 250ms;
@@ -477,12 +477,12 @@ nav a:hover{
 }
 
 .mobilePointer{
-	animation: pointing 5s infinite;
+	animation: pointing 4s infinite;
 	position: absolute;
 	top: 23vw;
-	right: 20.3vw;
-	height: 2.5vw;
-	width:  2.5vw;
+	right: 20.7vw;
+	height: 2vw;
+	width:  2vw;
 	z-index: 5;
 	pointer-events: none;
 }
@@ -1695,22 +1695,22 @@ footer{
 		display: block;
 		position: absolute;
 	
-		width: 15vw;
-		height: 15vw;
-		bottom: 0vw;
-		right: 10vw;
+		width: 5vw;
+		height: 5vw;
+		top: 45vw;
+		right: 38.5vw;
 		animation: pointing 2s infinite;
 	}
 
 	@keyframes pointing{
 		0%{
-			bottom: 0vw;
+			top: 45vw;
 		}
 		50%{
-			bottom: 2vw;
+			top: 45.5vw;
 		}
 		100%{
-			bottom: 0vw;
+			top: 45vw;
 		}
 	}
 
