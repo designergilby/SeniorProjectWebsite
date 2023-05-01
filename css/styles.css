@@ -136,17 +136,17 @@ nav a:hover{
 /* Hero Image */
 
 .heroImg{
-	height: 50vw;
+	height: 45vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	text-align: center;
 	position: absolute; 
-	right: 5vw;
-	width: 50vw;
+	right: 12vw;
+	width: 45vw;
 	top: 50%;
-	margin-top: -25vw;
+	margin-top: -22.5vw;
 }
 
 .mobileHero1{
@@ -162,7 +162,7 @@ nav a:hover{
 }
 
 .heroSVG:hover{
-	scale: 104%;
+	scale: 102%;
 }
 
 #PHYS{
@@ -397,6 +397,7 @@ nav a:hover{
 	width: 50%;
 	position: absolute;
 	bottom: 5vh;
+	left: 10vw;
 	
 }
 
@@ -475,7 +476,25 @@ nav a:hover{
 }
 
 .mobilePointer{
-	display: none;
+	animation: pointing 5s infinite;
+	position: absolute;
+	bottom: 2vw;
+	right: 5vw;
+	height: 7vw;
+	width:  7vw;
+	z-index: 5;
+}
+
+@keyframes pointing{
+	0%{
+		bottom: 2vw;
+	}
+	50%{
+		bottom: 3vw;
+	}
+	100%{
+		bottom: 2vw;
+	}
 }
 
 /* FEATURE 2*/
@@ -569,24 +588,24 @@ nav a:hover{
 	font-size: 2.2vw;
 }
 
-.downarrow{
-	width: 1.5vw;
-	height: 1.5vw;
+.viewAllProjectsSorted{
+	font-size: 2vw;
+	cursor: pointer;
+	color:#0063b0;
+	font-weight: 800;
+	margin-bottom: 4vw;
+
+	transition: 250ms
 }
+
+.viewAllProjectsSorted:hover{
+	font-size: 2.2vw;
+}
+
 
 
 
 /* ---------------- sorted ---------------- */
-
-.sortedProjects{
-	/* background-color: grey; */
-}
-
-.sortedIcon{
-	height: 5vw;
-	width: 5vw;
-	background-color: black;
-}
 
 .rightColW{
 	width: 57.552%;
@@ -596,7 +615,13 @@ nav a:hover{
 	width: 31.2883%;
 }
 
-
+.sortedDesc{
+	width: 48.5%;
+	font-size: 1.5vw;
+	line-height: 2vw;
+	color:#0063b0;
+	margin-bottom: 4vw;
+}
 
 /* ================================================== CHAR/GALLERY =================================================== */
 .pjwrapper{
@@ -1562,9 +1587,24 @@ footer{
 		display: block;
 	}
 
+	.viewAllProjectsSorted{
+		transition: none;
+		font-size: 5vw;
+		margin-bottom: 7vw;
+		margin-top: 0vw;
+	}
+
 	.sortedTitle{
 		margin-bottom: 10%;
+		font-size: 5vw;
+		margin-top: 3vw;
+	}
+
+	.sortedDesc{
+		width: 100%;
 		font-size: 3.5vw;
+		line-height: 4.25vw;
+		margin-bottom: 7vw;
 	}
 	
 	.revealNav{
@@ -2581,7 +2621,7 @@ footer{
 	/*--- sorted area (Desktop) */
 
 	.sortedTitle{
-		margin-bottom: 5%;
+		margin-bottom: 2vw;
 		font-size: 2vw;
 
 	}

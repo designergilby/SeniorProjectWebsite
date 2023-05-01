@@ -83,6 +83,12 @@ $(document).ready(function() {
 		}, 1000);
 	});
 
+	$(".viewAllProjectsSorted").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $("#viewAllProjects").offset().top
+		}, 1000);
+	});
+
 	$(".physW").click(function() {
 		$([document.documentElement, document.body]).animate({
 			scrollTop: $(".physical").offset().top
