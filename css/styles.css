@@ -1977,6 +1977,7 @@ footer{
 			margin-top:2%;
 			margin-bottom:3%;
 			font-size:3.75vw;
+			text-transform: uppercase;
 		}
 	
 		.projectDescription{
