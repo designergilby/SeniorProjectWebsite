@@ -480,9 +480,9 @@ nav a:hover{
 	animation: pointing 5s infinite;
 	position: absolute;
 	top: 23vw;
-	right: 19.5vw;
-	height: 4vw;
-	width:  4vw;
+	right: 20.3vw;
+	height: 2.5vw;
+	width:  2.5vw;
 	z-index: 5;
 	pointer-events: none;
 }
