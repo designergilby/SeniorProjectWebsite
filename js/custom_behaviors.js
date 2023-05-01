@@ -276,7 +276,7 @@ $(document).ready(function() {
 	// ======================================== CHAR ======================
 	///Hover function for the names to disapear////BG image is added in css/////
 
-	var names = ['salmanAhmed', 'jasmineBussie', 'katelynChristiansen', 'jasmineFredrick', 'jackGilbert', 'charlotteGreen', 'hallieGroeschel', 'anikaGuggisberg', 'eleniHein', 'christianHeo', 'indigoHoffman', 'angelaHolton', 'ashleyJandro', 'danielleJohnson', 'jamieKerwin','ceciliaKnudsen', 'alyssaKoepke', 'kaliKoester', 'tjorvenLandwehr', 'emmaLarson', 'beauLuzar', 'seringMcHugh', 'harlanMckay', 'carlyMeyer', 'nadiyahMC', 'joeMischke', 'sarahMorris', 'tylerMullin', 'lilyNess', 'laurenPechman', 'samPeskie', 'kaylaPurney', 'natalieReber', 'isabelRoberts', 'jadynSchoppers', 'destinySwen', 'vaughnVande', 'alexWoo'];
+	var names = ['salmanAhmed', 'jasmineBussie', 'katelynChristiansen', 'jasmineFredrick', 'jackGilbert', 'charlotteGreen', 'hallieGroeschel', 'anikaGuggisberg', 'eleniHein', 'christianHeo', 'indigoHoffman', 'angelaHolton', 'ashleyJandro', 'danielleJohnson', 'jamieKerwin','ceciliaKnudsen', 'alyssaKoepke', 'kaliKoester', 'tjorvenLandwehr', 'emmaLarson', 'beauLuzar', 'seringaMcHugh', 'harlanMckay', 'carlyMeyer', 'nadiyahMC', 'joeMischke', 'sarahMorris', 'tylerMullin', 'lilyNess', 'laurenPechman', 'samPeskie', 'kaylaPurney', 'natalieReber', 'isabelRoberts', 'jadynSchoppers', 'destinySwen', 'vaughnVande', 'alexWoo'];
 	$.each(names, function(index, name) {
 	hoverEffect(name);
 	});
