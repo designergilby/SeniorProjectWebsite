@@ -874,7 +874,7 @@ nav a:hover{
 	
 	
 	.Fake{
-		background-image: url(../images/homeLogo/jasmineFredrick.png);
+		background-image: url(../images/homeLogo/jasmineFredrickHomeLogo.png);
 
 	}
 	
@@ -1497,7 +1497,7 @@ footer{
 	}
 
 	.physical{
-		background-color: rgba(210, 107, 170, 0.2);
+		background-color: #e3d3e6;
 	}
 
 	.sortedEmoColor{
@@ -1505,7 +1505,7 @@ footer{
 	}
 
 	.emotional{
-		background-color: rgba(80, 106, 178, 0.2);
+		background-color: #ccd3e9;
 	}
 
 	.sortedIntelColor{
@@ -1513,7 +1513,7 @@ footer{
 	}
 
 	.intellectual{
-		background-color: rgba(134, 72, 156, 0.2)
+		background-color: #d5cbe3;
 	}
 
 	.sortedSocColor{
@@ -1521,7 +1521,7 @@ footer{
 	}
 
 	.social{
-		background-color: rgba(238, 115, 155, 0.2)
+		background-color: #ead2e2;
 	}
 
 	.sortedFinColor{
@@ -1529,7 +1529,7 @@ footer{
 	}
 
 	.financial{
-		background-color: rgba(75, 192, 169, 0.2)
+		background-color: #d5dfe4;
 	}
 
 	.sortedOccColor{
@@ -1537,7 +1537,7 @@ footer{
 	}
 
 	.occupational{
-		background-color: rgba(104, 205, 236, 0.2);
+		background-color: #d8e4f1;
 	}
 
 	.sortedEnvirColor{
@@ -1545,7 +1545,7 @@ footer{
 	}
 
 	.environmental{
-		background-color: rgba(153, 202, 68, 0.2)
+		background-color: #dde5d8;
 	}
 
 
