@@ -147,6 +147,7 @@ nav a:hover{
 	width: 45vw;
 	top: 50%;
 	margin-top: -22.5vw;
+	z-index: 10;
 }
 
 .mobileHero1{
@@ -621,6 +622,7 @@ nav a:hover{
 	line-height: 2vw;
 	color:#0063b0;
 	margin-bottom: 4vw;
+	margin-top: 2vw;
 }
 
 /* ================================================== CHAR/GALLERY =================================================== */
